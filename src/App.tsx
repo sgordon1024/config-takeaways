@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import contentData from './data/content.json'
 import type { Content, Talk } from './types'
 import { useTheme } from './lib/useTheme'
@@ -6,6 +6,8 @@ import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
 import { Themes } from './components/Themes'
 import { DeepDives } from './components/DeepDives'
+import { PredictionCta } from './components/PredictionCta'
+import { PredictionPage } from './components/PredictionPage'
 import { Archive } from './components/Archive'
 import { Stats } from './components/Stats'
 import { Closing } from './components/Closing'
@@ -15,6 +17,19 @@ const content = contentData as Content
 
 export default function App() {
   const { theme, toggle } = useTheme()
+
+  // Tiny hash router: #/prediction shows the forecast page, everything else
+  // (including the in-page #section / #talk- anchors) shows the main page.
+  const [hash, setHash] = useState(() => (typeof window !== 'undefined' ? window.location.hash : ''))
+  useEffect(() => {
+    const onHash = () => setHash(window.location.hash)
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+  const isPrediction = hash.startsWith('#/prediction')
+  useEffect(() => {
+    if (isPrediction) window.scrollTo(0, 0)
+  }, [isPrediction])
 
   const talksById = useMemo(() => {
     const m = new Map<string, Talk>()
@@ -30,14 +45,19 @@ export default function App() {
   return (
     <div className="min-h-screen bg-paper text-ink transition-colors duration-500 dark:bg-ink dark:text-paper">
       <Nav theme={theme} onToggleTheme={toggle} />
-      <main>
-        <Hero meta={content.meta} />
-        <Themes themes={content.themes} talksById={talksById} />
-        <DeepDives talks={deepDiveTalks} />
-        <Archive talks={content.talks} />
-        <Stats stats={content.meta.stats} />
-        <Closing meta={content.meta} />
-      </main>
+      {isPrediction ? (
+        <PredictionPage />
+      ) : (
+        <main>
+          <Hero meta={content.meta} />
+          <Themes themes={content.themes} talksById={talksById} />
+          <DeepDives talks={deepDiveTalks} />
+          <PredictionCta />
+          <Archive talks={content.talks} />
+          <Stats stats={content.meta.stats} />
+          <Closing meta={content.meta} />
+        </main>
+      )}
       <Footer meta={content.meta} />
     </div>
   )

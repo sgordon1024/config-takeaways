@@ -1,0 +1,14 @@
+{
+ "id": "038",
+ "title": "The metacognitive design loop",
+ "speakers": "Jenny Au (Team Lead, UX QA Engineering, Epsilon/Publicis Groupe), Mike Green (Team Lead, Product Design, Epsilon/Publicis Groupe)",
+ "stage": "Level 2 Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Epsilon's Product Design Team transformed their front-end development workflow by combining Figma's Code Connect and MCP (Model Context Protocol) with generative AI layout creation.",
+  "The team built this workflow around their proprietary CORE UI component library, using it as the foundation that ties designs to production-ready code.",
+  "The integrated approach significantly accelerated product delivery, shortening the path from design to production and achieving what the team describes as unprecedented development velocity."
+ ],
+ "quotes": []
+}

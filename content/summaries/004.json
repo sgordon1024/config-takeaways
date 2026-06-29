@@ -1,0 +1,15 @@
+{
+ "id": "004",
+ "title": "Scooter, screen and duct-tape: from hack to habit",
+ "speakers": "Unni Krishnan Manikoth (Digital Experience Lead, Ather Energy ), Harish Kumar (Product Designer, Ather Energy )",
+ "stage": "Level 2 Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Ather Energy's designers built their own custom design tools using Arduinos, iPads, and Figma, rather than waiting for existing tools to fit their needs.",
+  "The talk explores going 'outside the design loop' and how scrappy hacks evolve into repeatable team habits.",
+  "Scrappy experimentation is presented as a way to validate ideas, influence stakeholders, and build real-world experiences faster.",
+  "The session frames the question of what to do when the design tool you need doesn't exist yet, drawing on hands-on prototyping for electric scooters."
+ ],
+ "quotes": []
+}

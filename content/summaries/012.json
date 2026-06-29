@@ -1,0 +1,15 @@
+{
+ "id": "012",
+ "title": "Figma meets hardware: prototyping for the physical world",
+ "speakers": "Frederik Uebersch\u00e4r (Senior Designer for Creative Technology, Electrolux), Sam Thorne (Senior Principal Designer for Creative Technology, Electrolux)",
+ "stage": "Level 2 Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Electrolux uses Figma to design the next generation of home appliances, and this talk shares how the team bridged the digital-physical gap to extend Figma's canvas into the physical world.",
+  "The team built \"Figma Displays\" using off-the-shelf electronics that live-stream prototypes onto production-accurate screens.",
+  "This new process shrank the feedback loop from six months to just two minutes, completely revamping the workflow.",
+  "The talk aims to inspire attendees to find their own ways to connect the digital canvas to the physical world around them."
+ ],
+ "quotes": []
+}

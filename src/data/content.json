@@ -1,0 +1,2057 @@
+{
+ "meta": {
+  "conference": "Config 2026",
+  "host": "Figma",
+  "location": "San Francisco, CA",
+  "dates": "June 23–25, 2026",
+  "curator": "Steve Gordon",
+  "tagline": "Config 2026's throughline is that when AI collapses the cost of making, the designer's value migrates away from production and toward the scarce human inputs that machines lack: taste, judgment, direction, trust, and context. Figma reframed AI from a feature into a way of working (\"agents\" becomes \"agency\"), and the product story, Make, Code layers, MCP, Code Connect, skills, Motion, Shaders, Weave, repeatedly argued that structure is the bridge that turns fast-but-wrong AI output into shippable, on-brand work. A leadership track wrestled with moving whole organizations into an AI-native posture without losing craft or culture, while a parallel humanist counter-current insisted that feeling, community, inclusion, and the irreplaceable final 5% are what endure when everyone has the same models. Underneath the tooling, the interface itself is being rethought from something you operate into something you cooperate with, making trust and legibility first-class design problems. Config 2026 was less a tools showcase than an argument about what stays essential when building gets cheap.",
+  "overview": "Config 2026 is Figma's annual design conference, anchored by Dylan Field's opening keynote and Figma's biggest product launch of the year, spanning main-stage product reveals, a Leadership Collective track, Maker and Level 2 stages, Community and artist talks, and hands-on Learning Labs, all centered on how AI is reshaping design, product-building, and the roles people play.",
+  "stats": {
+   "totalTalks": 96,
+   "transcribedTalks": 39,
+   "abstractTalks": 57,
+   "themes": 12,
+   "speakers": 153,
+   "stages": 9
+  }
+ },
+ "themes": [
+  {
+   "id": 1,
+   "headline": "Taste and judgment become the scarce skill",
+   "explanation": "As AI floods teams with polished output, speaker after speaker reframes the core craft as discernment, looking at piles of work and saying 'not that, this.' Editing, curation, and the discipline to push past the tool's 'good enough' to the differentiating final 5% are positioned as what AI won't give you for free. Leaders argue taste becomes the bottleneck once code generation automates, and that you simply cannot outsource it.",
+   "talkIds": [
+    "009",
+    "036",
+    "051",
+    "058",
+    "070",
+    "087"
+   ],
+   "talkCount": 6
+  },
+  {
+   "id": 2,
+   "headline": "Speed is table stakes; direction is the edge",
+   "explanation": "When anyone can build anything fast, velocity alone just ships slop. The hard, differentiating problems shift to picking the right thing (direction and conviction) and standing out (differentiation), with insight and high-fidelity feedback needing to keep pace with the new speed of building. A leader's job becomes choosing the path and zeroing in on the core rather than producing artifacts.",
+   "talkIds": [
+    "003",
+    "019",
+    "045",
+    "057",
+    "076"
+   ],
+   "talkCount": 5
+  },
+  {
+   "id": 3,
+   "headline": "Context is the fuel you must externalize",
+   "explanation": "Every AI session restarts from scratch and sounds like the average of everyone unless fed the taste, conventions, and definitions of 'done' that currently live invisibly in people's heads. The emerging discipline is externalizing that judgment into shared, machine-readable layers, skills, content systems, thinking files, knowledge layers. The crucial caveat is that more context isn't better context, so precision and curation win over verbose dumps.",
+   "talkIds": [
+    "037",
+    "042",
+    "013",
+    "049",
+    "087",
+    "025"
+   ],
+   "talkCount": 6
+  },
+  {
+   "id": 4,
+   "headline": "Design systems bridge slop to shippable code",
+   "explanation": "AI converts sketches and prompts into UI, but without a design system those outputs stay throwaway prototypes, 'fast, but wrong.' Connecting generated output to existing components, tokens, and Code Connect is what makes it production-ready, repeatable, and on-brand, often doubling velocity. Teams reported reaching 80-87% one-shot accuracy once the system was made legible to the agent via MCP and golden sets.",
+   "talkIds": [
+    "078",
+    "035",
+    "080",
+    "075",
+    "038",
+    "061"
+   ],
+   "talkCount": 6
+  },
+  {
+   "id": 5,
+   "headline": "Code enters the canvas natively",
+   "explanation": "Figma's flagship launches blurred design and code: Make lets designers work in their local codebase, Code layers bring code onto the canvas, and MCP plus Code Connect feed agents precise implementation context for one continuous idea-to-production workflow. Generative plugins let anyone build a real plugin by describing it, with a free-to-run cost model. Studios and enterprises showed pushing design directly into Git repositories rather than handing off.",
+   "talkIds": [
+    "050",
+    "002",
+    "034",
+    "032",
+    "016",
+    "063"
+   ],
+   "talkCount": 6
+  },
+  {
+   "id": 6,
+   "headline": "Expression goes native: Motion, Shaders, Draw, Weave",
+   "explanation": "Figma dramatically expanded its creative surface with a full Motion mode (timeline, keyframes, easing variables), native GPU shaders as effects and fills, Draw for 2D-into-3D sculpting, and the node-based Weave for AI creative workflows. Many of these are agent-generated from plain language, then hand-edited by the designer. The throughline is bringing visual expressiveness and craft back into the tool itself.",
+   "talkIds": [
+    "005",
+    "040",
+    "066",
+    "029",
+    "047"
+   ],
+   "talkCount": 5
+  },
+  {
+   "id": 7,
+   "headline": "The interface becomes a colleague, not a tool",
+   "explanation": "Designers are shifting from interaction design to relationship design: rather than cramming fluid intelligence into chat boxes and allow-buttons that mimic command lines, AI should behave like a teammate you cooperate with. Value compounds over repeated small moments of reading intent and adjusting, versus today's 'permanent first date.' Content designers increasingly craft the frames around intelligence, prompt starters, voice, copy, rather than the model's words.",
+   "talkIds": [
+    "022",
+    "023",
+    "017",
+    "089",
+    "088"
+   ],
+   "talkCount": 5
+  },
+  {
+   "id": 8,
+   "headline": "Trust is designed, progressive, and earned",
+   "explanation": "As products act on users' behalf, the central challenge becomes communicating intent so people feel in control, with smart defaults, human approval, and an escape hatch in high-stakes moments. Trust is built like onboarding a new teammate, small tasks first, autonomy added as confidence accrues, and sometimes by deliberately adding friction so users internalize and feel ownership. High-emotion or life-critical contexts should keep humans at the center.",
+   "talkIds": [
+    "008",
+    "022",
+    "023",
+    "094",
+    "075"
+   ],
+   "talkCount": 5
+  },
+  {
+   "id": 9,
+   "headline": "Measure well, not just move fast",
+   "explanation": "A speed-versus-confidence gap is opening: 91% of designers say work moves faster with AI but only 15% feel more confident it's better. The teams winning own evaluation, defining what 'good' means in human terms and validating against real research, customer feedback, and in-the-moment insight, turning evals and high-fidelity feedback into the new competitive moat. Defensibility through validation is the variable separating higher-risk from lower-risk teams.",
+   "talkIds": [
+    "084",
+    "076",
+    "019",
+    "057",
+    "028"
+   ],
+   "talkCount": 5
+  },
+  {
+   "id": 10,
+   "headline": "Agency over agents: leading orgs into AI",
+   "explanation": "Leadership talks reframe the goal from deploying agents to giving teams genuine agency over their work, mapping the messy reality of grassroots-versus-directive adoption. Prescriptions include creating protected space to explore, enabling the explorers, modeling hands-on behavior, and writing the operating playbook in real time as you become AI-native. As roles across design, product, and engineering blur, orgs hire hybrid player-coach managers and treat the real magic as T-shaped people plus AI in small pods, not the seductive solo-with-an-agent narrative.",
+   "talkIds": [
+    "003",
+    "015",
+    "030",
+    "036",
+    "020",
+    "058",
+    "082"
+   ],
+   "talkCount": 7
+  },
+  {
+   "id": 11,
+   "headline": "Keep the human and the feeling at the center",
+   "explanation": "Against the automation tide, artists and designers insist the imperfect, the personal, and the emotionally resonant are what make work unmistakably yours and durable as differentiators, what AI's averaged output erodes. The centaur-versus-minotaur framing and 'design the feel, not the graph' share one conviction: systems should amplify human dignity, voice, and craft rather than puppeteer the people inside them. Following curiosity and protecting the felt experience of software are positioned as strategy, not sentiment.",
+   "talkIds": [
+    "001",
+    "007",
+    "091",
+    "070",
+    "047",
+    "092"
+   ],
+   "talkCount": 6
+  },
+  {
+   "id": 12,
+   "headline": "Community, care, and inclusion are the moat",
+   "explanation": "When everyone can build fast and well, the old engineering edge erodes and belonging becomes the durable differentiator, features get copied, belonging does not, and the people who care most become your best product signal and growth channel. Designing for relationships, public space, and whose voice isn't in the room is reframed as strategic, including partnering with the Deaf community and designing for seniors and robots. Care and reciprocity beat extractive, attention-trapping patterns.",
+   "talkIds": [
+    "033",
+    "054",
+    "041",
+    "065",
+    "010"
+   ],
+   "talkCount": 5
+  }
+ ],
+ "deepDives": [
+  "009",
+  "087",
+  "022",
+  "008",
+  "078"
+ ],
+ "talks": [
+  {
+   "id": "000",
+   "title": "Opening keynote",
+   "speakers": "Dylan Field (CEO & Co-founder, Figma)",
+   "stage": "Main stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Frames the conference's central theme: design and product-building are changing, and the roles people play in the process are shifting alongside them.",
+    "Argues for rethinking product development from the ground up, changing both mindsets and methods in order to produce great work.",
+    "Serves as the kickoff for Config 2026 and features what Figma calls its biggest product launch of the year."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "001",
+   "title": "Keynote",
+   "speakers": "Holly Herndon (Artist, Herndon Dryhurst Studio)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "thvAivrQ4TI",
+   "keyPoints": [
+    "Herndon frames AI work through two myths: the centaur (human head/inhuman body) = humans orchestrating systems with human interest at the core, vs. the minotaur (human body/beast head) = humans trapped inside systems built to model and puppeteer them.",
+    "She describes her practice as 'protocol art', the creative intervention is upstream orchestration that produces emergent media, performances, and objects downstream; the protocol and its incentives are themselves the artwork.",
+    "For 'The Call' (Serpentine Gallery, London), she wrote a songbook covering all phonemes of English, sent it to 15 UK choirs, drove around recording them with her one-year-old and mom, and trained a collective choral model so people who never met could make music together.",
+    "Holly+ (2021, a COVID project) released a model of her own singing voice for anyone to sing through, with a royalty-split incentive model, a deliberately permissive, 'positive-sum' approach to IP (e.g., Sam Rolfes singing Dolly Parton's 'Jolene' through her voice/avatar).",
+    "Installations like Star Mirror (KW Berlin, 3 months) and the Attention Guild (Palazzo Diego, Venice, May) created read/write rooms that retain memory of what happened in them, letting humans and agents sing, debate, or even write software collectively."
+   ],
+   "quotes": [
+    {
+     "text": "A centaur builds protocols and models, and a minotaur is trapped inside protocols built to model them.",
+     "talk": "Keynote"
+    },
+    {
+     "text": "Angels appear as what you fear, and the devil appears as what you desire.",
+     "talk": "Keynote"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "002",
+   "title": "Figma learning lab: design to development workflows",
+   "speakers": "Riccardo Erra (Developer Advocate, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Offers a beginner-friendly walkthrough of moving from design to code using Figma's MCP server.",
+    "Covers best practices for bringing code context into Figma, specifically through variable prefixes and Code Connect.",
+    "Explains how to get stronger results from your design system in design-to-development workflows.",
+    "Includes a follow-on session in the Learning Lab Lounge for informal time with the Figma team."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "003",
+   "title": "Welcome and opening remarks",
+   "speakers": "Sheila Vashee (Chief Marketing Officer, Figma), Noah Levin (VP, Design, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "transcript",
+   "video": "BodZ123MS3E",
+   "keyPoints": [
+    "Figma's 2026 AI report maps teams onto a 2x2 of personal vs org-wide AI adoption: Nascent (lagging, now the smallest group), Unified (perfectly aligned top-down and bottom-up), Grassroots (ICs deep in AI, often on personal accounts, leadership not on board), and Directive (leadership bet on AI but ICs aren't there yet). Grassroots and Directive are framed as the most realistic and the hardest to solve.",
+    "Speed is now table stakes when anyone can build anything quickly; the harder, differentiating problems are direction (picking the right things) and differentiation (standing out). Every idea can now become a detailed prototype instead of a sticky note, so a leader's job is choosing which path and zeroing in on the core.",
+    "Noah's leadership tactics for AI adoption: create space (Figma's design team holds ~1-hour Friday study groups to build and explore during work hours), find and enable the 'explorers,' and model the behavior by getting hands-on. He cited designer Jason from the monetization team who DM'd an idea unrelated to his job that became the generative plugins launch.",
+    "Reframe from 'agents' to 'agency', teams don't just need agents, they need agency over their work, a recurring theme for the event.",
+    "Product previews for enterprise leaders: FigJam and Slides are getting the Figma agent for organizing info and sensemaking, and Figma is building agents to find work across a company (e.g., who recently worked on an onboarding file) usable in the file browser or any editor."
+   ],
+   "quotes": [
+    {
+     "text": "We don't just need agents. I mean, agents are nice. Trust me, I love agents. But, we need agency over the work that we do.",
+     "talk": "Welcome and opening remarks"
+    },
+    {
+     "text": "So let's stop pretending for a second that there's one playbook. And let's talk about the principles that hold true across all of them.",
+     "talk": "Welcome and opening remarks"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "004",
+   "title": "Scooter, screen and duct-tape: from hack to habit",
+   "speakers": "Unni Krishnan Manikoth (Digital Experience Lead, Ather Energy ), Harish Kumar (Product Designer, Ather Energy )",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Ather Energy's designers built their own custom design tools using Arduinos, iPads, and Figma, rather than waiting for existing tools to fit their needs.",
+    "The talk explores going 'outside the design loop' and how scrappy hacks evolve into repeatable team habits.",
+    "Scrappy experimentation is presented as a way to validate ideas, influence stakeholders, and build real-world experiences faster.",
+    "The session frames the question of what to do when the design tool you need doesn't exist yet, drawing on hands-on prototyping for electric scooters."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "005",
+   "title": "Get animated with Figma Motion",
+   "speakers": "Daniela Muntyan (Product Designer, Figma), Luca Damasco (Manager, Software Engineering, Figma), Dave Hornsby (Product Manager, Figma)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "3evAfmLVZK8",
+   "keyPoints": [
+    "Figma Motion adds a new 'motion mode' with a timeline, a play head, auto-keyframing, and a properties panel where every animatable property gets a diamond keyframe stamp. Animations play back in real time directly on the canvas.",
+    "Two ways to animate: stackable pre-made animation styles (entrances, cycles, exits, ~12-16 presets shipping at launch) and fine-grained keyframes with adjustable easing (presets, custom curves, overshoot, and command-drag for smooth paths).",
+    "Deep integration with Figma's design system primitives: animations work with components (color/edits cascade from a parent component down to the final composition), variables (two new types, easing and timing, with modes like standard/expressive/smooth), Draw properties (path trim, arcs, points-on-shape, stroke width), and shader fills.",
+    "The Figma agent can generate animations from a prompt, riff on multiple variations, vectorize and animate text, and compose individual shots onto a single staggered timeline, then designers edit the resulting keyframes by hand.",
+    "Collaboration features include timestamped comments tied to timeline positions, real-time multiplayer editing with synchronized timelines (spotlight/follow), plus production handoff: a read-only Dev Mode timeline, generated CSS/React Motion/JSON code, MCP prompt export, Figma Make/Weave integration, and MP4/WebM/GIF/animated-SVG export (4K 60fps on Pro Plus). Figma Motion is in beta."
+   ],
+   "quotes": [
+    {
+     "text": "We call him Mo. He's a We're a big fan of Mo.",
+     "talk": "Get animated with Figma Motion"
+    },
+    {
+     "text": "You're not stuck in your own file on your machine having to copy and paste and send those around for motion, which is just kind of an antiquated workflow.",
+     "talk": "Get animated with Figma Motion"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "006",
+   "title": "From kickoff to canvas: connecting Google Workspace and Figma",
+   "speakers": "Addison Rodomista (UX Design Lead, Google ), Chloe Fagan-Tucker (Google Workspace, BD & Strategic Partnerships, Google)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "AOcrfsZCsrU",
+   "keyPoints": [
+    "The talk frames the core problem as the \"toggle tax\" / fragmentation: design conversations and decisions are scattered across meetings, docs, and chats, so Figma can't be the single source of truth and teams constantly need realignment.",
+    "Walked through a designer persona \"Steve\" using the Figma + Google Workspace integration: Figma links dropping into Docs become native smart chips with metadata and thumbnails; an interactive Figma canvas embeds directly into Google Meet so peers can comment and duplicate frames in real time, not just watch a video feed.",
+    "Post-meeting continuity: Meet's \"take notes for me\" auto-captures crit feedback into a transcript, and because Meet chat is powered by Google Chat, conversations persist as searchable threads; the Figma app in Chat pings users (e.g., on mobile) so they can reply to Figma comments away from their desk.",
+    "Scale numbers cited for Google Workspace: 3 billion users, 13 million customers, and over 6 billion app installs from its marketplace.",
+    "Pitched the Workspace MCP server as the way for partners and \"citizen developers\" to pull Workspace context (Gmail, Drive, Calendar, Chat, People) into apps via AI natural-language prompts instead of APIs, plus new universal search; currently in developer preview with early-access partners before GA."
+   ],
+   "quotes": [
+    {
+     "text": "crit stops being about spectation and starts being about this real-time collaboration",
+     "talk": "From kickoff to canvas: connecting Google Workspace and Figma"
+    },
+    {
+     "text": "you can basically go from designer to developer all with using the tools that we are launching with workspace to bring those ideas to life",
+     "talk": "From kickoff to canvas: connecting Google Workspace and Figma"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "007",
+   "title": "Ready for the world",
+   "speakers": "Vicki Tan (Designer and Author)",
+   "stage": "Mezzanine stage",
+   "source": "transcript",
+   "video": "hpBND4-uiWc",
+   "keyPoints": [
+    "Tan's central thesis: a directional 'floating charge of energy' (Jung/von Franz; 'stagnant chi' in Chinese medicine) is a signal to make something 'unmistakably yours', by following curiosity, using what you already have, and changing as the work asks of you.",
+    "Her book 'Ask This Book a Question' is a choose-your-own-adventure on decision-making, designed entirely in Figma; readers route a stuck question through lenses of topic/subtopic, timing (urgent vs. once-in-a-lifetime), then land on a personal story where biases are named in situ with their 'light and shadow.'",
+    "Key reframe from her friend's job-quitting struggle: explaining cognitive biases ('loss aversion,' 'status quo bias') doesn't change behavior, people need to feel and place themselves in it. The 'denomination effect' (overweighting big things, undervaluing small recurring ones) was the breakthrough Mapo Tofu story.",
+    "Repeated publisher feedback that her polished, professional illustrations and covers 'didn't match her voice' led her to use her own unrefined illustrations and non-literary writing, the imperfection was what made it authentically hers.",
+    "She used the four-part Japanese/Chinese poetic structure Kishotenketsu (no climactic resolution like the hero's journey), change comes from an internal 'turn' (noticing) rather than external conflict; illustrated by the hardest, most personal story (Pentel 0.5mm lead / her late father)."
+   ],
+   "quotes": [
+    {
+     "text": "It wasn't perfect, but it was unmistakably mine.",
+     "talk": "Ready for the world"
+    },
+    {
+     "text": "When the floating charge of energy finds its direction, the question stops following you, and you start following it.",
+     "talk": "Ready for the world"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "008",
+   "title": "Trust as a through line",
+   "speakers": "Thomas Vidal (VP Product Design, Accor), Deidre Kolarick (Managing Vice President, Head of Design for Bank, Business, and Card, Capital One), Katie Szeto (Manager, Product Management, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "transcript",
+   "video": "XAePK-hlkdQ",
+   "keyPoints": [
+    "Capital One's Discover migration (mass debit-card reissuance) preserved trust via three principles: communicate early and often with 'no surprises' (a delivery/activation tracker), make switching easy (centralized view of recurring charges, direct merchant updates), and progressive nudging tuned to each user's spending behavior. Result: service call volume came in lower than prior reissuances.",
+    "Accor's framework for AI vs. high-emotion moments: the higher the 'intensity of the emotional signal,' the less AI should act, for special/personal moments AI should detect the signal and hand off to the human hotelier (hôtelier), keeping the human at the center.",
+    "Research finding on AI transparency in servicing: customers largely don't want to know every behind-the-scenes detail of AI, they want to feel in control and have an escape hatch in high-stakes moments (e.g., managing a deceased relative's estate vs. a routine lost-card call).",
+    "Accor built an 'AI design system' with layered rules, 'golden rules' (e.g., guests 'want to be known but not watching'), guardrails/error and human-escalation rules, and per-brand tone of voice across 40+ brands and 100+ countries, staffed by a dedicated team of AI product and content designers.",
+    "EPD triad shift: roles are blurring and delivery/QA/back-and-forth time shrinks (Accor shipped a ChatGPT app in January with just 3 people, one PM, one designer, one data scientist), freeing teams to fix long-neglected critical journeys and treat trust as a measurable core product requirement."
+   ],
+   "quotes": [
+    {
+     "text": "the question is not only can AI do it, but should AI do it?",
+     "talk": "Trust as a through line"
+    }
+   ],
+   "deepDive": true
+  },
+  {
+   "id": "009",
+   "title": "Scaling taste, craft, and quality in the AI era",
+   "speakers": "Teo Connor (VP Design, Airbnb), Loredana Crisan (Chief Design Officer, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "transcript",
+   "video": "UwAtDvcmxm8",
+   "keyPoints": [
+    "Care in design is reframed as 'hosting' (an Airbnb value): removing friction, adding delightful moments, and getting consistent details right so users feel considered, Connor's test is whether someone walks in and 'feels hosted.' Loredana adds that every design is 'like throwing a great party.'",
+    "The most valuable emerging skills as AI generates abundant output are judgment, editing, and evaluation, the ability to look at lots of work (your own, your team's, and the AI's) and say 'Not that, this.' Airbnb cultivates this 'old school' by having people share work and process to build a collective understanding of what good looks like.",
+    "Solo-with-an-agent work is a 'seductive narrative' but inferior; the real magic comes from diverse, T-shaped people (deep craft plus breadth) plus AI mixed together. Airbnb uses small cross-functional 'pod' teams run like startups, with high learning agility, high agency, and entrepreneurial spirit ('embrace the adventure').",
+    "Advice for early-career designers: when you start with a new tool you do your best work via brute force, then 'get good' and start shortcutting to 95%; resist the tools when they say first output is good enough and push for the extra 5%, that 5% is what makes ideas stand out.",
+    "Connor predicts an interim period of 'an outsized amount of very bad design' and 'slop,' but is bullish on AI for the industry because she believes in human creativity; what must survive is human dreaming and great design, judgment, editing, and the ability to simplify."
+   ],
+   "quotes": [],
+   "deepDive": true
+  },
+  {
+   "id": "010",
+   "title": "Beyond design systems: designing for robots and seniors",
+   "speakers": "Anna Oh (Head of Product and Design, Norbert Health)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "hGQEbwm6yc8",
+   "keyPoints": [
+    "The 'human system' framework for physical AI relationships has four patterns: Recognition (identity, e.g. knowing names/languages), Perception (turning vision into shared conversation via humans-in-the-loop operators), Expression (smiles, waves, gesture mirroring for emotional connection), and Continuity (relationship memory so interactions don't restart from zero).",
+    "Across 6 rounds of testing with 40+ patients (full face, no face, human-like, animal, robot, abstract), the teddy bear face won every single round; patients then named the robot 'Norbert' and 3D faces beat flat ones because many residents have low vision.",
+    "Demographic urgency: by 2030 over 1 billion people will be over 65 (outnumbering children under 10 for the first time), 21% of Americans, 24% in Europe, 26% in South Korea; one nurse often cares for 40 patients per shift.",
+    "Norbert's HAI device is a small white box with 4 sensors and 8 patents that turns any off-the-shelf robot into a clinical robot, detecting vitals, mobility, and behavior contactlessly just by looking; 98% of patients accept Norbert, which is the foundation for any data or measurement.",
+    "Redefined 'taste': it doesn't come from the design community but from the people you're responsible for; the AI industry optimizes for speed, but the people who need AI most are often least able to adapt to it."
+   ],
+   "quotes": [
+    {
+     "text": "Taste does not come from the design community. Taste come from the people you are responsible for. Their emotions, their smiles, their fears.",
+     "talk": "Beyond design systems: designing for robots and seniors"
+    },
+    {
+     "text": "I love you, Norbert. I will never forget you. Can I give you my number so that you can call me sometimes?",
+     "talk": "Beyond design systems: designing for robots and seniors"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "011",
+   "title": "Dimensional shift: sculpting in Figma Draw",
+   "speakers": "Josh McKenna (Independent Illustrator)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Josh McKenna frames learning a new program as a response to creative block, sharing how it 'saved his practice' after a successful career hit a wall.",
+    "He demonstrates a unified Figma Draw workflow with practical techniques for using 2D vector effects to create the illusion of 3D depth.",
+    "The talk argues that becoming a student again makes your brain 'porous' to new dimensions, bridging flat design and 3D.",
+    "Core thesis: picking up a new tool is not just a technical upgrade but a creative lifeline."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "012",
+   "title": "Figma meets hardware: prototyping for the physical world",
+   "speakers": "Frederik Ueberschär (Senior Designer for Creative Technology, Electrolux), Sam Thorne (Senior Principal Designer for Creative Technology, Electrolux)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Electrolux uses Figma to design the next generation of home appliances, and this talk shares how the team bridged the digital-physical gap to extend Figma's canvas into the physical world.",
+    "The team built \"Figma Displays\" using off-the-shelf electronics that live-stream prototypes onto production-accurate screens.",
+    "This new process shrank the feedback loop from six months to just two minutes, completely revamping the workflow.",
+    "The talk aims to inspire attendees to find their own ways to connect the digital canvas to the physical world around them."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "013",
+   "title": "How to build content systems for AI product workflows",
+   "speakers": "Jessica Ouyang (Co-founder, Ditto), Jolena Ma (Co-founder, Ditto)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "Wcz4RW1_qYI",
+   "keyPoints": [
+    "Core thesis: just as UI needs a design system, product copy needs a 'content system' - a single source of truth for terminology, patterns, and approved language that both people and AI agents can pull from to keep copy consistent at AI speed.",
+    "An effective content system must do three things: (1) be built from what's already live in your production codebase, (2) govern language everywhere work happens (not just where it's generated), and (3) show you what's working and what needs changing via a feedback loop.",
+    "Demo of Ditto's 'scan' tool: it read the DittoPay codebase, extracted 99 strings (91 unique, 8 repeated) across two languages, auto-tagged and organized them into a component library, pulled in Spanish translations automatically, and drafted a style guide inferred from how the product actually talks.",
+    "On feeding agents context: 'more context isn't necessarily better context.' Ditto's 'pull' command embeds relevant copy rules in code right next to design system components, so an agent (e.g. Claude Code) gets exactly what's needed - making fewer one-off calls, following rules more consistently, and wasting fewer tokens. In the demo, Claude Code reused 6 text components from the library instead of rewriting them.",
+    "The system governs at multiple stages - Figma plugin checks copy live, the codebase at generation time, and a PR bot that comments on inconsistencies in GitHub before merge - and edits flow back instantly: changing a preferred term (e.g. 'live' vs 'active') is immediately enforced everywhere across Figma, Claude Code, and PRs."
+   ],
+   "quotes": [
+    {
+     "text": "AI made it easy to generate more language than ever, but the teams that do this well won't be the ones generating the most. They'll be the ones with a system underneath keeping all of it right.",
+     "talk": "How to build content systems for AI product workflows"
+    },
+    {
+     "text": "Give an agent the whole system and it has to figure out what applies. Agents do better when they're given exactly what it needs for the task in front of it",
+     "talk": "How to build content systems for AI product workflows"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "014",
+   "title": "Out of sync, on purpose: desktop design after mobile won",
+   "speakers": "Giulio Fagiolini (Staff Designer, Spotify)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Examines designing for Spotify's desktop app, the original Spotify experience, and how it continues to evolve alongside mobile rather than simply mirroring it.",
+    "Argues for interpreting features per platform rather than copying them 1:1, tailoring execution to desktop's particular strengths.",
+    "Frames desktop's distinct role in people's routines as a companion for deep focus, creation, and immersive listening.",
+    "Shows, through real examples, how a small, deliberate team being a little 'out of sync' with mobile can turn consistency into craft."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "015",
+   "title": "How to build an AI-native org",
+   "speakers": "Anique Drumright (Chief Product Officer, Harvey), Christina Nguyen White (VP, Design, Harvey), Gui Seiz (Design, Director, Figma)",
+   "stage": "Leadership Collective Peer Exchange",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A facilitated roundtable discussion led by the Harvey team on how AI is reshaping product development and blurring the boundaries between design and product.",
+    "Uses a small-group conversation format where participants openly share perspectives rather than a traditional one-way presentation.",
+    "Explores evolving organizational structures and changing hiring dynamics in AI-native companies.",
+    "Examines what it means to build in a world where anyone can create."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "016",
+   "title": "Figma learning lab: the many ways to make with Figma Make",
+   "speakers": "Alexia Danton (Designer Advocate, Figma), Brett McMillin (Designer Advocate, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Covers the different ways to build with Figma Make, including creating a new prototype from scratch or starting from an existing codebase.",
+    "Walks through guidelines and skills and how to provide great context to get good results from Figma Make.",
+    "Shares best practices for working with your design system inside Figma Make.",
+    "Format is a learning lab session, with an invitation to continue informally afterward in the Learning Lab Lounge with the Figma team."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "017",
+   "title": "Writing for humans in an AI world",
+   "speakers": "Chelsea Larsson (Content Design, Anthropic)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Content designers at Anthropic don't write Claude's responses, they write everything around them: prompt starters, UI copy, feature names, and voice principles.",
+    "The talk explores how content design shifts when the interface understands natural language, requiring designers to design the 'frames' around intelligence that talks back.",
+    "It addresses teaching collaboration, not just use, through the edges of the experience, helping users learn to work with AI rather than simply operate it.",
+    "The session is aimed both at people designing AI products and those curious how AI changes the craft of content design more broadly."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "018",
+   "title": "Be the director: how stage craft informs product craft",
+   "speakers": "Kim Beverett (Product Manager, OpenAI)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Frames the screen as a stage and the user as the audience, arguing that product makers should adopt the mindset of a stage director when shaping experiences.",
+    "Centers on making intentional choices and defining the non-negotiables, or 'non-negotiables in your script,' that anchor a product.",
+    "Introduces the idea of finding a product's 'spine' as a unifying through-line that guides decisions.",
+    "Closes on the principle that 'the show must go on,' applying a theatrical resilience mindset to product craft."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "019",
+   "title": "From concept to confidence with Dscout AI",
+   "speakers": "Lauren Madura (Director of Product Design, Dscout), Michael Winnick (CEO & founder, Dscout)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "9pl3twjre6E",
+   "keyPoints": [
+    "Core thesis: as code becomes cheap and everyone is a maker, high-fidelity user feedback matters more than ever; the challenge is making the speed of learning match the new speed of building. Winnick reframes 'product market fit' as 'product market flow', staying agile as products fall in and out of fit faster than ever.",
+    "Winnick ties feedback to three needs (from Yuki Yamashita's framing): craft (the art of resonating deeply, avoiding 'getting high off your own supply' since AI like Claude constantly gasses you up), direction/conviction (harder now with a 'POC glut' and many more decision-makers), and speed.",
+    "dscout AI Studio is a suite of four tools, Draft Your Study, Explore Your Data, AI Moderation, and a new MCP server, built on five design principles: confident research without the PhD, governance without bureaucracy, fielding with less friction, communicate with your data, and high-fidelity feedback where the work happens.",
+    "Capabilities demoed: AI crawls a Figma prototype plus your learning objectives to guide study-building; AI templates replace Notion hubs and approval processes for governance; AI moderation runs recorded, dynamic interviews in parallel with hundreds/thousands of participants in different languages, and participants were surprisingly open and candid with a bot.",
+    "Data analysis tools: a conversational interface to 'talk to your data' with everything linking back to raw source, plus 'Spotlight,' an immersive AI-curated collection of moments. The dscout MCP server (in beta) plugs into Figma Make via @dscout to build usability tests, pull feedback back in, and have Figma Make iterate, a build-test-learn-iterate loop in one place."
+   ],
+   "quotes": [
+    {
+     "text": "We are now living in a world where the driving concept is really product market flow.",
+     "talk": "From concept to confidence with Dscout AI"
+    },
+    {
+     "text": "With AI, it is very easy to get high off your own supply.",
+     "talk": "From concept to confidence with Dscout AI"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "020",
+   "title": "Skill issue: how we built an OS for PMs at Figma",
+   "speakers": "Jinen Kamdar (Product Lead, Figma), Lawrence Luk (Product Technical Program Manager, Figma)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "2nn5J6tUzwE",
+   "keyPoints": [
+    "PMOS (PM Operating System) was built in one month by three volunteers, sponsored by the CPO, to free PMs from 'glue work' (juggling context across Slack, docs, FigJam, Figma, Asana) so they can focus on strategy and craft.",
+    "Every skill is built on three reusable building blocks: Context (access plus knowing what matters), Profile (who you work with and your priorities), and Experience (readable, useful, even beautiful output), all abstracted into shared files in a GitHub repo.",
+    "Three starter apps shipped: 'What's Up' (signal-from-noise daily catch-up), an auto-generated weekly update written in your voice with one-click publish, and a Spec Reviewer that grades spec sections red/yellow/green and coaches improvements.",
+    "Rollout required two tactics: becoming a 'forward deployed engineer at your own company' (sitting with teammates, keeping a friction log, iterating 10+ times) and hijacking a team offsite to run a hackathon where people built on PMOS, going from ~25% to 100% product-org adoption.",
+    "Demo showed an end-to-end product-review prep using chained skills (Scout/Slack search, experiment review via Hex MCP, codebase insight via GitHub, FigJam builder via Figma MCP), saving a PM roughly two hours; key takeaway is any team could build its own 'design OS' or 'company OS'."
+   ],
+   "quotes": [
+    {
+     "text": "if you do it wrong, you feel like you have to use AI at work, but if you get it right, you feel like you get to use AI at work",
+     "talk": "Skill issue: how we built an OS for PMs at Figma"
+    },
+    {
+     "text": "the technology is so nascent that I don't think there's a skill gap or a skill issue at all",
+     "talk": "Skill issue: how we built an OS for PMs at Figma"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "021",
+   "title": "Designing the product that can do anything",
+   "speakers": "Brian Ringley (Distinguished Product Manager & HRI Designer, Boston Dynamics)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Frames designing an interface for a humanoid robot that can theoretically do anything as one of the greatest current UX challenges, born from the collision of software, robotics, machine intelligence, and spatial computing.",
+    "Breaks the problem of teaching a robot about the world into three parts: training robots to develop skills, building application interfaces to author task behaviors, and integrating with facilities to monitor robots' effectiveness.",
+    "Connects these design challenges to the broader vision of the software-defined factory, drawing on the speaker's perspective as a product manager and HRI designer at Boston Dynamics."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "022",
+   "title": "Navigating the age of agentic computing",
+   "speakers": "Hector Ouilhet Olmos (VP of Design, AWS Applied AI Solutions, Amazon), Shani Taylor (VP, Customer Experience & Solutions, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "transcript",
+   "video": "ndceXNZZLno",
+   "keyPoints": [
+    "The core thesis is 'humanism' (humanomorphism): rather than mimicking the physics of office objects like skeuomorphism did (desk to desktop, cabinet to folder), AI design should mimic the dynamics of people/colleagues, designing for people who 'cooperate' with teammates rather than 'operate' tools.",
+    "Cramming fluid AI intelligence into chat boxes, text fields and trust/allow buttons recreates command-line tool behavior; example interaction patterns instead: an agent that 'leans in' when your cursor goes still (shake to dismiss), and one that detects hesitation when your cursor wavers between two options and offers trade-offs unprompted.",
+    "Shift from interaction design to 'relationship design', value compounds over tiny repeated moments of reading, adjusting and earning trust over time, versus today's AI which is like a 'permanent first date.' Hector's team shipped four products embodying this philosophy; he also built a personal open-source agent named Alicia that optimizes for the relationship itself.",
+    "Counterintuitive principle: deliberately ADD friction to build trust. In Amazon Connect Health (deployed at a San Diego hospital), having patients repeat instructions back 'in their own words' forced internalization and significantly decreased appointment cancellations.",
+    "Reframes the designer's role: humans have become 'human API endpoints' (input, execute, output) and should instead reclaim higher-order work, taste, judgment, discernment, since code is now written by capable coding agents, freeing designers to assert what is meaningful and ship end-to-end."
+   ],
+   "quotes": [
+    {
+     "text": "if we want to AI to behave less like those tools, and more like a teammate, we need to to stop designing for users who operate these tools, and start designing for people that cooperate",
+     "talk": "Navigating the age of agentic computing"
+    },
+    {
+     "text": "Taste, according to what you've been writing, is like the autobiography of your attention.",
+     "talk": "Navigating the age of agentic computing"
+    }
+   ],
+   "deepDive": true
+  },
+  {
+   "id": "023",
+   "title": "Trust, transparency, and flow: the UX of Gemini Enterprise",
+   "speakers": "Sheta Chatterjee (Senior Director, Head of UX, Cloud AI, Google), Yuhki Yamashita (Chief Product Officer, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "transcript",
+   "video": "cHigBlg7Ktw",
+   "keyPoints": [
+    "AI has moved past the single-player chatbox era ('the ancient days of AI like two years ago') to AI working alongside teams. Gemini Enterprise's 'collaborative projects' act as a 'team's shared brain', a context container of files, data, and people that agents act on top of. For long-horizon agents (Gemini Sparks), Google reused the familiar email metaphor in an 'inbox' (label/star/approve tasks) to counter the 'black box' fear when stakes are high.",
+    "Trust is built progressively, like working with a new human teammate: start with small tasks and 'smart defaults' requiring human approval, then add autonomy over time. Distinguish 'producing work' (between you and agents) from 'writing work' (sending email, publishing) which warrants human review.",
+    "Multiplayer with agents requires presence (seeing what agents change, like Figma's cursors), attribution (tracing who/which agent did what so changes can be rolled back), and giving agents their own identities. Open hard problem raised: should agent edits go on the human's undo stack?",
+    "Defends 'flowgramming' (box-and-arrow flows people call 'circa 2024 / ancient') because deterministic industries like healthcare need total control, 'a 5% delta in a dosage is life-threatening.' Both speakers argue flowgramming is back for AI workflows.",
+    "Optimistic leadership stance: the future isn't just 'happening to' designers, 'we hold the pen.' Operationalized by having designers talk to enterprise customers constantly; enterprise AI design is at 'stage zero.'"
+   ],
+   "quotes": [
+    {
+     "text": "Enterprise users don't stop being consumers when they come to work.",
+     "talk": "Trust, transparency, and flow: the UX of Gemini Enterprise"
+    },
+    {
+     "text": "We are all designers. We hold the pen and we shape the future of how people interact with our products.",
+     "talk": "Trust, transparency, and flow: the UX of Gemini Enterprise"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "024",
+   "title": "Figma learning lab: bringing designs to life with Figma Motion",
+   "speakers": "Miggi (Designer Advocate, Education, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "An introductory, beginner-friendly session designed to ease newcomers into using motion within Figma.",
+    "Covers Figma Motion features and the essentials needed to get started bringing designs to life with animation.",
+    "Focuses on adding energy and movement to product experiences to make them feel more alive.",
+    "Part of Figma's Learning Lab format, with a follow-on Learning Lab Lounge for informal time with the Figma team."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "025",
+   "title": "Figma deep dive: designing with the Figma agent",
+   "speakers": "Rodrigo Davies (Product Lead, Agents, Figma)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "0HqSSIPZkbI",
+   "keyPoints": [
+    "Figma agent gained major new capabilities: web search from the canvas (e.g. pulling real SF weather into designs), local file attachments (build designs from CSVs/spreadsheets), MCP connectors that read AND write back (Notion, Slack, Hex, Granola, Asana, GitHub), and shareable chats to learn teammates' workflows.",
+    "Custom skills are the headline feature: markdown files that steer the agent with your team's conventions, are portable from other agents 'in seconds,' and are composable, skills can call other skills and leverage connectors (demoed 'spec up' built on a foundational 'create documentation' skill to scale expertise across an org).",
+    "Design philosophy framed around Joanna Maciejewska's idea: AI should 'do laundry and dishes' (the tedious work like reconnecting colors/typography to the design system) so people can 'do art and writing', because what's tedious vs. loved differs per designer, they aimed to support as many use cases as possible.",
+    "'Parallel prompting' lets you fire off multiple agent tasks at once and keep editing live, demoed generating a search page, updating content to SF, swapping to dark/light mode, and creating constrained variations (lock fonts/style, only change layout) simultaneously.",
+    "The agent operates on real design layers connected to your design system, works with new code layers and motion (rotating compass, making components vertical/grid/interactive), and one teammate's feedback comments can be handed directly to the agent to address, keeping it embedded in a messy, multiplayer, divergent-then-convergent workflow. Design agent is in beta on pro/org/enterprise plans, coming to FigJam and Slides soon."
+   ],
+   "quotes": [
+    {
+     "text": "We want the AI to do laundry and dishes so that we can do art and writing.",
+     "talk": "Figma deep dive: designing with the Figma agent"
+    },
+    {
+     "text": "It's just taking your best practices from your head and giving those as instructions.",
+     "talk": "Figma deep dive: designing with the Figma agent"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "026",
+   "title": "Prompts to fashion: AI-powered 3D-printed garments",
+   "speakers": "Danit Peleg (Founder, 3D-Printed Fashion Lab )",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Danit Peleg presents an AI-powered workflow that converts sewing patterns into full-size, soft 3D-printable textiles, taking fashion design from prompts directly to 3D-printed garments.",
+    "The approach uses bio-based, zero-microplastic materials developed specifically for wearable, soft textiles, positioning it as a zero-waste, on-demand alternative to traditional fashion production.",
+    "The session features a live reveal of 3 looks designed with Weavy and printed using this new workflow, demonstrating what fully digitized fashion actually looks and feels like.",
+    "Peleg argues that the tools to build a circular, on-demand fashion future already exist today, framing this as a new paradigm for fashion production."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "027",
+   "title": "Design leadership in the age of acceleration",
+   "speakers": "Jen Dunnam (VP, Design, (Formerly) Patreon), Pedro Hernandez (Advocacy Manager, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Design leaders face a constant tension as product development accelerates and craft expectations rise: moving fast without losing clarity, quality, or creative foundations.",
+    "Building resilient design organizations depends on partnering effectively with product and engineering leadership.",
+    "Systems, rituals, and principles are needed to hold up under pressure and keep design organizations resilient.",
+    "Drawing on experience supporting creators, the speakers explore how thoughtful processes and systems can enable healthy, resilient, and lasting communities."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "028",
+   "title": "Applied Insights: the state of AI and design (Option 1)",
+   "speakers": "Andrew Hogan (Head of Insights, Figma), Shane Johnston (Researcher, Figma), Christa Simon (Manager, Research, Figma)",
+   "stage": "Leadership Collective Peer Exchange",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Figma's research team (Andrew Hogan, Shane Johnston, and Christa Simon) presents key findings from the newly-released 2026 AI report, unpacking three years of AI trends in design.",
+    "The session focuses on three themes: where AI's impact is accelerating, how investment is shifting, and what is actually changing about how teams work together.",
+    "The talk is interactive, inviting participants to react, compare their own experiences, and pressure-test which AI practices are genuinely sticking in real-world work.",
+    "Offered on both days of the conference, the session emphasizes evidence-based insights over hype, distinguishing durable changes from passing trends."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "029",
+   "title": "Hacking AI for creative operations at scale",
+   "speakers": "Rory Flynn (Founder, Systematiq Ai)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "_az4W2z5Fqw",
+   "keyPoints": [
+    "Three core skills transfer to any AI tool: deconstruction (reverse-engineer media into core components to learn how to prompt), system prompts (write rules once so the LLM does the work and removes you from the loop), and workflow development (chaining nodes to get from point A to B).",
+    "Demonstrated building workflows in Figma Weave, a node-based builder with 300+ AI tools; key reusable patterns include a 'router' (one input to many outputs), a 'text iterator' to split multiple prompts into individual generations (1, 4, or 400 assets), and a 'scale ref' to give models proportional context.",
+    "Prompt formulas via deconstruction: every photo has 'non-negotiable' components like lighting (the model fills them in if you don't), and edit/image-to-image models reduce to a simple 'keep this; change that' structure.",
+    "Build for reuse and tool-agnosticism: well-structured workflows stay ~95% the same and only the input changes; 'screw the models' because they all change, so swap tools into the structure rather than rebuilding.",
+    "Real client results: BarkBox digitally composites subscription boxes with AI lighting/shadow as a feeder image; built a 2D-vector-to-3D-studio-shot pitch pipeline run by four system prompts; Shark Ninja (hundreds of products, 25 categories, 35 markets) scaled from asset localization into retouching, compositing, and video."
+   ],
+   "quotes": [
+    {
+     "text": "Any 2D vector image can go in and studio shots can come out. I've replaced myself. We can go work on the next problem",
+     "talk": "Hacking AI for creative operations at scale"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "030",
+   "title": "Chaos as a catalyst: building Sephora’s next operating model",
+   "speakers": "Sneha Narahalli (SVP, Technology, Sephora), Paige Costello (VP Product, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Sephora is pursuing a transformation into an AI-native organization, a shift the speakers frame as going far beyond adding AI features to reshaping how the company operates.",
+    "Becoming AI-native requires working through ambiguity and writing the operating playbook in real time, rather than following an established model.",
+    "Teams are building new ways of working and defining patterns as they go, aiming to shape a scalable playbook that others can follow.",
+    "Throughout the transformation, Sephora continues to prioritize delivering inclusive, intuitive, and brand-forward customer experiences."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "031",
+   "title": "Figma learning lab: unlocking speed and visual expression with generative plugins and shader effects",
+   "speakers": "Hugo Raymond (Designer Advocate, Figma), Mallory Dean (Designer Advocate, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Introduces new ways to bring visual expression, consistency, and speed into the design workflow using generative effects and shader effects.",
+    "Framed as a 'learning lab' session, with an invitation to continue afterward in the Learning Lab Lounge for informal time with the Figma team."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "032",
+   "title": "Generative plugins: building plugins has never been easier",
+   "speakers": "Avery Frankenberg (Software Engineer, Figma), Jason Calleiro (Product Designer, Figma)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "5g7c4-EtmS8",
+   "keyPoints": [
+    "Generative plugins let anyone build a Figma plugin by describing it in natural language to the design agent, no coding, editor, or frameworks. The agent identifies the plugin type and asks clarifying follow-ups (e.g. which controls to include) before building.",
+    "They're true plugins on the existing plugin API and ship with Props Kit, a new native UI library so plugins look and feel like Figma. It supports unconventional controls beyond sliders/dropdowns, easing, joysticks, 3D controls, and on-canvas handles mappable to any property.",
+    "Plugins travel with the work: running one attaches it to the file and the specific layers it generated (remembering settings). Duplicating or copying a layer carries the plugin, no publishing, links, or installs needed for collaborators.",
+    "Cost model: you pay tokens to create a plugin once, but running it (yours, Figma's, or a teammate's) is free forever, pitched against the 'token maxing era' and cost-conscious admins.",
+    "Demos showed range and composability: live-weather temperature card, 3D-to-2D donut, gradient grid with a 'chaos' joystick, a teammate's 2D game terrain builder built from a Notion-connector PRD, and a nail studio composing shader fills + shader effects. The whole project went idea-to-Config-stage in ~45 days."
+   ],
+   "quotes": [
+    {
+     "text": "But now, if you can describe the tool, you can build the tool.",
+     "talk": "Generative plugins: building plugins has never been easier"
+    },
+    {
+     "text": "You create it once, and then it no longer costs you to run it. Whether you're running yours, Figma's, or a teammate's, running plugins is free.",
+     "talk": "Generative plugins: building plugins has never been easier"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "033",
+   "title": "The most important component: community",
+   "speakers": "Alicia Kranjc (Figma Community Product Manager, Figma)",
+   "stage": "Community Stage",
+   "source": "transcript",
+   "video": "U4bSieNNFU8",
+   "keyPoints": [
+    "Core thesis: with AI making it easy to build fast and well, the old engineering/craft edge is gone, and community is now the real differentiator and 'moat.' Kranjc defines community as 'your users' relationship with you and their relationship with one another', something most teams never design for.",
+    "Three reasons designing for community matters: (1) 'Features get copied, but belonging does not' (PostHog's distinct, radically transparent identity); (2) community is your best product signal, what users say to each other unprompted beats surveys (Linear's engineers evangelizing and filing feature requests unprompted); (3) the people who care are your best growth channel (Notion grew to 100M+ users largely via community, hiring an early fan who'd built an 80,000-monthly-visitor fan site).",
+    "Figma's four directives for fostering community: build products that foster connection (widgets, the photo booth from Maker Week, emote streams), build for lasting creative expression (new profiles with 'riffs,' FigPals), bring people together where they are (Make-a-thons, Friends of Figma), stay flexible / do things that don't scale (campus leaders, listening), and celebrate community publicly.",
+    "Concrete numbers: the latest Make-a-thon drew over 11,000 participants; Friends of Figma is 250+ groups across 82 countries running 900+ events last year; campus leaders grew from 66 to 187 in a year; the Made in Figma campaign turned creators' work into a San Francisco city-wide billboard takeover featuring their names and stories.",
+    "Three actions to start next week: meet five community members and have a real conversation about what they love/hate; celebrate one of them publicly (retweet, shout-out, newsletter); and brainstorm how your product can foster connection (real-time or lasting) even if it never ships. Example of listening: Figma reversed a change after backlash to moving the community tab to a secondary spot."
+   ],
+   "quotes": [
+    {
+     "text": "features get copied, but belonging does not.",
+     "talk": "The most important component: community"
+    },
+    {
+     "text": "community is your users' relationship with you and their relationship with one another. And most teams never think to design it.",
+     "talk": "The most important component: community"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "034",
+   "title": "From handoffs to upstream",
+   "speakers": "Frederick Andersen (Founder, EDL )",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "EDL, a design studio, made a deliberate bet a year ago, not on a tool or trend, but on a person and a reimagined idea of what a design studio could own.",
+    "The studio now pushes directly to clients' Git repos, runs their design systems in code, and positions itself upstream of clients' engineering teams rather than handing off downstream.",
+    "The talk tells the full story of this shift: the moment the team spotted the opportunity, the rituals that operationalized it, and the metrics that proved it worked.",
+    "Frederick Andersen frames the journey as intentional and replicable, addressing design leaders wondering whether their own team could move upstream the same way."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "035",
+   "title": "From idea to production: bridging design systems and code with AI",
+   "speakers": "Abdullah Alkhatib (Principal Designer, Mercari, Inc.), Motoki Narita (VP of Product Engineering (Marketplace), Mercari, Inc.), Marcel Weekes (VP, Product Engineering, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "AI can convert ideas, sketches, and screenshots into UI, but the abstract argues that without design systems these outputs remain prototypes rather than shippable products.",
+    "The talk's central thesis: connecting AI-generated output to existing design system components is what turns it into real, production-ready code rather than throwaway mockups.",
+    "The Mercari team shares concrete workflows and lessons learned from bridging design systems and code with AI.",
+    "Mercari reports that this approach doubled development speed while also improving quality."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "036",
+   "title": "Designing OpenAI’s products: Rethinking design in the age of AI",
+   "speakers": "Ian Silber (Head of Product Design, Open AI), Noah Levin (VP, Design, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "transcript",
+   "video": "eOd2gQg5vjg",
+   "keyPoints": [
+    "OpenAI has almost no fixed design process; it's deeply bottoms-up and 'every day is a hackathon', a designer can prototype in code and ship to production the next day. The principle is 'anybody can ship anything internally,' but a quality bar and sign-off gate what reaches users.",
+    "Model design is treated as part of product design: for the 'writing blocks' feature, the pixels became the easy part and most designer time went to writing prompts, evals, and the spec defining when/how the feature should trigger. These roles are filled by traditional designers and former writers, not ML PhDs.",
+    "Silber rejects 10-100x productivity claims for design/management, designers feel maybe '1.5x' more productive because exploration time (trying a million things, building consensus) hasn't compressed the way binary engineering tasks have. He's investing in tooling to shorten exploration breadth.",
+    "He pushes back on fully flattening orgs: he once had ~30 direct reports and warns it spreads attention like 'peanut butter.' OpenAI hires hybrid 'player-coach' managers who still commit code/design, and values resilient leaders comfortable with ambiguity over those who thrive in rigid structure.",
+    "Design rituals and culture mechanisms: crits kept under 10 people, a visual-only (PNG/video, no text) work-in-progress Slack channel, weekly demo days, 'walk the desks' riffing on Wednesdays, sitting designers together for community, and an 'AGI-pilled design system.' Core values include the AGI mission and 'shipping joy', not shipping fast slop."
+   ],
+   "quotes": [
+    {
+     "text": "it's a hackathon being shipped into your into your product.",
+     "talk": "Designing OpenAI’s products: Rethinking design in the age of AI"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "037",
+   "title": "How structured thinking gives your AI superpowers",
+   "speakers": "Carola Pescio Canale (Head of Design, AI, Atlassian)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "CPkL9msCuIU",
+   "keyPoints": [
+    "The core thesis: AI tools/agents/harnesses only deliver marginal gains, what makes AI personal is feeding it context about yourself. 'In a world where intelligence is the engine, context is the fuel' (Mike Cannon-Brookes, Atlassian CEO).",
+    "Habit 1, Empty your brain: at the end of the day, record an unstructured voice ramble (Loom, 3-20 min), then have AI digest the transcript into a Confluence doc AND extract a 'thinking.md' file capturing your point of view, so AI knows how you think when brainstorming. Takes ~10 min/day, can be weekly, and compounds over time.",
+    "Habit 2, Train AI to write as you: build a 'skill' so AI stops sounding like the average of everyone. Source your own words from your Gmail sent folder, last 30 days of Slack, or recorded conversations with teammates, 'you might not know it, but you're all writers.'",
+    "Habit 3 (her favorite), Give AI eyes via your phone camera as a 'prompt machine': snap a photo plus a three-word prompt. Examples: 'garden statue sell' builds a resale inventory with price estimates; photographing handwritten to-do lists to 'git merge' physical notes with task tools; sketching a UI and saying 'build this' for fast idea-to-execution.",
+    "The bigger bet: personal context (voice, photos, opinions) builds your personal graph, but the real scale comes from logging decisions into a shared team stack (Loom, Confluence, Jira), turning AI 'from your personal assistant into a team collaborator.'"
+   ],
+   "quotes": [
+    {
+     "text": "a photo is really worth 100 prompts",
+     "talk": "How structured thinking gives your AI superpowers"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "038",
+   "title": "The metacognitive design loop",
+   "speakers": "Jenny Au (Team Lead, UX QA Engineering, Epsilon/Publicis Groupe), Mike Green (Team Lead, Product Design, Epsilon/Publicis Groupe)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Epsilon's Product Design Team transformed their front-end development workflow by combining Figma's Code Connect and MCP (Model Context Protocol) with generative AI layout creation.",
+    "The team built this workflow around their proprietary CORE UI component library, using it as the foundation that ties designs to production-ready code.",
+    "The integrated approach significantly accelerated product delivery, shortening the path from design to production and achieving what the team describes as unprecedented development velocity."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "039",
+   "title": "Human methods, new material: designing with AI for the classroom",
+   "speakers": "Mubarak \"Moby\" Marafa (Staff Product Designer, Goodnotes), Wendy Liao (Learning and Development Specialist, Goodnotes)",
+   "stage": "Community Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Walks through the 0-to-1 design journey of Goodnotes Classroom, an AI product built for the human, messy, and high-stakes environment of the classroom.",
+    "Grounds the work in human-centered methods: observing real teacher workarounds, conducting classroom observations, building fast prototypes, and running co-creation sessions with educators.",
+    "Frames AI as a 'new material' to design with, while letting educators themselves shape product decisions.",
+    "Argues that the fastest way to build well is to get closer to the people you are building for."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "040",
+   "title": "Shaders in Figma: create the effects and fills you've always wanted",
+   "speakers": "Yassir Solomah (Software Engineering Manager, Figma), Piers Cowburn (Director of Engineering, Expressive Design, Figma), Rogie King (Product Designer, Figma)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "y_2_w-r9TYY",
+   "keyPoints": [
+    "Figma is launching native shaders, implemented as 'secure WebGPU intra-layer render pipelines' running custom code directly on the GPU, exposed as two types: shader effects (stacked in the effects panel) and shader fills (usable anywhere a fill works, text, strokes, brush strokes).",
+    "Shaders are generated and edited via an AI agent: you describe an effect in plain language and Figma produces it, including on-canvas handles (point, line, angle, radius), sliders, gradients, selects, switches, and color points. Shipped template effects include pixel stretch, gooey merge, chromatic metal, lens distort, dither, pixelate, and Riso.",
+    "The power comes from stacking and recombining effects on a base input, Piers demoed a corner-peel plus a shapes-mosaic that maps brightness values to shapes/colors, plus a Figma-logo example with lens distortion, time-offset duplicates and blend modes (multiply/overlay/difference) to 'play jazz' into unexpected outcomes.",
+    "Technical constraints: shaders are raster effects rendered at frame/layer size (no infinite zoom, they pixelate when zoomed), capped at a maximum 2048 texture size, and time-varying shaders sync their play head to the motion clip in motion mode.",
+    "Code is fully exportable via MCP/dev mode, you get a custom effect wrapper plus raw source (a one-time setup function, a per-frame render function, and a defined properties array describing the UI) with an included runtime, because 'your code is yours to take.' Inspiration site: shaders.figma.com."
+   ],
+   "quotes": [
+    {
+     "text": "If design was the body, expression was the soul.",
+     "talk": "Shaders in Figma: create the effects and fills you've always wanted"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "041",
+   "title": "The edge case is everyone",
+   "speakers": "Willie King (Business Development Manager, T-Mobile ), Lex Liley (Associate Director, Product Strategy, Kettle)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Most communication technology was built for an able-bodied world, and for the more than 11 million Americans who are Deaf or Hard of Hearing (DHH), a phone call can still be a barrier that T-Mobile set out to rethink.",
+    "Willie King (T-Mobile) and Lex Liley (Kettle) share how their teams partnered directly with the DHH community to challenge assumptions about voice communication.",
+    "The talk makes the case for inclusive design, arguing that solving hard accessibility challenges for those at the edges leads to better experiences for everyone."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "042",
+   "title": "Your best practices are trapped in your head, and your AI has no idea",
+   "speakers": "Harald Kirschner (Principal Product Manager, Microsoft)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues that the 'taste' designers build over years, tone of voice, component principles, definitions of 'done', currently lives invisibly in people's heads, scattered docs, or places their tools can't access.",
+    "Frames a core problem with AI workflows: every AI session starts from scratch because this accumulated context is invisible, forcing designers to repeat themselves each time.",
+    "Proposes building a shared knowledge layer that connects these scattered sources so AI can draw on a team's established context.",
+    "Shows how that shared context lets AI meaningfully assist with specs, prototypes, and design systems without constant re-explanation."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "043",
+   "title": "ESPN's migration playbook: the move to Figma with One North",
+   "speakers": "Elliott Muñoz (Creative Director, ESPN Creative Studio), Matt Rogers (Product Design Lead, One North)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "ESPN's game-day broadcast visuals (digital scoreboards, player stats, matchup graphics) each require a large lift to go from concept to live on air, motivating a workflow overhaul.",
+    "ESPN and partner agency One North walk through migrating ESPN's design workflow from Photoshop to Figma, covering the journey from initial adoption to transformative impact.",
+    "The migration revealed new ways to collaborate, scale, and accelerate design workflows, helping push ESPN's design system to the next level.",
+    "The relationship was reciprocal: ESPN's design system also pushed One North to elevate its own practices."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "044",
+   "title": "Prototypes, failures, and unexpected breakthroughs",
+   "speakers": "Noah Finer (Software Engineer, Figma)",
+   "stage": "Community Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Noah Finer describes two contrasting engineering mindsets at Figma: building quick, 'janky' prototypes for interactions versus perfecting subtle editor microinteractions that are designed to go almost unnoticed.",
+    "The talk explores how these two approaches interact and inform each other, framing prototyping, failures, and unexpected breakthroughs as part of the building process.",
+    "Noah draws on concrete experiences shipping features like Figma Slides, FigPals, and interactive transit personality tests to illustrate how these mindsets shape the experiences he builds."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "045",
+   "title": "Build like it's 2030. Listen like you mean it.",
+   "speakers": "Ned Dwyer (CEO & Co-founder, Great Question)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "ahDcjUgyI78",
+   "keyPoints": [
+    "A YC partner told Dwyer that any company founded before 2023 is now considered 'legacy', without an AI-native team, product, and growth rate, customers leave, you can't raise money, and no one will acquire you.",
+    "Core thesis: differentiation in an era where everyone uses the same models (Claude, ChatGPT, Gemini) comes from velocity PLUS insight. Velocity without insight just ships slop; insight without velocity makes you irrelevant.",
+    "Cited Anthropic data: Claude Code output grew 8x since 2023, and roughly 65% of code is now deployed to production with no human interaction, rising sharply each quarter.",
+    "Great Question rebuilt as AI-native by rethinking time (PRDs that took 3-5 days now take a morning), making everyone a product builder (support reps ship fixes directly), and shifting from gates-up-front to 'permissive by design' with design-system guardrails (Zeroheight) and review rituals.",
+    "Demoed a Figma Make dashboard feeding into Great Question via MCP: ship a prototype, collect real customer feedback with verbatim quotes (anti-hallucination), then push it back to Figma Make to auto-generate a new version, closing the research loop in real time. The differentiator is the 'last 10%': taste, the quality bar, and the knowledge problems you have the right to solve."
+   ],
+   "quotes": [
+    {
+     "text": "if we take velocity, which is critical to the future, but we deliver it without insight, all you're really doing is delivering slop.",
+     "talk": "Build like it's 2030. Listen like you mean it."
+    },
+    {
+     "text": "design isn't dead just like great question, it's being reborn.",
+     "talk": "Build like it's 2030. Listen like you mean it."
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "046",
+   "title": "Reimagining NASA.gov to tell Earth’s most important stories",
+   "speakers": "Ben Shown (Head of Design, Blink UX), Megan Greco (Senior Design Lead, Greenlight)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "NASA launched a redesigned web experience alongside a new design system called Horizon, intended to communicate its breakthroughs, missions, and discoveries with greater clarity, cohesion, and visual style.",
+    "Speakers Ben Shown (Blink UX) and Megan Greco (Greenlight) go behind the scenes on what it was like to design for an organization of rocket scientists, framing the effort as balancing creative vision with execution speed in a high-stakes collaboration.",
+    "The talk addresses practical challenges of the project, including aligning stakeholders and designing for scale across NASA's digital presence.",
+    "A central theme is building a design system meant to inspire a global audience while bringing consistency to how NASA tells its stories online."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "047",
+   "title": "Closing keynote",
+   "speakers": "Patrick Flaherty (Senior Motion Designer, Microsoft), Tommy Geoco (Storyteller, UX Tools ), Catt Small (Staff Product Designer, Dropbox), Matt D. Smith (CEO, Shift Nudge), Rasmus Andersson (Software Painter, Playbit)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "Lo-HSCqhIF8",
+   "keyPoints": [
+    "Patrick Flaherty's core reframe: 'Design the feel, not the graph.' The cubic Bezier curve is just a description of motion, not the goal; spacing equals velocity, and velocity equals feel, so you read a curve by watching how echo/trail spacing stacks up (slow) or opens up (fast).",
+    "The animator's timeless workflow is observe first, interpret second, stylize third, 'reference gives you the truth, taste decides what to keep, design decides how far to push.' His mantra: 'You are the analog', capture real motion (with your body, a camera, or a phone/watch accelerometer) before touching a graph editor.",
+    "Flaherty demoed a tool called Motion Tracker that records real-world motion live, tracks it on X/Y axes, and converts the timing into reusable easing curves applied directly in Figma (and After Effects). The full loop: capture, read the timing, shape the curve, apply, then name and share it as a team's shared motion language, he even wired a 'drop' curve into a Figma variable to apply it across many layers at once.",
+    "Panel data point: Figma reports 72% of attendees have tried generative AI this year; the UX Tools survey splits designers into roughly thirds, a third haven't touched AI, a third dabble, a third are fundamentally changing how they work.",
+    "Panel consensus on AI: fundamentals matter MORE because AI is a 'multiplying force' (Matt D. Smith) amplifying every good and bad decision. Designers want to own early/visioning thinking by hand and hand off production-level work to AI (Catt Small, Rasmus Andersson). Rasmus's spicy take, production design like error states and sign-up forms can be automated, but defining that you need a form is ideation. Catt: 'the double diamond is not dead.'"
+   ],
+   "quotes": [
+    {
+     "text": "Design the feel, not the graph. The graph, it matters, of course it does, but the graph is not the goal.",
+     "talk": "Closing keynote"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "048",
+   "title": "Opening keynotes",
+   "speakers": "Grant Sanderson (YouTube educator, 3Blue1Brown), Switch Angel + LO.FI.SCI.FI (Artists & Software Engineers)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "bLSLN96Gn-w",
+   "keyPoints": [
+    "Sanderson framed math explanation as a design discipline, structured around three principles for explaining one equation (e^(iπ) = -1) by answering three distinct questions: what it means, why it's true, and how it's applied.",
+    "Principle 1 (\"what does it look like?\"): visualizing the equation as an infinite polynomial whose spiraling sum shrinks (denominators grow rapidly) and zeros in on the point -1, treating each i as a 90-degree rotation.",
+    "Principle 2 (give your characters motivation): reframing e^x as e^t where position's rate of change equals itself (exponential growth/decay), so e^(it) forces velocity to be a 90-degree rotation of position, meaning the point traces a unit circle at 1 unit/second, landing at -1 after exactly pi seconds.",
+    "Principle 3 (the most memorable application is the most surprising): complex functions (e^z and its inverse, the natural log) explain M.C. Escher's 'Print Gallery', work by mathematicians de Smit and Lenstra ~50 years after Escher, who described the piece as the most peculiar thing he ever created.",
+    "Closing thesis: everyone is a teacher and all design is communication; math serves design as 'paintbrushes' for manipulating 2D space, and design serves explanation and teaching, understanding their intersection improves both."
+   ],
+   "quotes": [
+    {
+     "text": "If you were writing a novel, it's never going to work unless each one of the characters has a clearly defined motivation. The same is true in math.",
+     "talk": "Opening keynotes"
+    },
+    {
+     "text": "Simply asking that question is often the difference between sitting in a room in silence trying to read sheet music versus listening to the song.",
+     "talk": "Opening keynotes"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "049",
+   "title": "Figma learning lab: upskill on skills and agentic workflows",
+   "speakers": "Laura Fehre (Designer Advocate, Figma ), Manish Kumar (Developer Advocate, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Introduces skills as the mechanism by which AI agents learn a domain, encoding things like research frameworks, handoff standards, and definitions of done so each session starts informed rather than from scratch.",
+    "Goes beyond the basics to cover the full lifecycle of skills: how to design, author, and deploy them so agents become measurably faster and more precise for the specific work at hand.",
+    "Hands-on and applied: attendees leave with an actual skill they helped build during the session, not just a framework or template to finish on their own later.",
+    "Pairs the learning session with informal follow-up time with the Figma team in the Learning Lab Lounge."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "050",
+   "title": "Designing in code",
+   "speakers": "Elle Shwer (Product Manager, Figma), Iris Lin (Product Designer, Figma), Nikolas Klein (Product Manager, Figma), Ben Chen (Engineering Manager, Figma)",
+   "stage": "Main stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Introduces two new Figma launches aimed at closing the gap between designing and working in code, bringing code natively into Figma.",
+    "Make lets designers work directly in their local codebase to design in code.",
+    "Code layers let users explore and work with code right on the Figma canvas.",
+    "Positions code as part of the full workflow, supporting iterating, prototyping, and collaborating in code all the way to production."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "051",
+   "title": "Designing in the age of the 10x engineer",
+   "speakers": "Andy Zhang (Design Engineer Lead, Google)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "4fZ3CeFu954",
+   "keyPoints": [
+    "Because AI makes code cheap, prototypes become recyclable: feed past work back to the same agent so learnings embedded in the code aren't lost when iterating, instead of rebuilding from scratch (Andy's pre-AI story of a CEO greenlighting a prototype that then had to be thrown away).",
+    "Faster building creates a choice between launching earlier vs. elevating quality, Andy argues you should use the speed to gather more feedback and iterate, not just ship sooner.",
+    "Three prototyping starting points, each answering different questions: start from scratch (blue-sky/conceptual ideas, e.g. syncing agent diagrams into FigJam, or a 'Harry Potter' texting prototype that replays typing rhythm); an isolated playground with reusable building blocks (cites Brian Lovin of Notion's playground with deploy/brainstorm skills and a Figma-sync sub-agent); or forking off production to start from the product's ceiling (requires gating/guardrails to avoid regressions).",
+    "Quality comes from curation, not volume: cheap code is not a reason to ship more, most code should never reach users, and at Google Antigravity features graduate through active dogfooding from small team to wider Google to public. Andy built an interactive-graph interface for interacting with agents, found it cool but asked 'would I actually use this?', the answer was no, so he abandoned it.",
+    "Feedback from feeling a flow differs from feedback on seeing a flow; previously the cost of building feel-able prototypes was high, now it's cheap. Self-assess your process: how reusable are building blocks, how fast can you set up, how easily can you gather feedback, do you have agent skills to speed it up."
+   ],
+   "quotes": [
+    {
+     "text": "design quality isn't measured by how much you ship or how close you are to production code. It's measured by which version you said yes to and what what are the many versions said no to",
+     "talk": "Designing in the age of the 10x engineer"
+    },
+    {
+     "text": "you can't let AI decide something if you if it cannot verify because AI and your AI and your users are different",
+     "talk": "Designing in the age of the 10x engineer"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "052",
+   "title": "10 years of daily sketching",
+   "speakers": "Zach Lieberman (Artist, MIT Media Lab)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Zach Lieberman recounts a daily practice he began ten years ago: after a rough year, he posted a small code sketch on Instagram on New Year's Day and has posted one every day since.",
+    "The talk distills lessons from making something every single day, framed around what a sustained daily creative practice teaches.",
+    "He emphasizes the value of boredom and offers ways to structure iteration as part of that ongoing practice.",
+    "He shares how he structures his research, and centers the goal of finding creative freedom as the most important takeaway."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "053",
+   "title": "The invisible mechanisms in your interfaces",
+   "speakers": "Johannes Mutter (Design Engineer, mutter.co)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "6Kxf4BJlA_s",
+   "keyPoints": [
+    "Interfaces lack a shared 'pattern language' (unlike architecture's Christopher Alexander); Mutter built 'interface lineage' (interfacelineage.com) modeling thousands of patterns as a living organism showing what came before, what inspired, and what contrasts with each. Originality is recognition, not invention - 'all design is redesign.'",
+    "Three iconic design moves: (1) make invisible state visible with a one-pixel signal (typing/thinking indicators in iChat 2002, the unsaved-edit dot in VS Code/Pages, signal bars) where state and affordance are the same pixel; (2) forgive imprecise input by inferring intent and absorbing the 'slop' in software/hardware (the 1980s Mac menu safety triangle, touch keyboards invisibly growing key hit boxes, snapping/magnetism, the ThinkPad red trackball); (3) reveal hidden actions at the moment needed (@ for nouns, / for verbs, markdown, swipe gestures).",
+    "Example of 'noticing and naming': 'cursor affinity' - a blinking cursor on the seam between bold and regular text can't signal direction, so a one-pixel 'tail' on top warns which the next keystroke will be (noticed by Yoshiki Schmitz, implemented in the Bike editor, named on Hacker News).",
+    "His four-step method for studying interfaces: See it, Notice it, Name it, Link it (via a 'lineage grid' command mapping related patterns), then Steal it - reuse the move in your own work and prompt AI for it by name. Demoed by tearing down Microsoft Research's 'Textura,' where pinching/pulling text condenses/elaborates it via an LLM.",
+    "Core thesis for the AI era: when machines can build a thousand versions of anything, your words become the bottleneck - 'you cannot prompt what you can't name.' Recurring design principles cited: progressive disclosure and recognition over recall."
+   ],
+   "quotes": [
+    {
+     "text": "Nothing is original. Originality is recognition, not invention. All design is redesign.",
+     "talk": "The invisible mechanisms in your interfaces"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "054",
+   "title": "The world of street art and care-filled design",
+   "speakers": "Ella Rochelle-Lawton (Project & Program Manager, First Amendment)",
+   "stage": "Mezzanine stage",
+   "source": "transcript",
+   "video": "5wNurWRnawU",
+   "keyPoints": [
+    "Design is never isolated, it exists in public space, in relationship to people, and in conversation with the world. The closing call to action: ask 'whose voice isn't in the room yet?' and invite them in to shape what comes next.",
+    "Designing for public space changes how you make: a different relationship to permanence (you can't undo it, can't predict how it's experienced) shifts focus from 'platforms, pixels, or print' to 'people, place, and presence.'",
+    "Street art models behaviors design lacks: it's conversational (artists respond to, build on, and challenge each other's work) and involves checking back in, artists return to clean, restore, and revamp (e.g. Os Gemeos returning to SF years later to honor passed artists), versus design's hand-off-and-done model.",
+    "Design can include or exclude, she contrasts community murals signaling 'this space belongs to us' (Tenderloin) with hostile architecture like uncomfortable benches meant to deter unhoused people.",
+    "Cited the Porchlight Mural Program (evaluated by Yale School of Medicine): collaborative mural-making neighborhoods showed increased social cohesion, sense of agency, better neighborhood conditions, and feelings of safety, plus decreased mental health stigma, proving public art impact is more than aesthetic."
+   ],
+   "quotes": [
+    {
+     "text": "As designers, we have to acknowledge that our work can include or exclude, create belonging or remove it.",
+     "talk": "The world of street art and care-filled design"
+    },
+    {
+     "text": "Street art isn't just a medium. It's a way of working, a way of responding, and a way of connecting people.",
+     "talk": "The world of street art and care-filled design"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "055",
+   "title": "Welcome and opening remarks",
+   "speakers": "Shaunt Voskanian (Chief Revenue Officer, Figma), Viral Shah (VP, Research, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Opens Figma's Config 2026 conference with official welcome and opening remarks.",
+    "Delivered by Shaunt Voskanian (Chief Revenue Officer) and Viral Shah (VP, Research) at Figma.",
+    "Sets the stage for the conference as the introductory session."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "056",
+   "title": "Dense by design",
+   "speakers": "Matthew Ström-Awn (Founder, mu.design)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "notTKhz8C2c",
+   "keyPoints": [
+    "The talk frames density as a \"ladder\" of five distinct definitions: visual density (pixels on screen), information density, meaning density, time density, and value density.",
+    "Information density draws on Edward Tufte's data-to-ink ratio (goal: as close to 1:1 as possible), exemplified by the 1885 Paris-to-Lyon train schedule that plots stations by physical distance so train speed and transfers are readable from the line angles.",
+    "Time density uses HCI thresholds to design feedback: under 100ms feels instant (skip animation), 100ms-10s use transitions/spinners, 10s-1min show a progress bar, and past 1 minute let users leave and notify them later.",
+    "The talk's central formula: value density = value users get divided by the time and space you ask them to spend (value per second per pixel), and density isn't fixed, it depends on who is looking (e.g., a chaotic ECG is life-or-death dense to a doctor).",
+    "Origin story and conclusion: Stripe CEO Patrick Collison asked why the Stripe dashboard couldn't look like the dense Bloomberg terminal; the answer is that Bloomberg is built for stock brokers while Stripe serves startups and store owners, so density looks different. Ström-Awn argues design's real problem is talking about craft too much rather than doing it."
+   ],
+   "quotes": [
+    {
+     "text": "value density equals the amount of value that your users are getting from what you've designed divided by the amount of time and space that you ask them to spend on it",
+     "talk": "Dense by design"
+    },
+    {
+     "text": "I don't think we have a craft problem. I think we have a problem of talking about craft too much.",
+     "talk": "Dense by design"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "057",
+   "title": "Building real-time user insights into your design workflow",
+   "speakers": "Prayag Narula (CEO & Co-Founder, HeyMarvin)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "cYuTlnp3wLs",
+   "keyPoints": [
+    "Launched Marvin Live Intercept, billed as the world's first live in-app AI interview intercept: JavaScript embedded in any website/product waits for a behavioral trigger (e.g., user repeatedly clicking the same button, navigating back and forth, or landing on a new app), then prompts a real-time screen-share interview.",
+    "The AI interviewer records the user's screen, asks intelligent follow-up questions in 40 different languages, then sends videos back to the Marvin research-analysis account where they can be shared in real time via Slack, Teams, Figma, etc.",
+    "Core thesis: scaling/speeding up research (faster surveys, AI moderation) is just 'a faster horse.' The real unsolved problem is capturing user insight in the exact moment before a decision is made, closing the gap between insight and decision-making.",
+    "Critiques existing methods: in-app surveys have abysmally low response rates and low fidelity because they force users to translate their mental model into words; after-the-fact interviews force users to reconstruct experiences from memory weeks later. In-the-moment, screen-shared feedback gives completely different fidelity.",
+    "Vision framed as 'one researcher per user', letting designers talk to users at the moment of need to match engineering pace without leaving users behind. Origin story: his wife sat on a Zoom call for days waiting for users to click a feedback pop-up, exposing the friction problem."
+   ],
+   "quotes": [
+    {
+     "text": "everyone is pitching it including ourselves how it's a way to get interviewing faster but in the end we're building a faster horse",
+     "talk": "Building real-time user insights into your design workflow"
+    },
+    {
+     "text": "The best feedback comes from the moment someone is in your product, not in a survey that they fill out later",
+     "talk": "Building real-time user insights into your design workflow"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "058",
+   "title": "Building AI products at enterprise scale",
+   "speakers": "Dylan Field (CEO & Co-founder, Figma), Jeetu Patel (President and Chief Product Officer, Cisco)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "transcript",
+   "video": "myhhqLnjAqY",
+   "keyPoints": [
+    "Cisco treats engineering, product management, and design as three equal legs of the stool. Patel deliberately changed the power structure so designers could challenge engineers, and made everyone responsible for design rather than outsourcing it: 'you can't outsource taste,' and as code generation automates, taste becomes the bottleneck.",
+    "Design has commercial relevance, and Patel argues design leaders fail when they pitch only idealism instead of money. His three product goals: build products people love (and talk about), reach scaled adoption (the closest proxy to value), and achieve commercial relevance. He credits design as a meaningful contributor to ~$320B of market-cap growth over ~2 years.",
+    "Cisco is a full-stack, vertically integrated company (silicon, optics, hardware, OS, security/observability platform, models, apps, agents) and unified 251 acquisitions and 15-20 design languages into one management plane with a single design language for $63B of revenue.",
+    "Patel shares his acquisition/product 'tells': he judges companies by typography and whether a product ships in dark mode (default for Cisco) - small nuances reveal whether a team sweats details. He praised Anthropic's distinctive use of serif fonts in a text-based UI.",
+    "On AI's future: Patel believes AI creates MORE design jobs, not fewer, because automation makes human judgment, taste, and intuition the profound bottleneck. Tools like Figma Make democratize design to PMs and engineers, which makes designers more valuable, not less. Advice to attendees: coach your boss; if design doesn't matter to your boss, leave."
+   ],
+   "quotes": [
+    {
+     "text": "It takes the same amount of effort to design a bad product than it does to design a good product.",
+     "talk": "Building AI products at enterprise scale"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "059",
+   "title": "Managing multiple creative passions in a world that tells you to specialize",
+   "speakers": "Lauren Hom (Lettering Artist & Designer, Hom Sweet Hom)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Drawing on her 15-year career as a lettering artist and designer, Lauren Hom shares how she has sustained multiple creative passions rather than narrowing to a single discipline.",
+    "The talk pushes back against the common industry pressure to specialize, presenting a case for embracing a multi-passion creative path.",
+    "Hom frames her experience as guidance for managing and balancing several creative interests over the long term of a career."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "060",
+   "title": "Usernames on Instagram: how a craft fix became an identity crisis",
+   "speakers": "Rose McManus (Content Designer, Instagram (Meta))",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "njz16gKVLFs",
+   "keyPoints": [
+    "A craft-level inconsistency (Instagram's story viewer list showing display names instead of usernames, which let spam bots with capitalized/emoji display names float to the top) became the entry point to a much bigger identity question about which name field to standardize on.",
+    "McManus uses Baudrillard's four-stage theory of simulation (reality, representation, distortion, masked absence, complete hyperreality) as a framework to analyze usernames vs. display names, e.g., K-pop star IU's handle 'dlwlrma' is her Hangul name typed backwards on a Latin keyboard, a third-stage cipher.",
+    "Empirical evidence that users abstract their names: a study of Russian-speaking Instagram users found most abstract their name; on TikTok, 15% of Nigerian users put their real name in their handle while 40% add authenticity markers like 'real' or 'official' (which ironically prove nothing).",
+    "Usernames can become hyperreal identities more 'real' than a person's legal name, e.g., the account @dril ('Wint', run by 'some guy named Paul') and creators like Young Kombucha 420 who had to clarify their identity after switching handles.",
+    "The product lesson: when designing evolving paradigms, ask what behavior you're enabling beyond your imagination and what happens at 10x/1000x/3 billion-x scale; Instagram ultimately kept usernames because they had already become a load-bearing identity and 'internet export' users built their lives around."
+   ],
+   "quotes": [
+    {
+     "text": "Rose, I need you to press a few buttons while you're at work and get these bots away from me.",
+     "talk": "Usernames on Instagram: how a craft fix became an identity crisis"
+    },
+    {
+     "text": "When we We products, we create infrastructure that real people carry with them and ultimately build around.",
+     "talk": "Usernames on Instagram: how a craft fix became an identity crisis"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "061",
+   "title": "AI will upend your process, for the better",
+   "speakers": "Justin Meyer (CEO, Bitovi)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "6nyveN7zfMQ",
+   "keyPoints": [
+    "Bitovi sees teams maturing through three agentic phases: solo vibe coders, 'local agent orchestrators' (everyone uses their agent and moves work between sources of truth like GitHub, Jira, Figma), and 'cloud agent orchestrating' teams who trigger agent steps with a button click.",
+    "Four prerequisites make non-engineer vibe coding succeed: a mocking layer (Mock Service Worker) so the agent only builds the front end; three core skills (brand, component, data-model skills) for consistency; visual tools like Convey/Figma Make Local so designers drag-and-drop instead of writing technical prompts; and easy sharing via GitHub Codespaces (the Code button > '+') to spin up a shareable environment.",
+    "Their React-to-Figma skill layers a visual diff using Storybook on top of Figma's MCP so the agent catches small mismatches (e.g., a checkbox outline thicker in React than Figma) and self-corrects when rebuilding components.",
+    "For implementation accuracy, Figma's get_design_context plus Code Connect are essential, Code Connect roughly tripled the likelihood of one-shotting a Figma design in their experience.",
+    "Cloud orchestration is implemented cleverly by posting a GitHub issue assigned to GitHub Copilot (or a Bitovi AI agent on a Jira ticket) that runs the exact same skills the team ran locally, enabling a near end-to-end design-to-prod workflow via button clicks; all skills/setup are open source via a QR code."
+   ],
+   "quotes": [
+    {
+     "text": "instead of the traditional weeks-long process of going from design to dev to test and the user testing, product owners, designers, they're building prototypes that take hours",
+     "talk": "AI will upend your process, for the better"
+    },
+    {
+     "text": "When code connect in our experience, like I mean, might triple the the likelihood that you're going to one shot a Figma design.",
+     "talk": "AI will upend your process, for the better"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "062",
+   "title": "Designing at the pace of model drops",
+   "speakers": "Rodrigo Lemes (Ux Principal and OPS director, Mercado Livre), Paige Costello (VP Product, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Mercado Libre has cultivated a culture that encourages risk-taking, making mistakes, and trying again, sustained across a large org of over 1,500 designers within a 30,000-person product, design, and engineering organization spanning many countries, languages, and cultures.",
+    "The conversation explores how the company translates its values into everyday practice, keeping a large organization curious, autonomous, and willing to be wrong.",
+    "It addresses the rising stakes of AI reshaping design tools almost weekly, and what it takes to design and adapt at that pace.",
+    "Framed as a discussion between Mercado Libre Principal Designer Rodrigo Lemes and Figma VP Product Paige Costello."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "063",
+   "title": "How Codex is rewriting the product playbook",
+   "speakers": "Alexander Embiricos (Head of Enterprise, OpenAI), Kris Rasmussen (Chief Technology Officer, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A fireside chat with Alex Embiricos (head of product for Codex at OpenAI) on the vision behind Codex, framed as one of the most influential AI products in the market today.",
+    "Covers Codex's evolution from early product decisions through real-world deployment, tracing how the product developed over time.",
+    "Explores what Codex reveals about the future of building software and products.",
+    "Discusses how AI is transforming team workflows across product, design, and engineering disciplines."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "064",
+   "title": "Figma learning lab: express yourself with Figma Draw",
+   "speakers": "Laura Butvinik (Manager, Education Content Strategy, Figma), Rachel Platt (Education Designer, Figma), Kristen Bates (Education Content Strategist, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A hands-on, collaborative learning lab session where attendees come together to create a single shared art piece.",
+    "The session celebrates expressive design and showcases what's possible with Figma Draw.",
+    "Attendees are asked to bring their laptop so they can actively participate in the collaborative creation.",
+    "Participants are invited to continue afterward in the Learning Lab Lounge for informal time with the Figma team."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "065",
+   "title": "The future is low-tech: lessons from the early 2000s",
+   "speakers": "Jésabel DC (Tech Anthropologist & EdTech Founder, The Lifestyle Lab )",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "otkSbl399tU",
+   "keyPoints": [
+    "Core thesis: technology in the early 2000s wasn't better because designers were more ethical, but because the ad-based business model that rewards 'trapping' users hadn't yet emerged. She proposes 'low-tech' as a middle path between digital over-immersion and total phone abandonment.",
+    "Four design lessons drawn from early-2000s artifacts: (1) LEGO instructions, 'if it requires an explanation, it needs a redesign' (embed guidance in the experience, like Super Mario World 1-1 teaching mechanics through play); (2) Loading bars, 'disorientation creates dependency, orientation creates trust,' answering 'Where am I? What's happening? Can I interact? Did my action work?'; (3) Pokemon, 'technology should activate reality, not replace it' (Strava art, Tinder adding in-person events); (4) Animal Crossing, design for anticipation/secure attachment rather than retention/anxious attachment.",
+    "Reframes users as a relationship rather than a resource, arguing the extraction model (build something users can't leave, harvest attention, monetize trapped time) will lose to a reciprocity model as regulation and user expectations make user-centered design a competitive advantage.",
+    "Speaker's credibility/product: she's a 'tech anthropologist' with 4,000+ hours of fieldwork studying digital lives; co-founder of The Lifestyle Lab, a product ecosystem (a video game, education programs, consulting) whose co-living game mechanic translates into a real-world roommate system that levels up players in real life.",
+    "Business model as design constraint: 'our business model decides what our product is free to become.' The Lifestyle Lab avoids monetizing user time by selling to institutions (schools, workplaces, communities) that benefit from users' growth; cites Time Left's subscription/brand-partnership model and Pinterest's 'go offline' campaign as alignment of business and user success."
+   ],
+   "quotes": [
+    {
+     "text": "And we went from designing experiences for our users to designing engagement mechanisms that use their own nervous systems against them.",
+     "talk": "The future is low-tech: lessons from the early 2000s"
+    },
+    {
+     "text": "The best thing you can find online is a reason to go offline.",
+     "talk": "The future is low-tech: lessons from the early 2000s"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "066",
+   "title": "Inside the Weave workflow",
+   "speakers": "Gal Sharir (Product Designer, Figma), Ron Baranov (Creative Workflow Advocate, Figma)",
+   "stage": "Main stage",
+   "source": "abstract",
+   "video": "-ZoEot3OFr0",
+   "keyPoints": [
+    "Goes behind the scenes of how Weave creative work actually gets made, focusing on the decisions behind the work rather than the polished final frame",
+    "Explores the mechanics of an AI-assisted creative workflow including branching, sequencing, iteration, model chaining, and edits",
+    "Addresses mistakes and recoveries as part of the process, treating them as a normal part of creating rather than failures to hide",
+    "Frames systems thinking as what turns AI from a 'magic trick' into a real, repeatable creative process"
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "067",
+   "title": "The hidden craft of interface design in modern film",
+   "speakers": "Jayse Hansen (Fictional UI Design Director, ØFFGRID)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Jayse Hansen, a fictional UI (FUI) design director, walks through how the holograms, HUDs, and futuristic interface systems seen in blockbuster films are designed, animated, and brought to life, tracing the process from initial sketchbook to the IMAX screen.",
+    "The talk emphasizes a story-driven approach to designing technology that doesn't actually exist but feels like it plausibly should, framing fictional interface design as a craft in service of narrative.",
+    "Hansen draws on experience spanning more than 20 major franchises, including Iron Man, The Hunger Games, Tron, and Star Wars, offering a rare backstage look at this normally hidden craft.",
+    "The session highlights the meticulous, detailed work behind film interface design, going behind the screens to reveal a discipline most audiences never consciously notice."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "068",
+   "title": "Figma learning lab: workflow tips, from slow to flow",
+   "speakers": "Chad Bergman (Designer Advocate, Figma), Michel Ferreira (Designer Advocate, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A pair of Figma Designer Advocates (Chad Bergman and Michel Ferreira) share a collection of practical tips and workflow tricks aimed at helping designers work smarter and faster.",
+    "The focus is on speeding up work both on the canvas and beyond it, framing the session around moving from a slow workflow to a state of flow.",
+    "The session is positioned as part of Figma's Learning Lab, with an invitation to continue informally afterward in the Learning Lab Lounge for time with the Figma team."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "069",
+   "title": "Quirk up your workplace",
+   "speakers": "Darby Thomas (Senior Product Designer, GitHub)",
+   "stage": "Maker Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "The talk makes the case for bringing more silliness and playfulness into the workplace rather than treating work as strictly serious.",
+    "Darby Thomas draws on GitHub's experience to show how playfulness can make remote work more fun and engaging.",
+    "It centers on the specific rituals, gimmicks, and stunts the team has used to keep distributed work interesting."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "070",
+   "title": "The canvas is not dead",
+   "speakers": "Catt Small (Staff Product Designer, Dropbox)",
+   "stage": "Mezzanine stage",
+   "source": "transcript",
+   "video": "WGZ38oeoBtU",
+   "keyPoints": [
+    "Be the driver, not the passenger: AI is a powerful force multiplier but you must define the bounds and own the direction. The talk's core test is a contrast between two real cases.",
+    "Where AI helped: building an experimental narrative game (inspired by Slack's UI) in a 2-week class deadline. She gave AI the architecture/framework (Yarn, exporting to HTML/JS) so she could spend her cognitive energy hand-writing 20+ distinctly-voiced characters and hand-drawing all 20 avatars.",
+    "Where AI subtracted: creating a product vision at Dropbox (700M+ users, ~20 years of product history). AI-generated screens (tried Figma, ChatGPT) lacked nuance and struggled to retain context; reacting to and fixing output became more work than doing it by hand.",
+    "Good uses: synthesis of research/data, generating copy variants and placeholder content, prototyping a contained simple flow (e.g. an error or animation state), poking holes in thinking / finding missing use cases, and reframing a message for different audiences (crit vs. director vs. VP).",
+    "Avoid AI for: true innovation (it averages; humans' unpredictability is where innovation comes from), human conviction, balancing pros/cons, managing up / persuading leaders, and accountability. Three questions before opening an AI tool: how much context does the problem require, how expansive/divergent must you be, and what is the cost of getting it wrong."
+   ],
+   "quotes": [
+    {
+     "text": "But speed without direction will lead you down a dead end.",
+     "talk": "The canvas is not dead"
+    },
+    {
+     "text": "It is unacceptable to say the AI did it as if that's a reasonable answer. It's just not.",
+     "talk": "The canvas is not dead"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "071",
+   "title": "Everyone's still eating: building Notion's design system",
+   "speakers": "Tamara Chu (Design Engineer, Notion), Shauna Sapper (Software Engineer, Notion)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "u7_Qof3AJ1g",
+   "keyPoints": [
+    "Notion built and migrated a design system in roughly a year (team officially established July 2025) after CEO Ivan tweeted that Notion didn't have one - the speakers liken the migration to whipping a tablecloth off a table while everyone's still eating and laying a new one at the same time.",
+    "A design system is framed not as a component library but as 'a set of shared decisions'; foundations came first: a new color system with the same tokens in every palette plus translucent versions of every opaque color (enabling one-command theme swaps and future high-contrast mode), and a fully custom icon set of thousands of icons hand-drawn by one person, Paul Verlu.",
+    "AI agents handled mechanical migrations (writing plans in Notion, then executing with type-check/unit-test verification) but struggled with perceptual work like matching old-to-new colors or how an icon sits in its view box - the lesson: make implicit steps explicit and decide per-step whether AI, a teammate, or you should own it.",
+    "They used Claude Code + Notion MCP to introspect the codebase and build deprecation trackers (e.g., 529 icons used only once), and a visual-regression tool called Meticulous that records and replays developer activity to surface before/after/diff screenshots, enabling a pipeline where Claude auto-creates PRs and Meticulous checks each one.",
+    "Enforcement falls on a spectrum from ignorable (docs, lint warnings) to unavoidable (tests, PR blockers); their favorite is 'ratcheting' - tracking deprecated-pattern usages in a count that can only go down, enforced by a bot named Doug. Agents take the path of least resistance and circumvent rules (one hard-coded a linted-against style prop via a ref), so the same unavoidable guardrails must bind humans and agents alike. End results: every web-app icon replaced, one text/layout/button component each, and all colors migrated to CSS variables over a 56-part run."
+   ],
+   "quotes": [
+    {
+     "text": "We explicitly linted against style props, but AI made it happen anyway. It did it with a ref. Um honestly, it earned our respect.",
+     "talk": "Everyone's still eating: building Notion's design system"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "072",
+   "title": "In defense of radical naivete",
+   "speakers": "Archie Lee Coates IV (Co-Founder, PLAYLAB, INC.), Damien Correll (VP, Brand Studio, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A fireside conversation between Figma's VP of Brand Design & Creative, Damien Correll, and PlayLab co-founder Archie Lee Coates IV exploring 'radical naivete' as a creative practice: questioning assumptions, challenging conventions, and approaching familiar problems with fresh eyes.",
+    "Draws on PlayLab's work across brands, institutions, and cultural experiences to illustrate how crossing disciplines and starting from first principles can produce unexpected breakthroughs.",
+    "Frames these ideas as especially relevant for today's leaders, who are navigating new problems and paradigms without established playbooks."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "073",
+   "title": "How design makes change legible",
+   "speakers": "Collin Whitehead (VP of Design, Superhuman)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues that as teams ship agents, products, and features at unprecedented pace, maintaining clarity for both teams and users becomes harder, and design is uniquely positioned to create coherence across brands, teams, and experiences.",
+    "Draws on lessons from scaling Superhuman and integrating new products into the business to illustrate how design can hold things together amid rapid change.",
+    "Calls on design leaders to expand their role beyond managing craft toward shaping strategy."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "074",
+   "title": "In praise of dark mode",
+   "speakers": "Mehmet Aydın Baytaş (Senior Design Engineer, Attio)",
+   "stage": "Community Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues for 'Dark Mode Maximalism', the thesis that all user interfaces should be designed in dark mode, premised on the idea that good design emits as little light as possible.",
+    "Reframes dark mode not as a user-selectable toggle but as the default condition of good design itself.",
+    "Draws on the speaker's two decades of combined design and engineering practice, as well as 'arcane scholarship,' to support the case."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "075",
+   "title": "Preparing Rocket for the AI era",
+   "speakers": "Emily Strobl (Director, Product Design - AI & Design Systems, Rocket), Will Hobick (Design Engineering Lead, Rocket)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "TThJrINckys",
+   "keyPoints": [
+    "Rocket built an end-to-end home ownership platform after acquiring Mr. Cooper (servicing book grew from 2M to 10M homes overnight) and Redfin; the AI platform handles 800,000 chats, 1.8M+ texts, and 160M+ calls per year, and they ship 5x faster than two years ago.",
+    "Their foundation is layered: semantic tokens (the name tells you WHY it exists), the Nova design system on top, annotations for intent, and Code Connect so the Figma MCP can read implementation code and verify code matches design.",
+    "Live demo walked the pre-approval letter component (in Rocket Assist) end-to-end: PRD to draft, A/B research on blue vs. green variants prototyped and one-click published in Figma Make, research embedded on the Figma canvas, then a design-system drift check that caught detached colors, a contrast failure, and detached dimensions.",
+    "Implementation in VS Code used a skill that avoids one-shotting MCP output, it drafts the component, applies annotations, then swaps in design-system utilities; a second Playwright-based skill screenshots Storybook and Figma to compare code and visuals for parity.",
+    "Memorable stats: only ~13% of Americans believe home ownership is within reach; 61% of millennial and 65% of Gen Z buyers cried at least once; the connected-workflow experiments drove a $1 billion incremental monthly origination volume increase in Q1 2026 alone."
+   ],
+   "quotes": [
+    {
+     "text": "The hardest part of going AI native isn't getting access to the tools. It's making sure the tools have something solid to build on.",
+     "talk": "Preparing Rocket for the AI era"
+    },
+    {
+     "text": "As AI and new tools make it easier to build these new experiences quickly, speed alone is no longer the differentiator.",
+     "talk": "Preparing Rocket for the AI era"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "076",
+   "title": "Designing with confidence in an AI-powered world",
+   "speakers": "Bobby Meixner (VP, Solution Marketing, UserTesting)",
+   "stage": "Maker Stage",
+   "source": "transcript",
+   "video": "XOVcpvbblGY",
+   "keyPoints": [
+    "UserTesting's report surveyed 183 designers and found a 6:1 speed-vs-confidence gap: 91% say their work moves faster with AI, but only 15% feel much more confident in the quality of their output.",
+    "Confidence follows a 'reversibility factor' - it's high in early discovery/ideation (4.1/5) but drops as decisions become irreversible near ship (3.6-3.7); 65% can't confidently say AI makes their outcomes better (37% same, 19% sometimes worse).",
+    "The differentiator between designers who feel risk increased vs. decreased is validation: the higher-risk group relies on peer critique or skips validation, while the lower-risk group cross-checks with research, customer feedback, usability tests, and analytics - making defensibility the key variable.",
+    "Demoed the UserTesting for Figma plugin plus a Figma Make workflow where 'Diana' analyzes past feedback, launches a test to UserTesting's panel of 7M+ verified participants via AI prompt, gets results back in hours, and resolves a mid-funnel drop-off (completion rate up 79%).",
+    "Closing reveal: every 'first-time moment' photo in the deck was AI-generated with deliberate flaws, used to argue that noticing imperfections - human judgment - remains the scarce thing AI can't replace."
+   ],
+   "quotes": [
+    {
+     "text": "one person with the right tools can really build pretty much almost anything. Which sounds amazing until you realize the thing that those 100 people do together",
+     "talk": "Designing with confidence in an AI-powered world"
+    },
+    {
+     "text": "to understand people deeply enough to imagine what they don't yet know they need and actually go through and defend that until it truly exists. And that is not something that AI can do for you.",
+     "talk": "Designing with confidence in an AI-powered world"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "077",
+   "title": "The next era of product building: Designing the workflows of the future",
+   "speakers": "Yuhki Yamashita (Chief Product Officer, Figma), Kris Rasmussen (Chief Technology Officer, Figma), Loredana Crisan (Chief Design Officer, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A fireside-style conversation among Figma's three product leaders, CPO Yuhki Yamashita, CTO Kris Rasmussen, and CDO Loredana Crisan, on how AI is reshaping the way products are imagined, designed, and built.",
+    "Examines how teams are adapting their workflows to new ways of working as the software creation process changes alongside AI.",
+    "Considers what remains essential and enduring even as the workflows behind product building rapidly evolve.",
+    "Looks ahead to the next generation of product creation and the future workflows that will define it."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "078",
+   "title": "Designed to be read: making a system AI can actually use",
+   "speakers": "Harvey Whiting (Product Designer, Meta)",
+   "stage": "Level 2 Stage",
+   "source": "transcript",
+   "video": "TQaYwH6f4DA",
+   "keyPoints": [
+    "AI design tools create a new category Meta calls \"fast, but wrong\", failing consistently in three ways: low fidelity (wrong type/color, malformed or missing components), low repeatability (same prompt yields different results, eroding trust), and context collapse (a single form works, but a full Ads Manager experience falls off a cliff).",
+    "Three root causes for the agent failing: proprietary internal code libraries an open-web-trained model can't bridge, sheer design system complexity (hundreds of components plus do's/don'ts and intentional friction), and unrealistic one-shot expectations for work even experienced designers iterate on.",
+    "Meta got scientific using \"golden sets\" (large batches of test cases run repeatedly with metrics), rebuilt components pixel-exact, and set a goalpost of 80% high accuracy (perfect, production-ready, using every required component), ultimately hitting 87%.",
+    "Since manual feedback loops don't scale, Meta co-developed MCP (Model Context Protocol) with Figma to capture every dimension of the design system, color, type, spacing, components, documentation, content standards, illustrations, producing design-system-aligned output in one shot without a template; now broadly available in Figma.",
+    "Proposed layered stack for the industry: context (the foundation, anything unspecified gets randomized), then skills (knowing when/why to apply knowledge, launching natively in Figma), then agents. Three takeaways: audit your context, embrace the feedback loop, and prepare for agents."
+   ],
+   "quotes": [
+    {
+     "text": "The question isn't whether AI is part of the workflow, it already is. The question is whether we let it ship slop, or we teach it taste.",
+     "talk": "Designed to be read: making a system AI can actually use"
+    },
+    {
+     "text": "Speed without quality is just expensive noise. So, to unlock AI design, we have to solve quality first.",
+     "talk": "Designed to be read: making a system AI can actually use"
+    }
+   ],
+   "deepDive": true
+  },
+  {
+   "id": "079",
+   "title": "Designing brand intelligence: from rules to expression",
+   "speakers": "Nicole Martinez (Co-founder, Let's Jetty)",
+   "stage": "Community Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues that in an AI-powered design world the designer's edge is shifting away from technical execution toward how you think, decide, and design when change outpaces your design system.",
+    "Reimagines brand guides as cognitive frameworks rather than rigid rule sets, drawing inspiration from J Dilla, who broke away from rigid quantization in rhythm to create work that felt more human, fluid, and felt.",
+    "Offers practical guidance on organizing brands by cognition and building interactive brand frameworks directly in Figma.",
+    "Frames an evolution in the designer's role from hands-on makers to strategic directors."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "080",
+   "title": "Getting real output from Figma Make",
+   "speakers": "Brett McMillin (Designer Advocate, Figma), Laura Fehre (Designer Advocate, Figma )",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "q_-udq6jXpw",
+   "keyPoints": [
+    "Make works with your design system, it just needs to be taught how. The core mechanism is a structured set of markdown guideline files plus a 'make kit' (code representation of components + usage guidelines), which can be built from an NPM package or generated from a Figma library, then published to a private NPM registry inside Figma.",
+    "Guideline files should be modular and high-signal, not one generic dump. The recommended structure uses three critical high-level files: a Guidelines file (front door defining product character and required reading order), a Discovery file (teaches the agent where/when/how to find components and verify decisions, preventing hallucinated imports/icons), and a Setup file (exact CSS imports, providers, theme, build config so packages install correctly).",
+    "They demoed the full workflow on SAP's Fiori (complex enterprise) and Offtrail (small, no NPM package) design systems: create a kit via the gear/cog 'create a kit' option, select NPM packages (public SAP UI5), drop in generated guideline files, test with a robust screen prompt, then publish. The argument: if it works for SAP's complexity, it works for yours.",
+    "Translating human-readable design system guidelines into machine-readable markdown is now trivially fast with an LLM, Laura copied SAP's public guidelines into an LLM with the target structure and it took about 42 minutes; custom 'skills' were written to verify the markdown stayed true and to run a compliance check.",
+    "A Fiori compliance-check skill scored generated output 4.7 out of 5 against a 3.8 publish threshold. Beyond kits, they built templates with onboarding overlays and 'presets and recipes' panels (one-click pre-baked prompts to swap floor plans/themes), and noted kit updates to NPM packages and guidelines push down to all consuming template and make files."
+   ],
+   "quotes": [
+    {
+     "text": "Make is great, but it's not using my design system, so it's not that useful for me. We are here today to tell you that's not true.",
+     "talk": "Getting real output from Figma Make"
+    },
+    {
+     "text": "for the past 6 months, we've been doing one thing. We've been thinking, talking, and dreaming in markdown.",
+     "talk": "Getting real output from Figma Make"
+    }
+   ],
+   "deepDive": false
+  },
+  {
+   "id": "081",
+   "title": "Digitizing the public sector",
+   "speakers": "Sau Sheong Chang (DCE (Products) & CTO, GovTech), Marcel Weekes (VP, Product Engineering, Figma)",
+   "stage": "Leadership Collective Deep Dives",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Sau Sheong Chang draws on his experience building government digital services to explore how the public sector and its institutions can be modernized.",
+    "The talk frames modernization as a convergence of three forces: design, technology, and systems thinking working together.",
+    "It centers on designing for everyone, treating inclusive, universal design as a core requirement of public-sector digital services.",
+    "Chang distills lessons that private-sector leaders can take away from the work of designing services for an entire population."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "082",
+   "title": "Applied Insights: shifting roles in product building",
+   "speakers": "Matt Walker (Researcher, Figma), Mike Blight (Manager, Research, Figma)",
+   "stage": "Leadership Collective Peer Exchange",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Figma's research team examines how responsibilities across design, product, and engineering are shifting as roles in product building evolve.",
+    "The session explores what these shifting role boundaries mean for how teams collaborate and work together today.",
+    "Delivered as an interactive session led by Figma researchers Matt Walker and Mike Blight, drawing on applied insights from their work."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "083",
+   "title": "Figma learning lab: build your first Weave workflow",
+   "speakers": "Moran Dankner (Creative workflow advocate, Figma), Ken Vreman (Senior Design Advocate, Figma)",
+   "stage": "Learning Labs",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "A hands-on, bring-your-laptop workshop that takes attendees from a blank canvas to a working Figma Weave workflow, demystifying node-based tools by actually building with them.",
+    "Walks through the core mechanics of Weave: connecting models, directing outputs, and controlling each step of the workflow.",
+    "Frames Figma Weave as giving users explicit, granular control over every step of a node-based AI workflow.",
+    "Includes informal follow-up time with the Figma team afterward in the Learning Lab Lounge."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "084",
+   "title": "Own the loop: how designers and researchers win with AI evals",
+   "speakers": "Setor Zilevu (Researcher, Figma)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues that the teams winning with AI succeed not by moving fast but by measuring well, and that good measurement begins with a human-centered definition of what 'good' means, owned by design and research.",
+    "Reframes AI evaluation, traditionally treated as an engineering problem, as something that should now be led by designers and researchers.",
+    "Claims that as AI capabilities commoditize, design becomes the new competitive moat.",
+    "Issues an invitation for designers and researchers to become architects of how AI is evaluated against real human needs."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "085",
+   "title": "Gnarly by design: building systems with grit",
+   "speakers": "Beau Wingfield (Visual Product Designer, ex-EA, Full Circle Studio (skate.), Publix)",
+   "stage": "Community Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Beau Wingfield explores how to build gritty, texture-heavy design systems, which he frames as even harder to create than clean design systems.",
+    "The talk centers on a real video game design system as a case study for the journey.",
+    "It covers techniques for adding character and texture to an otherwise squeaky-clean design system.",
+    "A key focus is making such a character-rich, texture-heavy system scalable."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "086",
+   "title": "300GB story: how to inspire action when data isn’t enough",
+   "speakers": "Luke Fiorante (Design Engineer, Harvard University), Sirinda Limsong (Product Designer, Harvard University)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Presented by Luke Fiorante (Design Engineer) and Sirinda Limsong (Product Designer) from Harvard University, the talk centers on a '300GB story' and the challenge of inspiring action when data alone isn't enough.",
+    "The session explores how large volumes of data (referenced as 300GB) must be translated into compelling narrative to actually drive people to act.",
+    "Figma's official abstract for this Config 2026 session was not yet published at the time of summarizing ('More info coming soon...'), so detailed content specifics are not available."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "087",
+   "title": "Design context for agentic workflows",
+   "speakers": "Jake Albaugh (Developer Advocate, Figma)",
+   "stage": "Main stage",
+   "source": "transcript",
+   "video": "D5WUW9X_-L0",
+   "keyPoints": [
+    "Warns against \"cognitive surrender\", adopting an LLM's judgment as your own to avoid the work of validation. Argues AI accelerates execution, not clarity, and that polish (which we're trained to trust as a sign of consideration) is now built on averages and can seduce us off the ideal path. Proposes a \"consideration imperative\": invest in clarified intent up front.",
+    "Frames design as a specification, not just a preview, advocating spec-driven development. Precise context (design tokens, reusable components, Code Connect snippets) packs more intent into less surface area than verbose raw output, likening dumping full visual detail to handing someone encyclopedias when all they need is 'slice of bread, slice of cheese, slice of bread.'",
+    "Claims precise context (e.g. Code Connect) makes agents write a far larger share of total code, with less total code overall and lower AI usage, \"leaner code and lower AI usage,\" reducing the tech debt left by verbose context. Cites a Google white paper that low-investment vibe coding yields high maintenance friction and dead-ends for complex systems, vs. up-front platform design.",
+    "Introduces \"hyper tokens\", named, reusable semantic style fragments (extending Figma text styles to shape, layout, typography, effects, motion) compiled from a single strongly-typed, form-agnostic JSON schema (built on the DTCG spec) into libraries, docs, Code Connect, CSS, and Svelte components.",
+    "Demonstrates using FigJam as an agentic interface and single source of truth: codifying a Code Connect skill on canvas (with a 'homework' exercise and answer key for agents), letting different agents compile their own skills, and building stegasound.jake.fun, an audio-encoded-image site, in one night across Figma's design agent, Make, and a codebase."
+   ],
+   "quotes": [
+    {
+     "text": "Cognitive surrender is when we adopt an LLM's judgment as our own.",
+     "talk": "Design context for agentic workflows"
+    },
+    {
+     "text": "AI accelerates execution, not clarity. If anything, AI can get in the way of clarity.",
+     "talk": "Design context for agentic workflows"
+    }
+   ],
+   "deepDive": true
+  },
+  {
+   "id": "088",
+   "title": "Design for the future of apps",
+   "speakers": "Craig Labenz (Developer Relations Engineer, Google)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Generative AI extends beyond text chat and image generation to Generative UI (GenUI), a pattern where ephemeral, on-demand UI is composed by AI, increasingly used at Google.",
+    "GenUI promises unparalleled personalization, tailoring the interface to each individual user.",
+    "This personalization introduces risks of regressions in core UX pillars such as consistency and clear information hierarchy.",
+    "The talk shows how designers can adapt design systems to capture GenUI's full potential while mitigating its risks."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "089",
+   "title": "Designing for agents: rethinking the role of the interface",
+   "speakers": "Rachel Been (SVP of Design, Expedia), Charlie Sutton (Chief Design Officer, Atlassian), Yuhki Yamashita (Chief Product Officer, Figma)",
+   "stage": "Leadership Collective Main Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "As AI agents become more common, design is shifting beyond traditional interfaces toward systems that can act on users' behalf, prompting a rethink of the role of the interface itself.",
+    "The panel pairs design leaders from both B2B (Atlassian) and consumer (Expedia) contexts, moderated by Figma, to compare how agent-driven experiences play out across different product domains.",
+    "Discussion centers on emerging patterns, challenges, and opportunities in designing agent-driven experiences.",
+    "A core theme is building agent products that people genuinely understand and feel confident using."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "090",
+   "title": "The marathon designer: creative endurance beyond prompts and pixels",
+   "speakers": "Socrates Charisis (Founder & Designer, Quintessential)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Charisis argues that design's biggest threat is not AI but burnout, pixel-pushing, clinging to old ways of working, and waiting for permission.",
+    "He introduces a framework for 'creative endurance' built on three core practices: sustainable pacing, builder culture, and versatile hiring.",
+    "The talk draws on lessons from running a bootstrapped design studio (Quintessential) in Athens, sharing real stories and actionable systems.",
+    "It addresses how to keep creativity alive when the work gets dull and the tools keep changing, emphasizing endurance over speed and chaos."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "091",
+   "title": "Don't forget the feeling: a critique of software in 2026",
+   "speakers": "Luis Ouriach (Designer Advocate, Figma)",
+   "stage": "Community Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Framed as a critique of the state of software in 2026, the talk argues that the emotional, human 'feeling' of using software is too often overlooked or lost.",
+    "Delivered from the perspective of a Figma Designer Advocate (Luis Ouriach), it centers on how design choices shape the way software feels to use, not just how it functions.",
+    "Figma had not released a detailed abstract for this session ahead of Config 2026 (listed only as 'More info coming soon'), so specifics of the argument and examples were not yet published."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "092",
+   "title": "Designing money: how to build a trustworthy brand in the age of AI",
+   "speakers": "Chris Warner (Creative Lead, Brand Studio, Plaid)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Explores how to pair machine learning with true artistry in brand and graphic design, and what it means to build a trustworthy financial brand in the age of AI.",
+    "Frames the central questions Plaid's team confronted while reshaping how money looks and feels: what's moral, what's safe, and what genuinely resonates in this new creative world.",
+    "Examines how authenticity has shaped the history of finance through the lens of graphic design and branding.",
+    "Considers what machine learning means for the future of financial design and brand-building."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "093",
+   "title": "Design systems anarchy",
+   "speakers": "Lauren LoPrete (Head of Design Foundations, Mercury)",
+   "stage": "Level 2 Stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues that design systems teams have drifted into a 'cop' or gatekeeper role, creating rules that product teams ignore and route around, rather than enabling good work.",
+    "Applies punk's blueprint to design systems: shared ethos, basic infrastructure, and people who care, contending that quality comes from culture rather than compliance.",
+    "Draws on the speaker's experience running an indie record label and nearly a decade leading systems at scale at Block, Dropbox, and Expedia to ground the argument.",
+    "Claims AI has handed designers the means of production and declared the gatekeeping model dead, calling for teams to stop managing systems and start nurturing subcultures."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "094",
+   "title": "Legibility by design",
+   "speakers": "Ryan Powell (Head of Design, Waymo)",
+   "stage": "Mezzanine stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Argues that building trust in AI is fundamentally a problem of communication design, not transparency, and that the core challenge across autonomous vehicles and generative agents is the same: deciding how much a system should communicate.",
+    "Introduces a framework for trust that moves beyond automation toward 'legibility', designing so users understand a system's intent rather than merely monitoring its tasks.",
+    "Emphasizes calibrating feedback to the right level to avoid alert fatigue, drawing on Powell's years of experience designing for Waymo's autonomous vehicles.",
+    "Aims to help designers build AI products that feel predictable and fundamentally trustworthy."
+   ],
+   "quotes": [],
+   "deepDive": false
+  },
+  {
+   "id": "095",
+   "title": "Closing keynote",
+   "speakers": "Brent David Freaney (Art Director, Special Offer, Inc.), André Anjos (Artist, RAC)",
+   "stage": "Main stage",
+   "source": "abstract",
+   "video": null,
+   "keyPoints": [
+    "Brent David Freaney shares the design process behind cultural projects, using the single shade of green developed for Charli XCX's Brat as a focal example of how much craft goes into a single creative decision.",
+    "He covers systems thinking as the throughline that holds together large-scale creative campaigns, rather than treating individual deliverables in isolation.",
+    "The talk spans design work across multiple mediums: albums, magazines, live media, and screens.",
+    "He walks through his actual process and tools, and what it takes to design for cultural impact."
+   ],
+   "quotes": [],
+   "deepDive": false
+  }
+ ]
+}

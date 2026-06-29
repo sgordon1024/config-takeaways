@@ -1,0 +1,15 @@
+{
+ "id": "085",
+ "title": "Gnarly by design: building systems with grit",
+ "speakers": "Beau Wingfield (Visual Product Designer, ex-EA, Full Circle Studio (skate.), Publix)",
+ "stage": "Community Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Beau Wingfield explores how to build gritty, texture-heavy design systems, which he frames as even harder to create than clean design systems.",
+  "The talk centers on a real video game design system as a case study for the journey.",
+  "It covers techniques for adding character and texture to an otherwise squeaky-clean design system.",
+  "A key focus is making such a character-rich, texture-heavy system scalable."
+ ],
+ "quotes": []
+}

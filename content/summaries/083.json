@@ -1,0 +1,15 @@
+{
+ "id": "083",
+ "title": "Figma learning lab: build your first Weave workflow",
+ "speakers": "Moran Dankner (Creative workflow advocate, Figma), Ken Vreman (Senior Design Advocate, Figma)",
+ "stage": "Learning Labs",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "A hands-on, bring-your-laptop workshop that takes attendees from a blank canvas to a working Figma Weave workflow, demystifying node-based tools by actually building with them.",
+  "Walks through the core mechanics of Weave: connecting models, directing outputs, and controlling each step of the workflow.",
+  "Frames Figma Weave as giving users explicit, granular control over every step of a node-based AI workflow.",
+  "Includes informal follow-up time with the Figma team afterward in the Learning Lab Lounge."
+ ],
+ "quotes": []
+}

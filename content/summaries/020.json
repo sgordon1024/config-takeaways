@@ -1,0 +1,25 @@
+{
+ "id": "020",
+ "title": "Skill issue: how we built an OS for PMs at Figma",
+ "speakers": "Jinen Kamdar (Product Lead, Figma), Lawrence Luk (Product Technical Program Manager, Figma)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "2nn5J6tUzwE",
+ "key_points": [
+  "PMOS (PM Operating System) was built in one month by three volunteers, sponsored by the CPO, to free PMs from 'glue work' (juggling context across Slack, docs, FigJam, Figma, Asana) so they can focus on strategy and craft.",
+  "Every skill is built on three reusable building blocks: Context (access plus knowing what matters), Profile (who you work with and your priorities), and Experience (readable, useful, even beautiful output), all abstracted into shared files in a GitHub repo.",
+  "Three starter apps shipped: 'What's Up' (signal-from-noise daily catch-up), an auto-generated weekly update written in your voice with one-click publish, and a Spec Reviewer that grades spec sections red/yellow/green and coaches improvements.",
+  "Rollout required two tactics: becoming a 'forward deployed engineer at your own company' (sitting with teammates, keeping a friction log, iterating 10+ times) and hijacking a team offsite to run a hackathon where people built on PMOS, going from ~25% to 100% product-org adoption.",
+  "Demo showed an end-to-end product-review prep using chained skills (Scout/Slack search, experiment review via Hex MCP, codebase insight via GitHub, FigJam builder via Figma MCP), saving a PM roughly two hours; key takeaway is any team could build its own 'design OS' or 'company OS'."
+ ],
+ "quotes": [
+  {
+   "text": "if you do it wrong, you feel like you have to use AI at work, but if you get it right, you feel like you get to use AI at work",
+   "talk": "Skill issue: how we built an OS for PMs at Figma"
+  },
+  {
+   "text": "the technology is so nascent that I don't think there's a skill gap or a skill issue at all",
+   "talk": "Skill issue: how we built an OS for PMs at Figma"
+  }
+ ]
+}

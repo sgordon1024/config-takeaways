@@ -1,0 +1,21 @@
+{
+ "id": "058",
+ "title": "Building AI products at enterprise scale",
+ "speakers": "Dylan Field (CEO & Co-founder, Figma), Jeetu Patel (President and Chief Product Officer, Cisco)",
+ "stage": "Leadership Collective Main Stage",
+ "source": "transcript",
+ "video": "myhhqLnjAqY",
+ "key_points": [
+  "Cisco treats engineering, product management, and design as three equal legs of the stool. Patel deliberately changed the power structure so designers could challenge engineers, and made everyone responsible for design rather than outsourcing it: 'you can't outsource taste,' and as code generation automates, taste becomes the bottleneck.",
+  "Design has commercial relevance, and Patel argues design leaders fail when they pitch only idealism instead of money. His three product goals: build products people love (and talk about), reach scaled adoption (the closest proxy to value), and achieve commercial relevance. He credits design as a meaningful contributor to ~$320B of market-cap growth over ~2 years.",
+  "Cisco is a full-stack, vertically integrated company (silicon, optics, hardware, OS, security/observability platform, models, apps, agents) and unified 251 acquisitions and 15-20 design languages into one management plane with a single design language for $63B of revenue.",
+  "Patel shares his acquisition/product 'tells': he judges companies by typography and whether a product ships in dark mode (default for Cisco) - small nuances reveal whether a team sweats details. He praised Anthropic's distinctive use of serif fonts in a text-based UI.",
+  "On AI's future: Patel believes AI creates MORE design jobs, not fewer, because automation makes human judgment, taste, and intuition the profound bottleneck. Tools like Figma Make democratize design to PMs and engineers, which makes designers more valuable, not less. Advice to attendees: coach your boss; if design doesn't matter to your boss, leave."
+ ],
+ "quotes": [
+  {
+   "text": "It takes the same amount of effort to design a bad product than it does to design a good product.",
+   "talk": "Building AI products at enterprise scale"
+  }
+ ]
+}

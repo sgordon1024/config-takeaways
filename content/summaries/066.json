@@ -1,0 +1,15 @@
+{
+ "id": "066",
+ "title": "Inside the Weave workflow",
+ "speakers": "Gal Sharir (Product Designer, Figma), Ron Baranov (Creative Workflow Advocate, Figma)",
+ "stage": "Main stage",
+ "source": "abstract",
+ "video": "-ZoEot3OFr0",
+ "key_points": [
+  "Goes behind the scenes of how Weave creative work actually gets made, focusing on the decisions behind the work rather than the polished final frame",
+  "Explores the mechanics of an AI-assisted creative workflow including branching, sequencing, iteration, model chaining, and edits",
+  "Addresses mistakes and recoveries as part of the process, treating them as a normal part of creating rather than failures to hide",
+  "Frames systems thinking as what turns AI from a 'magic trick' into a real, repeatable creative process"
+ ],
+ "quotes": []
+}

@@ -1,0 +1,25 @@
+{
+ "id": "057",
+ "title": "Building real-time user insights into your design workflow",
+ "speakers": "Prayag Narula (CEO & Co-Founder, HeyMarvin)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "cYuTlnp3wLs",
+ "key_points": [
+  "Launched Marvin Live Intercept, billed as the world's first live in-app AI interview intercept: JavaScript embedded in any website/product waits for a behavioral trigger (e.g., user repeatedly clicking the same button, navigating back and forth, or landing on a new app), then prompts a real-time screen-share interview.",
+  "The AI interviewer records the user's screen, asks intelligent follow-up questions in 40 different languages, then sends videos back to the Marvin research-analysis account where they can be shared in real time via Slack, Teams, Figma, etc.",
+  "Core thesis: scaling/speeding up research (faster surveys, AI moderation) is just 'a faster horse.' The real unsolved problem is capturing user insight in the exact moment before a decision is made, closing the gap between insight and decision-making.",
+  "Critiques existing methods: in-app surveys have abysmally low response rates and low fidelity because they force users to translate their mental model into words; after-the-fact interviews force users to reconstruct experiences from memory weeks later. In-the-moment, screen-shared feedback gives completely different fidelity.",
+  "Vision framed as 'one researcher per user', letting designers talk to users at the moment of need to match engineering pace without leaving users behind. Origin story: his wife sat on a Zoom call for days waiting for users to click a feedback pop-up, exposing the friction problem."
+ ],
+ "quotes": [
+  {
+   "text": "everyone is pitching it including ourselves how it's a way to get interviewing faster but in the end we're building a faster horse",
+   "talk": "Building real-time user insights into your design workflow"
+  },
+  {
+   "text": "The best feedback comes from the moment someone is in your product, not in a survey that they fill out later",
+   "talk": "Building real-time user insights into your design workflow"
+  }
+ ]
+}

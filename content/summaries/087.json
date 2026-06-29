@@ -1,0 +1,25 @@
+{
+ "id": "087",
+ "title": "Design context for agentic workflows",
+ "speakers": "Jake Albaugh (Developer Advocate, Figma)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "D5WUW9X_-L0",
+ "key_points": [
+  "Warns against \"cognitive surrender\", adopting an LLM's judgment as your own to avoid the work of validation. Argues AI accelerates execution, not clarity, and that polish (which we're trained to trust as a sign of consideration) is now built on averages and can seduce us off the ideal path. Proposes a \"consideration imperative\": invest in clarified intent up front.",
+  "Frames design as a specification, not just a preview, advocating spec-driven development. Precise context (design tokens, reusable components, Code Connect snippets) packs more intent into less surface area than verbose raw output, likening dumping full visual detail to handing someone encyclopedias when all they need is 'slice of bread, slice of cheese, slice of bread.'",
+  "Claims precise context (e.g. Code Connect) makes agents write a far larger share of total code, with less total code overall and lower AI usage, \"leaner code and lower AI usage,\" reducing the tech debt left by verbose context. Cites a Google white paper that low-investment vibe coding yields high maintenance friction and dead-ends for complex systems, vs. up-front platform design.",
+  "Introduces \"hyper tokens\", named, reusable semantic style fragments (extending Figma text styles to shape, layout, typography, effects, motion) compiled from a single strongly-typed, form-agnostic JSON schema (built on the DTCG spec) into libraries, docs, Code Connect, CSS, and Svelte components.",
+  "Demonstrates using FigJam as an agentic interface and single source of truth: codifying a Code Connect skill on canvas (with a 'homework' exercise and answer key for agents), letting different agents compile their own skills, and building stegasound.jake.fun, an audio-encoded-image site, in one night across Figma's design agent, Make, and a codebase."
+ ],
+ "quotes": [
+  {
+   "text": "Cognitive surrender is when we adopt an LLM's judgment as our own.",
+   "talk": "Design context for agentic workflows"
+  },
+  {
+   "text": "AI accelerates execution, not clarity. If anything, AI can get in the way of clarity.",
+   "talk": "Design context for agentic workflows"
+  }
+ ]
+}

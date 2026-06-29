@@ -1,0 +1,25 @@
+{
+ "id": "003",
+ "title": "Welcome and opening remarks",
+ "speakers": "Sheila Vashee (Chief Marketing Officer, Figma), Noah Levin (VP, Design, Figma)",
+ "stage": "Leadership Collective Main Stage",
+ "source": "transcript",
+ "video": "BodZ123MS3E",
+ "key_points": [
+  "Figma's 2026 AI report maps teams onto a 2x2 of personal vs org-wide AI adoption: Nascent (lagging, now the smallest group), Unified (perfectly aligned top-down and bottom-up), Grassroots (ICs deep in AI, often on personal accounts, leadership not on board), and Directive (leadership bet on AI but ICs aren't there yet). Grassroots and Directive are framed as the most realistic and the hardest to solve.",
+  "Speed is now table stakes when anyone can build anything quickly; the harder, differentiating problems are direction (picking the right things) and differentiation (standing out). Every idea can now become a detailed prototype instead of a sticky note, so a leader's job is choosing which path and zeroing in on the core.",
+  "Noah's leadership tactics for AI adoption: create space (Figma's design team holds ~1-hour Friday study groups to build and explore during work hours), find and enable the 'explorers,' and model the behavior by getting hands-on. He cited designer Jason from the monetization team who DM'd an idea unrelated to his job that became the generative plugins launch.",
+  "Reframe from 'agents' to 'agency', teams don't just need agents, they need agency over their work, a recurring theme for the event.",
+  "Product previews for enterprise leaders: FigJam and Slides are getting the Figma agent for organizing info and sensemaking, and Figma is building agents to find work across a company (e.g., who recently worked on an onboarding file) usable in the file browser or any editor."
+ ],
+ "quotes": [
+  {
+   "text": "We don't just need agents. I mean, agents are nice. Trust me, I love agents. But, we need agency over the work that we do.",
+   "talk": "Welcome and opening remarks"
+  },
+  {
+   "text": "So let's stop pretending for a second that there's one playbook. And let's talk about the principles that hold true across all of them.",
+   "talk": "Welcome and opening remarks"
+  }
+ ]
+}

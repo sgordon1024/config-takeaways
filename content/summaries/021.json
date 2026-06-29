@@ -1,0 +1,14 @@
+{
+ "id": "021",
+ "title": "Designing the product that can do anything",
+ "speakers": "Brian Ringley (Distinguished Product Manager & HRI Designer, Boston Dynamics)",
+ "stage": "Mezzanine stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Frames designing an interface for a humanoid robot that can theoretically do anything as one of the greatest current UX challenges, born from the collision of software, robotics, machine intelligence, and spatial computing.",
+  "Breaks the problem of teaching a robot about the world into three parts: training robots to develop skills, building application interfaces to author task behaviors, and integrating with facilities to monitor robots' effectiveness.",
+  "Connects these design challenges to the broader vision of the software-defined factory, drawing on the speaker's perspective as a product manager and HRI designer at Boston Dynamics."
+ ],
+ "quotes": []
+}

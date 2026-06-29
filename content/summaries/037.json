@@ -1,0 +1,21 @@
+{
+ "id": "037",
+ "title": "How structured thinking gives your AI superpowers",
+ "speakers": "Carola Pescio Canale (Head of Design, AI, Atlassian)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "CPkL9msCuIU",
+ "key_points": [
+  "The core thesis: AI tools/agents/harnesses only deliver marginal gains, what makes AI personal is feeding it context about yourself. 'In a world where intelligence is the engine, context is the fuel' (Mike Cannon-Brookes, Atlassian CEO).",
+  "Habit 1, Empty your brain: at the end of the day, record an unstructured voice ramble (Loom, 3-20 min), then have AI digest the transcript into a Confluence doc AND extract a 'thinking.md' file capturing your point of view, so AI knows how you think when brainstorming. Takes ~10 min/day, can be weekly, and compounds over time.",
+  "Habit 2, Train AI to write as you: build a 'skill' so AI stops sounding like the average of everyone. Source your own words from your Gmail sent folder, last 30 days of Slack, or recorded conversations with teammates, 'you might not know it, but you're all writers.'",
+  "Habit 3 (her favorite), Give AI eyes via your phone camera as a 'prompt machine': snap a photo plus a three-word prompt. Examples: 'garden statue sell' builds a resale inventory with price estimates; photographing handwritten to-do lists to 'git merge' physical notes with task tools; sketching a UI and saying 'build this' for fast idea-to-execution.",
+  "The bigger bet: personal context (voice, photos, opinions) builds your personal graph, but the real scale comes from logging decisions into a shared team stack (Loom, Confluence, Jira), turning AI 'from your personal assistant into a team collaborator.'"
+ ],
+ "quotes": [
+  {
+   "text": "a photo is really worth 100 prompts",
+   "talk": "How structured thinking gives your AI superpowers"
+  }
+ ]
+}

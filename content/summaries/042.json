@@ -1,0 +1,15 @@
+{
+ "id": "042",
+ "title": "Your best practices are trapped in your head, and your AI has no idea",
+ "speakers": "Harald Kirschner (Principal Product Manager, Microsoft)",
+ "stage": "Level 2 Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Argues that the 'taste' designers build over years, tone of voice, component principles, definitions of 'done', currently lives invisibly in people's heads, scattered docs, or places their tools can't access.",
+  "Frames a core problem with AI workflows: every AI session starts from scratch because this accumulated context is invisible, forcing designers to repeat themselves each time.",
+  "Proposes building a shared knowledge layer that connects these scattered sources so AI can draw on a team's established context.",
+  "Shows how that shared context lets AI meaningfully assist with specs, prototypes, and design systems without constant re-explanation."
+ ],
+ "quotes": []
+}

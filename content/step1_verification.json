@@ -1,0 +1,67 @@
+{
+ "dropped_quotes": [
+  {
+   "id": "008",
+   "title": "Trust as a through line",
+   "quote": "for every bad experience that you have... you have 10 positive experiences to basically cancel that out... Trust... is very difficult to earn, and it is very easy to break."
+  },
+  {
+   "id": "009",
+   "title": "Scaling taste, craft, and quality in the AI era",
+   "quote": "sometimes AI is a little bit like junk food. You like kind of it's like super tasty, crave it... And then afterwards, you're kind of you're looking at the packaging and you're a bit regretful and what you've created is a bit hollow."
+  },
+  {
+   "id": "009",
+   "title": "Scaling taste, craft, and quality in the AI era",
+   "quote": "we'll be swimming in some slop for for a while, but that's okay because... the great work will always rise above it."
+  },
+  {
+   "id": "029",
+   "title": "Hacking AI for creative operations at scale",
+   "quote": "AI is only like three things and you can figure this stuff out. It's context, what you provide it, it's direction... and then it's iteration"
+  },
+  {
+   "id": "036",
+   "title": "Designing OpenAI\u2019s products: Rethinking design in the age of AI",
+   "quote": "I think road maps are like a way yeah for managers to feel good about themselves like they have some idea what's going to get done"
+  },
+  {
+   "id": "037",
+   "title": "How structured thinking gives your AI superpowers",
+   "quote": "Your personal graph is a start, but the team graph is what turns AI from your personal assistant into a team collaborator."
+  },
+  {
+   "id": "040",
+   "title": "Shaders in Figma: create the effects and fills you've always wanted",
+   "quote": "Yeah, remember when Yasser told me, \"We should call these things secure WebGPU intra-layer render pipelines?\"... I was like, dude, let's just call them shaders."
+  },
+  {
+   "id": "047",
+   "title": "Closing keynote",
+   "quote": "Step number one, have a conviction. Cuz some people don't."
+  },
+  {
+   "id": "053",
+   "title": "The invisible mechanisms in your interfaces",
+   "quote": "what matters is your words. Because they become the bottleneck to what you can express... you cannot prompt what you can't name."
+  },
+  {
+   "id": "058",
+   "title": "Building AI products at enterprise scale",
+   "quote": "The easy way to manipulate me is don't show up to me with a product that's not in dark mode."
+  },
+  {
+   "id": "071",
+   "title": "Everyone's still eating: building Notion's design system",
+   "quote": "a design system is just a set of shared decisions... It's what gives your product a soul. It's what makes it feel like it's yours."
+  }
+ ],
+ "thin_key_points": [
+  [
+   "031",
+   "Figma learning lab:\u2028unlocking speed and visual expression with generative plugins and shader effects",
+   2,
+   "abstract"
+  ]
+ ]
+}

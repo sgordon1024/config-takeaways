@@ -1,0 +1,15 @@
+{
+ "id": "050",
+ "title": "Designing in code",
+ "speakers": "Elle Shwer (Product Manager, Figma), Iris Lin (Product Designer, Figma), Nikolas Klein (Product Manager, Figma), Ben Chen (Engineering Manager, Figma)",
+ "stage": "Main stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Introduces two new Figma launches aimed at closing the gap between designing and working in code, bringing code natively into Figma.",
+  "Make lets designers work directly in their local codebase to design in code.",
+  "Code layers let users explore and work with code right on the Figma canvas.",
+  "Positions code as part of the full workflow, supporting iterating, prototyping, and collaborating in code all the way to production."
+ ],
+ "quotes": []
+}

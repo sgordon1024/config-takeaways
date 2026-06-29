@@ -1,0 +1,25 @@
+{
+ "id": "006",
+ "title": "From kickoff to canvas: connecting Google Workspace and Figma",
+ "speakers": "Addison Rodomista (UX Design Lead, Google ), Chloe Fagan-Tucker (Google Workspace, BD & Strategic Partnerships, Google)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "AOcrfsZCsrU",
+ "key_points": [
+  "The talk frames the core problem as the \"toggle tax\" / fragmentation: design conversations and decisions are scattered across meetings, docs, and chats, so Figma can't be the single source of truth and teams constantly need realignment.",
+  "Walked through a designer persona \"Steve\" using the Figma + Google Workspace integration: Figma links dropping into Docs become native smart chips with metadata and thumbnails; an interactive Figma canvas embeds directly into Google Meet so peers can comment and duplicate frames in real time, not just watch a video feed.",
+  "Post-meeting continuity: Meet's \"take notes for me\" auto-captures crit feedback into a transcript, and because Meet chat is powered by Google Chat, conversations persist as searchable threads; the Figma app in Chat pings users (e.g., on mobile) so they can reply to Figma comments away from their desk.",
+  "Scale numbers cited for Google Workspace: 3 billion users, 13 million customers, and over 6 billion app installs from its marketplace.",
+  "Pitched the Workspace MCP server as the way for partners and \"citizen developers\" to pull Workspace context (Gmail, Drive, Calendar, Chat, People) into apps via AI natural-language prompts instead of APIs, plus new universal search; currently in developer preview with early-access partners before GA."
+ ],
+ "quotes": [
+  {
+   "text": "crit stops being about spectation and starts being about this real-time collaboration",
+   "talk": "From kickoff to canvas: connecting Google Workspace and Figma"
+  },
+  {
+   "text": "you can basically go from designer to developer all with using the tools that we are launching with workspace to bring those ideas to life",
+   "talk": "From kickoff to canvas: connecting Google Workspace and Figma"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "023",
+ "title": "Trust, transparency, and flow: the UX of Gemini Enterprise",
+ "speakers": "Sheta Chatterjee (Senior Director, Head of UX, Cloud AI, Google), Yuhki Yamashita (Chief Product Officer, Figma)",
+ "stage": "Leadership Collective Main Stage",
+ "source": "transcript",
+ "video": "cHigBlg7Ktw",
+ "key_points": [
+  "AI has moved past the single-player chatbox era ('the ancient days of AI like two years ago') to AI working alongside teams. Gemini Enterprise's 'collaborative projects' act as a 'team's shared brain', a context container of files, data, and people that agents act on top of. For long-horizon agents (Gemini Sparks), Google reused the familiar email metaphor in an 'inbox' (label/star/approve tasks) to counter the 'black box' fear when stakes are high.",
+  "Trust is built progressively, like working with a new human teammate: start with small tasks and 'smart defaults' requiring human approval, then add autonomy over time. Distinguish 'producing work' (between you and agents) from 'writing work' (sending email, publishing) which warrants human review.",
+  "Multiplayer with agents requires presence (seeing what agents change, like Figma's cursors), attribution (tracing who/which agent did what so changes can be rolled back), and giving agents their own identities. Open hard problem raised: should agent edits go on the human's undo stack?",
+  "Defends 'flowgramming' (box-and-arrow flows people call 'circa 2024 / ancient') because deterministic industries like healthcare need total control, 'a 5% delta in a dosage is life-threatening.' Both speakers argue flowgramming is back for AI workflows.",
+  "Optimistic leadership stance: the future isn't just 'happening to' designers, 'we hold the pen.' Operationalized by having designers talk to enterprise customers constantly; enterprise AI design is at 'stage zero.'"
+ ],
+ "quotes": [
+  {
+   "text": "Enterprise users don't stop being consumers when they come to work.",
+   "talk": "Trust, transparency, and flow: the UX of Gemini Enterprise"
+  },
+  {
+   "text": "We are all designers. We hold the pen and we shape the future of how people interact with our products.",
+   "talk": "Trust, transparency, and flow: the UX of Gemini Enterprise"
+  }
+ ]
+}

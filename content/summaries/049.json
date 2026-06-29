@@ -1,0 +1,15 @@
+{
+ "id": "049",
+ "title": "Figma learning lab: upskill on skills and agentic workflows",
+ "speakers": "Laura Fehre (Designer Advocate, Figma ), Manish Kumar (Developer Advocate, Figma)",
+ "stage": "Learning Labs",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Introduces skills as the mechanism by which AI agents learn a domain, encoding things like research frameworks, handoff standards, and definitions of done so each session starts informed rather than from scratch.",
+  "Goes beyond the basics to cover the full lifecycle of skills: how to design, author, and deploy them so agents become measurably faster and more precise for the specific work at hand.",
+  "Hands-on and applied: attendees leave with an actual skill they helped build during the session, not just a framework or template to finish on their own later.",
+  "Pairs the learning session with informal follow-up time with the Figma team in the Learning Lab Lounge."
+ ],
+ "quotes": []
+}

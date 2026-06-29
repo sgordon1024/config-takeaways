@@ -1,0 +1,25 @@
+{
+ "id": "076",
+ "title": "Designing with confidence in an AI-powered world",
+ "speakers": "Bobby Meixner (VP, Solution Marketing, UserTesting)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "XOVcpvbblGY",
+ "key_points": [
+  "UserTesting's report surveyed 183 designers and found a 6:1 speed-vs-confidence gap: 91% say their work moves faster with AI, but only 15% feel much more confident in the quality of their output.",
+  "Confidence follows a 'reversibility factor' - it's high in early discovery/ideation (4.1/5) but drops as decisions become irreversible near ship (3.6-3.7); 65% can't confidently say AI makes their outcomes better (37% same, 19% sometimes worse).",
+  "The differentiator between designers who feel risk increased vs. decreased is validation: the higher-risk group relies on peer critique or skips validation, while the lower-risk group cross-checks with research, customer feedback, usability tests, and analytics - making defensibility the key variable.",
+  "Demoed the UserTesting for Figma plugin plus a Figma Make workflow where 'Diana' analyzes past feedback, launches a test to UserTesting's panel of 7M+ verified participants via AI prompt, gets results back in hours, and resolves a mid-funnel drop-off (completion rate up 79%).",
+  "Closing reveal: every 'first-time moment' photo in the deck was AI-generated with deliberate flaws, used to argue that noticing imperfections - human judgment - remains the scarce thing AI can't replace."
+ ],
+ "quotes": [
+  {
+   "text": "one person with the right tools can really build pretty much almost anything. Which sounds amazing until you realize the thing that those 100 people do together",
+   "talk": "Designing with confidence in an AI-powered world"
+  },
+  {
+   "text": "to understand people deeply enough to imagine what they don't yet know they need and actually go through and defend that until it truly exists. And that is not something that AI can do for you.",
+   "talk": "Designing with confidence in an AI-powered world"
+  }
+ ]
+}

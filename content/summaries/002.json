@@ -1,0 +1,15 @@
+{
+ "id": "002",
+ "title": "Figma learning lab:\u2028design to development workflows",
+ "speakers": "Riccardo Erra (Developer Advocate, Figma)",
+ "stage": "Learning Labs",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Offers a beginner-friendly walkthrough of moving from design to code using Figma's MCP server.",
+  "Covers best practices for bringing code context into Figma, specifically through variable prefixes and Code Connect.",
+  "Explains how to get stronger results from your design system in design-to-development workflows.",
+  "Includes a follow-on session in the Learning Lab Lounge for informal time with the Figma team."
+ ],
+ "quotes": []
+}

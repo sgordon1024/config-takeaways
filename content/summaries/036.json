@@ -1,0 +1,21 @@
+{
+ "id": "036",
+ "title": "Designing OpenAI’s products: Rethinking design in the age of AI",
+ "speakers": "Ian Silber (Head of Product Design, Open AI), Noah Levin (VP, Design, Figma)",
+ "stage": "Leadership Collective Main Stage",
+ "source": "transcript",
+ "video": "eOd2gQg5vjg",
+ "key_points": [
+  "OpenAI has almost no fixed design process; it's deeply bottoms-up and 'every day is a hackathon', a designer can prototype in code and ship to production the next day. The principle is 'anybody can ship anything internally,' but a quality bar and sign-off gate what reaches users.",
+  "Model design is treated as part of product design: for the 'writing blocks' feature, the pixels became the easy part and most designer time went to writing prompts, evals, and the spec defining when/how the feature should trigger. These roles are filled by traditional designers and former writers, not ML PhDs.",
+  "Silber rejects 10-100x productivity claims for design/management, designers feel maybe '1.5x' more productive because exploration time (trying a million things, building consensus) hasn't compressed the way binary engineering tasks have. He's investing in tooling to shorten exploration breadth.",
+  "He pushes back on fully flattening orgs: he once had ~30 direct reports and warns it spreads attention like 'peanut butter.' OpenAI hires hybrid 'player-coach' managers who still commit code/design, and values resilient leaders comfortable with ambiguity over those who thrive in rigid structure.",
+  "Design rituals and culture mechanisms: crits kept under 10 people, a visual-only (PNG/video, no text) work-in-progress Slack channel, weekly demo days, 'walk the desks' riffing on Wednesdays, sitting designers together for community, and an 'AGI-pilled design system.' Core values include the AGI mission and 'shipping joy', not shipping fast slop."
+ ],
+ "quotes": [
+  {
+   "text": "it's a hackathon being shipped into your into your product.",
+   "talk": "Designing OpenAI’s products: Rethinking design in the age of AI"
+  }
+ ]
+}

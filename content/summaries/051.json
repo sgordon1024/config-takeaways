@@ -1,0 +1,25 @@
+{
+ "id": "051",
+ "title": "Designing in the age of the 10x engineer",
+ "speakers": "Andy Zhang (Design Engineer Lead, Google)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "4fZ3CeFu954",
+ "key_points": [
+  "Because AI makes code cheap, prototypes become recyclable: feed past work back to the same agent so learnings embedded in the code aren't lost when iterating, instead of rebuilding from scratch (Andy's pre-AI story of a CEO greenlighting a prototype that then had to be thrown away).",
+  "Faster building creates a choice between launching earlier vs. elevating quality, Andy argues you should use the speed to gather more feedback and iterate, not just ship sooner.",
+  "Three prototyping starting points, each answering different questions: start from scratch (blue-sky/conceptual ideas, e.g. syncing agent diagrams into FigJam, or a 'Harry Potter' texting prototype that replays typing rhythm); an isolated playground with reusable building blocks (cites Brian Lovin of Notion's playground with deploy/brainstorm skills and a Figma-sync sub-agent); or forking off production to start from the product's ceiling (requires gating/guardrails to avoid regressions).",
+  "Quality comes from curation, not volume: cheap code is not a reason to ship more, most code should never reach users, and at Google Antigravity features graduate through active dogfooding from small team to wider Google to public. Andy built an interactive-graph interface for interacting with agents, found it cool but asked 'would I actually use this?', the answer was no, so he abandoned it.",
+  "Feedback from feeling a flow differs from feedback on seeing a flow; previously the cost of building feel-able prototypes was high, now it's cheap. Self-assess your process: how reusable are building blocks, how fast can you set up, how easily can you gather feedback, do you have agent skills to speed it up."
+ ],
+ "quotes": [
+  {
+   "text": "design quality isn't measured by how much you ship or how close you are to production code. It's measured by which version you said yes to and what what are the many versions said no to",
+   "talk": "Designing in the age of the 10x engineer"
+  },
+  {
+   "text": "you can't let AI decide something if you if it cannot verify because AI and your AI and your users are different",
+   "talk": "Designing in the age of the 10x engineer"
+  }
+ ]
+}

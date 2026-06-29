@@ -1,0 +1,25 @@
+{
+ "id": "005",
+ "title": "Get animated with Figma Motion",
+ "speakers": "Daniela Muntyan (Product Designer, Figma), Luca Damasco (Manager, Software Engineering, Figma), Dave Hornsby (Product Manager, Figma)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "3evAfmLVZK8",
+ "key_points": [
+  "Figma Motion adds a new 'motion mode' with a timeline, a play head, auto-keyframing, and a properties panel where every animatable property gets a diamond keyframe stamp. Animations play back in real time directly on the canvas.",
+  "Two ways to animate: stackable pre-made animation styles (entrances, cycles, exits, ~12-16 presets shipping at launch) and fine-grained keyframes with adjustable easing (presets, custom curves, overshoot, and command-drag for smooth paths).",
+  "Deep integration with Figma's design system primitives: animations work with components (color/edits cascade from a parent component down to the final composition), variables (two new types, easing and timing, with modes like standard/expressive/smooth), Draw properties (path trim, arcs, points-on-shape, stroke width), and shader fills.",
+  "The Figma agent can generate animations from a prompt, riff on multiple variations, vectorize and animate text, and compose individual shots onto a single staggered timeline, then designers edit the resulting keyframes by hand.",
+  "Collaboration features include timestamped comments tied to timeline positions, real-time multiplayer editing with synchronized timelines (spotlight/follow), plus production handoff: a read-only Dev Mode timeline, generated CSS/React Motion/JSON code, MCP prompt export, Figma Make/Weave integration, and MP4/WebM/GIF/animated-SVG export (4K 60fps on Pro Plus). Figma Motion is in beta."
+ ],
+ "quotes": [
+  {
+   "text": "We call him Mo. He's a We're a big fan of Mo.",
+   "talk": "Get animated with Figma Motion"
+  },
+  {
+   "text": "You're not stuck in your own file on your machine having to copy and paste and send those around for motion, which is just kind of an antiquated workflow.",
+   "talk": "Get animated with Figma Motion"
+  }
+ ]
+}

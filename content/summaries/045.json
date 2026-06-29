@@ -1,0 +1,25 @@
+{
+ "id": "045",
+ "title": "Build like it's 2030. Listen like you mean it.",
+ "speakers": "Ned Dwyer (CEO & Co-founder, Great Question)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "ahDcjUgyI78",
+ "key_points": [
+  "A YC partner told Dwyer that any company founded before 2023 is now considered 'legacy', without an AI-native team, product, and growth rate, customers leave, you can't raise money, and no one will acquire you.",
+  "Core thesis: differentiation in an era where everyone uses the same models (Claude, ChatGPT, Gemini) comes from velocity PLUS insight. Velocity without insight just ships slop; insight without velocity makes you irrelevant.",
+  "Cited Anthropic data: Claude Code output grew 8x since 2023, and roughly 65% of code is now deployed to production with no human interaction, rising sharply each quarter.",
+  "Great Question rebuilt as AI-native by rethinking time (PRDs that took 3-5 days now take a morning), making everyone a product builder (support reps ship fixes directly), and shifting from gates-up-front to 'permissive by design' with design-system guardrails (Zeroheight) and review rituals.",
+  "Demoed a Figma Make dashboard feeding into Great Question via MCP: ship a prototype, collect real customer feedback with verbatim quotes (anti-hallucination), then push it back to Figma Make to auto-generate a new version, closing the research loop in real time. The differentiator is the 'last 10%': taste, the quality bar, and the knowledge problems you have the right to solve."
+ ],
+ "quotes": [
+  {
+   "text": "if we take velocity, which is critical to the future, but we deliver it without insight, all you're really doing is delivering slop.",
+   "talk": "Build like it's 2030. Listen like you mean it."
+  },
+  {
+   "text": "design isn't dead just like great question, it's being reborn.",
+   "talk": "Build like it's 2030. Listen like you mean it."
+  }
+ ]
+}

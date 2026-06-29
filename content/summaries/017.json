@@ -1,0 +1,15 @@
+{
+ "id": "017",
+ "title": "Writing for humans in an AI world",
+ "speakers": "Chelsea Larsson (Content Design, Anthropic)",
+ "stage": "Mezzanine stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Content designers at Anthropic don't write Claude's responses, they write everything around them: prompt starters, UI copy, feature names, and voice principles.",
+  "The talk explores how content design shifts when the interface understands natural language, requiring designers to design the 'frames' around intelligence that talks back.",
+  "It addresses teaching collaboration, not just use, through the edges of the experience, helping users learn to work with AI rather than simply operate it.",
+  "The session is aimed both at people designing AI products and those curious how AI changes the craft of content design more broadly."
+ ],
+ "quotes": []
+}

@@ -1,0 +1,15 @@
+{
+ "id": "035",
+ "title": "From idea to production: bridging design systems and code with AI",
+ "speakers": "Abdullah Alkhatib (Principal Designer, Mercari, Inc.), Motoki Narita (VP of Product Engineering (Marketplace), Mercari, Inc.), Marcel Weekes (VP, Product Engineering, Figma)",
+ "stage": "Leadership Collective Deep Dives",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "AI can convert ideas, sketches, and screenshots into UI, but the abstract argues that without design systems these outputs remain prototypes rather than shippable products.",
+  "The talk's central thesis: connecting AI-generated output to existing design system components is what turns it into real, production-ready code rather than throwaway mockups.",
+  "The Mercari team shares concrete workflows and lessons learned from bridging design systems and code with AI.",
+  "Mercari reports that this approach doubled development speed while also improving quality."
+ ],
+ "quotes": []
+}

@@ -1,0 +1,21 @@
+{
+ "id": "047",
+ "title": "Closing keynote",
+ "speakers": "Patrick Flaherty (Senior Motion Designer, Microsoft), Tommy Geoco (Storyteller, UX Tools   ), Catt Small (Staff Product Designer, Dropbox), Matt D. Smith (CEO, Shift Nudge), Rasmus Andersson (Software Painter, Playbit)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "Lo-HSCqhIF8",
+ "key_points": [
+  "Patrick Flaherty's core reframe: 'Design the feel, not the graph.' The cubic Bezier curve is just a description of motion, not the goal; spacing equals velocity, and velocity equals feel, so you read a curve by watching how echo/trail spacing stacks up (slow) or opens up (fast).",
+  "The animator's timeless workflow is observe first, interpret second, stylize third, 'reference gives you the truth, taste decides what to keep, design decides how far to push.' His mantra: 'You are the analog', capture real motion (with your body, a camera, or a phone/watch accelerometer) before touching a graph editor.",
+  "Flaherty demoed a tool called Motion Tracker that records real-world motion live, tracks it on X/Y axes, and converts the timing into reusable easing curves applied directly in Figma (and After Effects). The full loop: capture, read the timing, shape the curve, apply, then name and share it as a team's shared motion language, he even wired a 'drop' curve into a Figma variable to apply it across many layers at once.",
+  "Panel data point: Figma reports 72% of attendees have tried generative AI this year; the UX Tools survey splits designers into roughly thirds, a third haven't touched AI, a third dabble, a third are fundamentally changing how they work.",
+  "Panel consensus on AI: fundamentals matter MORE because AI is a 'multiplying force' (Matt D. Smith) amplifying every good and bad decision. Designers want to own early/visioning thinking by hand and hand off production-level work to AI (Catt Small, Rasmus Andersson). Rasmus's spicy take, production design like error states and sign-up forms can be automated, but defining that you need a form is ideation. Catt: 'the double diamond is not dead.'"
+ ],
+ "quotes": [
+  {
+   "text": "Design the feel, not the graph. The graph, it matters, of course it does, but the graph is not the goal.",
+   "talk": "Closing keynote"
+  }
+ ]
+}

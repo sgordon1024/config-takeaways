@@ -1,0 +1,21 @@
+{
+ "id": "029",
+ "title": "Hacking AI for creative operations at scale",
+ "speakers": "Rory Flynn (Founder, Systematiq Ai)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "_az4W2z5Fqw",
+ "key_points": [
+  "Three core skills transfer to any AI tool: deconstruction (reverse-engineer media into core components to learn how to prompt), system prompts (write rules once so the LLM does the work and removes you from the loop), and workflow development (chaining nodes to get from point A to B).",
+  "Demonstrated building workflows in Figma Weave, a node-based builder with 300+ AI tools; key reusable patterns include a 'router' (one input to many outputs), a 'text iterator' to split multiple prompts into individual generations (1, 4, or 400 assets), and a 'scale ref' to give models proportional context.",
+  "Prompt formulas via deconstruction: every photo has 'non-negotiable' components like lighting (the model fills them in if you don't), and edit/image-to-image models reduce to a simple 'keep this; change that' structure.",
+  "Build for reuse and tool-agnosticism: well-structured workflows stay ~95% the same and only the input changes; 'screw the models' because they all change, so swap tools into the structure rather than rebuilding.",
+  "Real client results: BarkBox digitally composites subscription boxes with AI lighting/shadow as a feeder image; built a 2D-vector-to-3D-studio-shot pitch pipeline run by four system prompts; Shark Ninja (hundreds of products, 25 categories, 35 markets) scaled from asset localization into retouching, compositing, and video."
+ ],
+ "quotes": [
+  {
+   "text": "Any 2D vector image can go in and studio shots can come out. I've replaced myself. We can go work on the next problem",
+   "talk": "Hacking AI for creative operations at scale"
+  }
+ ]
+}

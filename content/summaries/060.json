@@ -1,0 +1,25 @@
+{
+ "id": "060",
+ "title": "Usernames on Instagram: how a craft fix became an identity crisis",
+ "speakers": "Rose McManus (Content Designer, Instagram (Meta))",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "njz16gKVLFs",
+ "key_points": [
+  "A craft-level inconsistency (Instagram's story viewer list showing display names instead of usernames, which let spam bots with capitalized/emoji display names float to the top) became the entry point to a much bigger identity question about which name field to standardize on.",
+  "McManus uses Baudrillard's four-stage theory of simulation (reality, representation, distortion, masked absence, complete hyperreality) as a framework to analyze usernames vs. display names, e.g., K-pop star IU's handle 'dlwlrma' is her Hangul name typed backwards on a Latin keyboard, a third-stage cipher.",
+  "Empirical evidence that users abstract their names: a study of Russian-speaking Instagram users found most abstract their name; on TikTok, 15% of Nigerian users put their real name in their handle while 40% add authenticity markers like 'real' or 'official' (which ironically prove nothing).",
+  "Usernames can become hyperreal identities more 'real' than a person's legal name, e.g., the account @dril ('Wint', run by 'some guy named Paul') and creators like Young Kombucha 420 who had to clarify their identity after switching handles.",
+  "The product lesson: when designing evolving paradigms, ask what behavior you're enabling beyond your imagination and what happens at 10x/1000x/3 billion-x scale; Instagram ultimately kept usernames because they had already become a load-bearing identity and 'internet export' users built their lives around."
+ ],
+ "quotes": [
+  {
+   "text": "Rose, I need you to press a few buttons while you're at work and get these bots away from me.",
+   "talk": "Usernames on Instagram: how a craft fix became an identity crisis"
+  },
+  {
+   "text": "When we We products, we create infrastructure that real people carry with them and ultimately build around.",
+   "talk": "Usernames on Instagram: how a craft fix became an identity crisis"
+  }
+ ]
+}

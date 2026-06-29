@@ -1,0 +1,25 @@
+{
+ "id": "025",
+ "title": "Figma deep dive: designing with the Figma agent",
+ "speakers": "Rodrigo Davies (Product Lead, Agents, Figma)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "0HqSSIPZkbI",
+ "key_points": [
+  "Figma agent gained major new capabilities: web search from the canvas (e.g. pulling real SF weather into designs), local file attachments (build designs from CSVs/spreadsheets), MCP connectors that read AND write back (Notion, Slack, Hex, Granola, Asana, GitHub), and shareable chats to learn teammates' workflows.",
+  "Custom skills are the headline feature: markdown files that steer the agent with your team's conventions, are portable from other agents 'in seconds,' and are composable, skills can call other skills and leverage connectors (demoed 'spec up' built on a foundational 'create documentation' skill to scale expertise across an org).",
+  "Design philosophy framed around Joanna Maciejewska's idea: AI should 'do laundry and dishes' (the tedious work like reconnecting colors/typography to the design system) so people can 'do art and writing', because what's tedious vs. loved differs per designer, they aimed to support as many use cases as possible.",
+  "'Parallel prompting' lets you fire off multiple agent tasks at once and keep editing live, demoed generating a search page, updating content to SF, swapping to dark/light mode, and creating constrained variations (lock fonts/style, only change layout) simultaneously.",
+  "The agent operates on real design layers connected to your design system, works with new code layers and motion (rotating compass, making components vertical/grid/interactive), and one teammate's feedback comments can be handed directly to the agent to address, keeping it embedded in a messy, multiplayer, divergent-then-convergent workflow. Design agent is in beta on pro/org/enterprise plans, coming to FigJam and Slides soon."
+ ],
+ "quotes": [
+  {
+   "text": "We want the AI to do laundry and dishes so that we can do art and writing.",
+   "talk": "Figma deep dive: designing with the Figma agent"
+  },
+  {
+   "text": "It's just taking your best practices from your head and giving those as instructions.",
+   "talk": "Figma deep dive: designing with the Figma agent"
+  }
+ ]
+}

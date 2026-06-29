@@ -1,0 +1,25 @@
+{
+ "id": "022",
+ "title": "Navigating the age of agentic computing",
+ "speakers": "Hector Ouilhet Olmos (VP of Design, AWS Applied AI Solutions, Amazon), Shani Taylor (VP, Customer Experience & Solutions, Figma)",
+ "stage": "Leadership Collective Deep Dives",
+ "source": "transcript",
+ "video": "ndceXNZZLno",
+ "key_points": [
+  "The core thesis is 'humanism' (humanomorphism): rather than mimicking the physics of office objects like skeuomorphism did (desk to desktop, cabinet to folder), AI design should mimic the dynamics of people/colleagues, designing for people who 'cooperate' with teammates rather than 'operate' tools.",
+  "Cramming fluid AI intelligence into chat boxes, text fields and trust/allow buttons recreates command-line tool behavior; example interaction patterns instead: an agent that 'leans in' when your cursor goes still (shake to dismiss), and one that detects hesitation when your cursor wavers between two options and offers trade-offs unprompted.",
+  "Shift from interaction design to 'relationship design', value compounds over tiny repeated moments of reading, adjusting and earning trust over time, versus today's AI which is like a 'permanent first date.' Hector's team shipped four products embodying this philosophy; he also built a personal open-source agent named Alicia that optimizes for the relationship itself.",
+  "Counterintuitive principle: deliberately ADD friction to build trust. In Amazon Connect Health (deployed at a San Diego hospital), having patients repeat instructions back 'in their own words' forced internalization and significantly decreased appointment cancellations.",
+  "Reframes the designer's role: humans have become 'human API endpoints' (input, execute, output) and should instead reclaim higher-order work, taste, judgment, discernment, since code is now written by capable coding agents, freeing designers to assert what is meaningful and ship end-to-end."
+ ],
+ "quotes": [
+  {
+   "text": "if we want to AI to behave less like those tools, and more like a teammate, we need to to stop designing for users who operate these tools, and start designing for people that cooperate",
+   "talk": "Navigating the age of agentic computing"
+  },
+  {
+   "text": "Taste, according to what you've been writing, is like the autobiography of your attention.",
+   "talk": "Navigating the age of agentic computing"
+  }
+ ]
+}

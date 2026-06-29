@@ -1,0 +1,15 @@
+{
+ "id": "094",
+ "title": "Legibility by design",
+ "speakers": "Ryan Powell (Head of Design, Waymo)",
+ "stage": "Mezzanine stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Argues that building trust in AI is fundamentally a problem of communication design, not transparency, and that the core challenge across autonomous vehicles and generative agents is the same: deciding how much a system should communicate.",
+  "Introduces a framework for trust that moves beyond automation toward 'legibility', designing so users understand a system's intent rather than merely monitoring its tasks.",
+  "Emphasizes calibrating feedback to the right level to avoid alert fatigue, drawing on Powell's years of experience designing for Waymo's autonomous vehicles.",
+  "Aims to help designers build AI products that feel predictable and fundamentally trustworthy."
+ ],
+ "quotes": []
+}

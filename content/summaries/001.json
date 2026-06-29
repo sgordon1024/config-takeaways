@@ -1,0 +1,25 @@
+{
+ "id": "001",
+ "title": "Keynote",
+ "speakers": "Holly Herndon (Artist, Herndon Dryhurst Studio)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "thvAivrQ4TI",
+ "key_points": [
+  "Herndon frames AI work through two myths: the centaur (human head/inhuman body) = humans orchestrating systems with human interest at the core, vs. the minotaur (human body/beast head) = humans trapped inside systems built to model and puppeteer them.",
+  "She describes her practice as 'protocol art', the creative intervention is upstream orchestration that produces emergent media, performances, and objects downstream; the protocol and its incentives are themselves the artwork.",
+  "For 'The Call' (Serpentine Gallery, London), she wrote a songbook covering all phonemes of English, sent it to 15 UK choirs, drove around recording them with her one-year-old and mom, and trained a collective choral model so people who never met could make music together.",
+  "Holly+ (2021, a COVID project) released a model of her own singing voice for anyone to sing through, with a royalty-split incentive model, a deliberately permissive, 'positive-sum' approach to IP (e.g., Sam Rolfes singing Dolly Parton's 'Jolene' through her voice/avatar).",
+  "Installations like Star Mirror (KW Berlin, 3 months) and the Attention Guild (Palazzo Diego, Venice, May) created read/write rooms that retain memory of what happened in them, letting humans and agents sing, debate, or even write software collectively."
+ ],
+ "quotes": [
+  {
+   "text": "A centaur builds protocols and models, and a minotaur is trapped inside protocols built to model them.",
+   "talk": "Keynote"
+  },
+  {
+   "text": "Angels appear as what you fear, and the devil appears as what you desire.",
+   "talk": "Keynote"
+  }
+ ]
+}

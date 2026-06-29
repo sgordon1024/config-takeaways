@@ -1,0 +1,25 @@
+{
+ "id": "048",
+ "title": "Opening keynotes",
+ "speakers": "Grant Sanderson (YouTube educator, 3Blue1Brown), Switch Angel + LO.FI.SCI.FI (Artists & Software Engineers)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "bLSLN96Gn-w",
+ "key_points": [
+  "Sanderson framed math explanation as a design discipline, structured around three principles for explaining one equation (e^(iπ) = -1) by answering three distinct questions: what it means, why it's true, and how it's applied.",
+  "Principle 1 (\"what does it look like?\"): visualizing the equation as an infinite polynomial whose spiraling sum shrinks (denominators grow rapidly) and zeros in on the point -1, treating each i as a 90-degree rotation.",
+  "Principle 2 (give your characters motivation): reframing e^x as e^t where position's rate of change equals itself (exponential growth/decay), so e^(it) forces velocity to be a 90-degree rotation of position, meaning the point traces a unit circle at 1 unit/second, landing at -1 after exactly pi seconds.",
+  "Principle 3 (the most memorable application is the most surprising): complex functions (e^z and its inverse, the natural log) explain M.C. Escher's 'Print Gallery', work by mathematicians de Smit and Lenstra ~50 years after Escher, who described the piece as the most peculiar thing he ever created.",
+  "Closing thesis: everyone is a teacher and all design is communication; math serves design as 'paintbrushes' for manipulating 2D space, and design serves explanation and teaching, understanding their intersection improves both."
+ ],
+ "quotes": [
+  {
+   "text": "If you were writing a novel, it's never going to work unless each one of the characters has a clearly defined motivation. The same is true in math.",
+   "talk": "Opening keynotes"
+  },
+  {
+   "text": "Simply asking that question is often the difference between sitting in a room in silence trying to read sheet music versus listening to the song.",
+   "talk": "Opening keynotes"
+  }
+ ]
+}

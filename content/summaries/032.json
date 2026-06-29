@@ -1,0 +1,25 @@
+{
+ "id": "032",
+ "title": "Generative plugins: building plugins has never been easier",
+ "speakers": "Avery Frankenberg (Software Engineer, Figma), Jason Calleiro (Product Designer, Figma)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "5g7c4-EtmS8",
+ "key_points": [
+  "Generative plugins let anyone build a Figma plugin by describing it in natural language to the design agent, no coding, editor, or frameworks. The agent identifies the plugin type and asks clarifying follow-ups (e.g. which controls to include) before building.",
+  "They're true plugins on the existing plugin API and ship with Props Kit, a new native UI library so plugins look and feel like Figma. It supports unconventional controls beyond sliders/dropdowns, easing, joysticks, 3D controls, and on-canvas handles mappable to any property.",
+  "Plugins travel with the work: running one attaches it to the file and the specific layers it generated (remembering settings). Duplicating or copying a layer carries the plugin, no publishing, links, or installs needed for collaborators.",
+  "Cost model: you pay tokens to create a plugin once, but running it (yours, Figma's, or a teammate's) is free forever, pitched against the 'token maxing era' and cost-conscious admins.",
+  "Demos showed range and composability: live-weather temperature card, 3D-to-2D donut, gradient grid with a 'chaos' joystick, a teammate's 2D game terrain builder built from a Notion-connector PRD, and a nail studio composing shader fills + shader effects. The whole project went idea-to-Config-stage in ~45 days."
+ ],
+ "quotes": [
+  {
+   "text": "But now, if you can describe the tool, you can build the tool.",
+   "talk": "Generative plugins: building plugins has never been easier"
+  },
+  {
+   "text": "You create it once, and then it no longer costs you to run it. Whether you're running yours, Figma's, or a teammate's, running plugins is free.",
+   "talk": "Generative plugins: building plugins has never been easier"
+  }
+ ]
+}

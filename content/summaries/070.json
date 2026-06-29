@@ -1,0 +1,25 @@
+{
+ "id": "070",
+ "title": "The canvas is not dead",
+ "speakers": "Catt Small (Staff Product Designer, Dropbox)",
+ "stage": "Mezzanine stage",
+ "source": "transcript",
+ "video": "WGZ38oeoBtU",
+ "key_points": [
+  "Be the driver, not the passenger: AI is a powerful force multiplier but you must define the bounds and own the direction. The talk's core test is a contrast between two real cases.",
+  "Where AI helped: building an experimental narrative game (inspired by Slack's UI) in a 2-week class deadline. She gave AI the architecture/framework (Yarn, exporting to HTML/JS) so she could spend her cognitive energy hand-writing 20+ distinctly-voiced characters and hand-drawing all 20 avatars.",
+  "Where AI subtracted: creating a product vision at Dropbox (700M+ users, ~20 years of product history). AI-generated screens (tried Figma, ChatGPT) lacked nuance and struggled to retain context; reacting to and fixing output became more work than doing it by hand.",
+  "Good uses: synthesis of research/data, generating copy variants and placeholder content, prototyping a contained simple flow (e.g. an error or animation state), poking holes in thinking / finding missing use cases, and reframing a message for different audiences (crit vs. director vs. VP).",
+  "Avoid AI for: true innovation (it averages; humans' unpredictability is where innovation comes from), human conviction, balancing pros/cons, managing up / persuading leaders, and accountability. Three questions before opening an AI tool: how much context does the problem require, how expansive/divergent must you be, and what is the cost of getting it wrong."
+ ],
+ "quotes": [
+  {
+   "text": "But speed without direction will lead you down a dead end.",
+   "talk": "The canvas is not dead"
+  },
+  {
+   "text": "It is unacceptable to say the AI did it as if that's a reasonable answer. It's just not.",
+   "talk": "The canvas is not dead"
+  }
+ ]
+}

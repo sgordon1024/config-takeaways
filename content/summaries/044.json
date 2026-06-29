@@ -1,0 +1,14 @@
+{
+ "id": "044",
+ "title": "Prototypes, failures, and unexpected breakthroughs",
+ "speakers": "Noah Finer (Software Engineer, Figma)",
+ "stage": "Community Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Noah Finer describes two contrasting engineering mindsets at Figma: building quick, 'janky' prototypes for interactions versus perfecting subtle editor microinteractions that are designed to go almost unnoticed.",
+  "The talk explores how these two approaches interact and inform each other, framing prototyping, failures, and unexpected breakthroughs as part of the building process.",
+  "Noah draws on concrete experiences shipping features like Figma Slides, FigPals, and interactive transit personality tests to illustrate how these mindsets shape the experiences he builds."
+ ],
+ "quotes": []
+}

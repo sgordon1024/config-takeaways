@@ -1,0 +1,25 @@
+{
+ "id": "019",
+ "title": "From concept to confidence with Dscout AI",
+ "speakers": "Lauren Madura (Director of Product Design, Dscout), Michael Winnick (CEO & founder, Dscout)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "9pl3twjre6E",
+ "key_points": [
+  "Core thesis: as code becomes cheap and everyone is a maker, high-fidelity user feedback matters more than ever; the challenge is making the speed of learning match the new speed of building. Winnick reframes 'product market fit' as 'product market flow', staying agile as products fall in and out of fit faster than ever.",
+  "Winnick ties feedback to three needs (from Yuki Yamashita's framing): craft (the art of resonating deeply, avoiding 'getting high off your own supply' since AI like Claude constantly gasses you up), direction/conviction (harder now with a 'POC glut' and many more decision-makers), and speed.",
+  "dscout AI Studio is a suite of four tools, Draft Your Study, Explore Your Data, AI Moderation, and a new MCP server, built on five design principles: confident research without the PhD, governance without bureaucracy, fielding with less friction, communicate with your data, and high-fidelity feedback where the work happens.",
+  "Capabilities demoed: AI crawls a Figma prototype plus your learning objectives to guide study-building; AI templates replace Notion hubs and approval processes for governance; AI moderation runs recorded, dynamic interviews in parallel with hundreds/thousands of participants in different languages, and participants were surprisingly open and candid with a bot.",
+  "Data analysis tools: a conversational interface to 'talk to your data' with everything linking back to raw source, plus 'Spotlight,' an immersive AI-curated collection of moments. The dscout MCP server (in beta) plugs into Figma Make via @dscout to build usability tests, pull feedback back in, and have Figma Make iterate, a build-test-learn-iterate loop in one place."
+ ],
+ "quotes": [
+  {
+   "text": "We are now living in a world where the driving concept is really product market flow.",
+   "talk": "From concept to confidence with Dscout AI"
+  },
+  {
+   "text": "With AI, it is very easy to get high off your own supply.",
+   "talk": "From concept to confidence with Dscout AI"
+  }
+ ]
+}

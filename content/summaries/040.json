@@ -1,0 +1,21 @@
+{
+ "id": "040",
+ "title": "Shaders in Figma: create the effects and fills you've always wanted",
+ "speakers": "Yassir Solomah (Software Engineering Manager, Figma), Piers Cowburn (Director of Engineering, Expressive Design, Figma), Rogie King (Product Designer, Figma)",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "y_2_w-r9TYY",
+ "key_points": [
+  "Figma is launching native shaders, implemented as 'secure WebGPU intra-layer render pipelines' running custom code directly on the GPU, exposed as two types: shader effects (stacked in the effects panel) and shader fills (usable anywhere a fill works, text, strokes, brush strokes).",
+  "Shaders are generated and edited via an AI agent: you describe an effect in plain language and Figma produces it, including on-canvas handles (point, line, angle, radius), sliders, gradients, selects, switches, and color points. Shipped template effects include pixel stretch, gooey merge, chromatic metal, lens distort, dither, pixelate, and Riso.",
+  "The power comes from stacking and recombining effects on a base input, Piers demoed a corner-peel plus a shapes-mosaic that maps brightness values to shapes/colors, plus a Figma-logo example with lens distortion, time-offset duplicates and blend modes (multiply/overlay/difference) to 'play jazz' into unexpected outcomes.",
+  "Technical constraints: shaders are raster effects rendered at frame/layer size (no infinite zoom, they pixelate when zoomed), capped at a maximum 2048 texture size, and time-varying shaders sync their play head to the motion clip in motion mode.",
+  "Code is fully exportable via MCP/dev mode, you get a custom effect wrapper plus raw source (a one-time setup function, a per-frame render function, and a defined properties array describing the UI) with an included runtime, because 'your code is yours to take.' Inspiration site: shaders.figma.com."
+ ],
+ "quotes": [
+  {
+   "text": "If design was the body, expression was the soul.",
+   "talk": "Shaders in Figma: create the effects and fills you've always wanted"
+  }
+ ]
+}

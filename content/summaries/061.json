@@ -1,0 +1,25 @@
+{
+ "id": "061",
+ "title": "AI will upend your process, for the better",
+ "speakers": "Justin Meyer (CEO, Bitovi)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "6nyveN7zfMQ",
+ "key_points": [
+  "Bitovi sees teams maturing through three agentic phases: solo vibe coders, 'local agent orchestrators' (everyone uses their agent and moves work between sources of truth like GitHub, Jira, Figma), and 'cloud agent orchestrating' teams who trigger agent steps with a button click.",
+  "Four prerequisites make non-engineer vibe coding succeed: a mocking layer (Mock Service Worker) so the agent only builds the front end; three core skills (brand, component, data-model skills) for consistency; visual tools like Convey/Figma Make Local so designers drag-and-drop instead of writing technical prompts; and easy sharing via GitHub Codespaces (the Code button > '+') to spin up a shareable environment.",
+  "Their React-to-Figma skill layers a visual diff using Storybook on top of Figma's MCP so the agent catches small mismatches (e.g., a checkbox outline thicker in React than Figma) and self-corrects when rebuilding components.",
+  "For implementation accuracy, Figma's get_design_context plus Code Connect are essential, Code Connect roughly tripled the likelihood of one-shotting a Figma design in their experience.",
+  "Cloud orchestration is implemented cleverly by posting a GitHub issue assigned to GitHub Copilot (or a Bitovi AI agent on a Jira ticket) that runs the exact same skills the team ran locally, enabling a near end-to-end design-to-prod workflow via button clicks; all skills/setup are open source via a QR code."
+ ],
+ "quotes": [
+  {
+   "text": "instead of the traditional weeks-long process of going from design to dev to test and the user testing, product owners, designers, they're building prototypes that take hours",
+   "talk": "AI will upend your process, for the better"
+  },
+  {
+   "text": "When code connect in our experience, like I mean, might triple the the likelihood that you're going to one shot a Figma design.",
+   "talk": "AI will upend your process, for the better"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "080",
+ "title": "Getting real output from Figma Make",
+ "speakers": "Brett McMillin (Designer Advocate, Figma), Laura Fehre (Designer Advocate, Figma )",
+ "stage": "Main stage",
+ "source": "transcript",
+ "video": "q_-udq6jXpw",
+ "key_points": [
+  "Make works with your design system, it just needs to be taught how. The core mechanism is a structured set of markdown guideline files plus a 'make kit' (code representation of components + usage guidelines), which can be built from an NPM package or generated from a Figma library, then published to a private NPM registry inside Figma.",
+  "Guideline files should be modular and high-signal, not one generic dump. The recommended structure uses three critical high-level files: a Guidelines file (front door defining product character and required reading order), a Discovery file (teaches the agent where/when/how to find components and verify decisions, preventing hallucinated imports/icons), and a Setup file (exact CSS imports, providers, theme, build config so packages install correctly).",
+  "They demoed the full workflow on SAP's Fiori (complex enterprise) and Offtrail (small, no NPM package) design systems: create a kit via the gear/cog 'create a kit' option, select NPM packages (public SAP UI5), drop in generated guideline files, test with a robust screen prompt, then publish. The argument: if it works for SAP's complexity, it works for yours.",
+  "Translating human-readable design system guidelines into machine-readable markdown is now trivially fast with an LLM, Laura copied SAP's public guidelines into an LLM with the target structure and it took about 42 minutes; custom 'skills' were written to verify the markdown stayed true and to run a compliance check.",
+  "A Fiori compliance-check skill scored generated output 4.7 out of 5 against a 3.8 publish threshold. Beyond kits, they built templates with onboarding overlays and 'presets and recipes' panels (one-click pre-baked prompts to swap floor plans/themes), and noted kit updates to NPM packages and guidelines push down to all consuming template and make files."
+ ],
+ "quotes": [
+  {
+   "text": "Make is great, but it's not using my design system, so it's not that useful for me. We are here today to tell you that's not true.",
+   "talk": "Getting real output from Figma Make"
+  },
+  {
+   "text": "for the past 6 months, we've been doing one thing. We've been thinking, talking, and dreaming in markdown.",
+   "talk": "Getting real output from Figma Make"
+  }
+ ]
+}

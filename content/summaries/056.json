@@ -1,0 +1,25 @@
+{
+ "id": "056",
+ "title": "Dense by design",
+ "speakers": "Matthew Ström-Awn (Founder,  mu.design)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "notTKhz8C2c",
+ "key_points": [
+  "The talk frames density as a \"ladder\" of five distinct definitions: visual density (pixels on screen), information density, meaning density, time density, and value density.",
+  "Information density draws on Edward Tufte's data-to-ink ratio (goal: as close to 1:1 as possible), exemplified by the 1885 Paris-to-Lyon train schedule that plots stations by physical distance so train speed and transfers are readable from the line angles.",
+  "Time density uses HCI thresholds to design feedback: under 100ms feels instant (skip animation), 100ms-10s use transitions/spinners, 10s-1min show a progress bar, and past 1 minute let users leave and notify them later.",
+  "The talk's central formula: value density = value users get divided by the time and space you ask them to spend (value per second per pixel), and density isn't fixed, it depends on who is looking (e.g., a chaotic ECG is life-or-death dense to a doctor).",
+  "Origin story and conclusion: Stripe CEO Patrick Collison asked why the Stripe dashboard couldn't look like the dense Bloomberg terminal; the answer is that Bloomberg is built for stock brokers while Stripe serves startups and store owners, so density looks different. Ström-Awn argues design's real problem is talking about craft too much rather than doing it."
+ ],
+ "quotes": [
+  {
+   "text": "value density equals the amount of value that your users are getting from what you've designed divided by the amount of time and space that you ask them to spend on it",
+   "talk": "Dense by design"
+  },
+  {
+   "text": "I don't think we have a craft problem. I think we have a problem of talking about craft too much.",
+   "talk": "Dense by design"
+  }
+ ]
+}

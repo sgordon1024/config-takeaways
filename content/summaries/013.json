@@ -1,0 +1,25 @@
+{
+ "id": "013",
+ "title": "How to build content systems for AI product workflows",
+ "speakers": "Jessica Ouyang (Co-founder, Ditto), Jolena Ma (Co-founder, Ditto)",
+ "stage": "Maker Stage",
+ "source": "transcript",
+ "video": "Wcz4RW1_qYI",
+ "key_points": [
+  "Core thesis: just as UI needs a design system, product copy needs a 'content system' - a single source of truth for terminology, patterns, and approved language that both people and AI agents can pull from to keep copy consistent at AI speed.",
+  "An effective content system must do three things: (1) be built from what's already live in your production codebase, (2) govern language everywhere work happens (not just where it's generated), and (3) show you what's working and what needs changing via a feedback loop.",
+  "Demo of Ditto's 'scan' tool: it read the DittoPay codebase, extracted 99 strings (91 unique, 8 repeated) across two languages, auto-tagged and organized them into a component library, pulled in Spanish translations automatically, and drafted a style guide inferred from how the product actually talks.",
+  "On feeding agents context: 'more context isn't necessarily better context.' Ditto's 'pull' command embeds relevant copy rules in code right next to design system components, so an agent (e.g. Claude Code) gets exactly what's needed - making fewer one-off calls, following rules more consistently, and wasting fewer tokens. In the demo, Claude Code reused 6 text components from the library instead of rewriting them.",
+  "The system governs at multiple stages - Figma plugin checks copy live, the codebase at generation time, and a PR bot that comments on inconsistencies in GitHub before merge - and edits flow back instantly: changing a preferred term (e.g. 'live' vs 'active') is immediately enforced everywhere across Figma, Claude Code, and PRs."
+ ],
+ "quotes": [
+  {
+   "text": "AI made it easy to generate more language than ever, but the teams that do this well won't be the ones generating the most. They'll be the ones with a system underneath keeping all of it right.",
+   "talk": "How to build content systems for AI product workflows"
+  },
+  {
+   "text": "Give an agent the whole system and it has to figure out what applies. Agents do better when they're given exactly what it needs for the task in front of it",
+   "talk": "How to build content systems for AI product workflows"
+  }
+ ]
+}

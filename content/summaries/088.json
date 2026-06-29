@@ -1,0 +1,15 @@
+{
+ "id": "088",
+ "title": "Design for the future of apps",
+ "speakers": "Craig Labenz (Developer Relations Engineer, Google)",
+ "stage": "Mezzanine stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "Generative AI extends beyond text chat and image generation to Generative UI (GenUI), a pattern where ephemeral, on-demand UI is composed by AI, increasingly used at Google.",
+  "GenUI promises unparalleled personalization, tailoring the interface to each individual user.",
+  "This personalization introduces risks of regressions in core UX pillars such as consistency and clear information hierarchy.",
+  "The talk shows how designers can adapt design systems to capture GenUI's full potential while mitigating its risks."
+ ],
+ "quotes": []
+}

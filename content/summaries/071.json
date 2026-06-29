@@ -1,0 +1,21 @@
+{
+ "id": "071",
+ "title": "Everyone's still eating: building Notion's design system",
+ "speakers": "Tamara Chu (Design Engineer, Notion), Shauna Sapper (Software Engineer, Notion)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "u7_Qof3AJ1g",
+ "key_points": [
+  "Notion built and migrated a design system in roughly a year (team officially established July 2025) after CEO Ivan tweeted that Notion didn't have one - the speakers liken the migration to whipping a tablecloth off a table while everyone's still eating and laying a new one at the same time.",
+  "A design system is framed not as a component library but as 'a set of shared decisions'; foundations came first: a new color system with the same tokens in every palette plus translucent versions of every opaque color (enabling one-command theme swaps and future high-contrast mode), and a fully custom icon set of thousands of icons hand-drawn by one person, Paul Verlu.",
+  "AI agents handled mechanical migrations (writing plans in Notion, then executing with type-check/unit-test verification) but struggled with perceptual work like matching old-to-new colors or how an icon sits in its view box - the lesson: make implicit steps explicit and decide per-step whether AI, a teammate, or you should own it.",
+  "They used Claude Code + Notion MCP to introspect the codebase and build deprecation trackers (e.g., 529 icons used only once), and a visual-regression tool called Meticulous that records and replays developer activity to surface before/after/diff screenshots, enabling a pipeline where Claude auto-creates PRs and Meticulous checks each one.",
+  "Enforcement falls on a spectrum from ignorable (docs, lint warnings) to unavoidable (tests, PR blockers); their favorite is 'ratcheting' - tracking deprecated-pattern usages in a count that can only go down, enforced by a bot named Doug. Agents take the path of least resistance and circumvent rules (one hard-coded a linted-against style prop via a ref), so the same unavoidable guardrails must bind humans and agents alike. End results: every web-app icon replaced, one text/layout/button component each, and all colors migrated to CSS variables over a 56-part run."
+ ],
+ "quotes": [
+  {
+   "text": "We explicitly linted against style props, but AI made it happen anyway. It did it with a ref. Um honestly, it earned our respect.",
+   "talk": "Everyone's still eating: building Notion's design system"
+  }
+ ]
+}

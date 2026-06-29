@@ -1,0 +1,167 @@
+{
+ "overview": "Config 2026 is Figma's annual design conference, anchored by Dylan Field's opening keynote and Figma's biggest product launch of the year, spanning main-stage product reveals, a Leadership Collective track, Maker and Level 2 stages, Community and artist talks, and hands-on Learning Labs, all centered on how AI is reshaping design, product-building, and the roles people play.",
+ "meta_narrative": "Config 2026's throughline is that when AI collapses the cost of making, the designer's value migrates away from production and toward the scarce human inputs that machines lack: taste, judgment, direction, trust, and context. Figma reframed AI from a feature into a way of working (\"agents\" becomes \"agency\"), and the product story, Make, Code layers, MCP, Code Connect, skills, Motion, Shaders, Weave, repeatedly argued that structure is the bridge that turns fast-but-wrong AI output into shippable, on-brand work. A leadership track wrestled with moving whole organizations into an AI-native posture without losing craft or culture, while a parallel humanist counter-current insisted that feeling, community, inclusion, and the irreplaceable final 5% are what endure when everyone has the same models. Underneath the tooling, the interface itself is being rethought from something you operate into something you cooperate with, making trust and legibility first-class design problems. Config 2026 was less a tools showcase than an argument about what stays essential when building gets cheap.",
+ "themes": [
+  {
+   "headline": "Taste and judgment become the scarce skill",
+   "explanation": "As AI floods teams with polished output, speaker after speaker reframes the core craft as discernment, looking at piles of work and saying 'not that, this.' Editing, curation, and the discipline to push past the tool's 'good enough' to the differentiating final 5% are positioned as what AI won't give you for free. Leaders argue taste becomes the bottleneck once code generation automates, and that you simply cannot outsource it.",
+   "talk_ids": [
+    "009",
+    "036",
+    "051",
+    "058",
+    "070",
+    "087"
+   ]
+  },
+  {
+   "headline": "Speed is table stakes; direction is the edge",
+   "explanation": "When anyone can build anything fast, velocity alone just ships slop. The hard, differentiating problems shift to picking the right thing (direction and conviction) and standing out (differentiation), with insight and high-fidelity feedback needing to keep pace with the new speed of building. A leader's job becomes choosing the path and zeroing in on the core rather than producing artifacts.",
+   "talk_ids": [
+    "003",
+    "019",
+    "045",
+    "057",
+    "076"
+   ]
+  },
+  {
+   "headline": "Context is the fuel you must externalize",
+   "explanation": "Every AI session restarts from scratch and sounds like the average of everyone unless fed the taste, conventions, and definitions of 'done' that currently live invisibly in people's heads. The emerging discipline is externalizing that judgment into shared, machine-readable layers, skills, content systems, thinking files, knowledge layers. The crucial caveat is that more context isn't better context, so precision and curation win over verbose dumps.",
+   "talk_ids": [
+    "037",
+    "042",
+    "013",
+    "049",
+    "087",
+    "025"
+   ]
+  },
+  {
+   "headline": "Design systems bridge slop to shippable code",
+   "explanation": "AI converts sketches and prompts into UI, but without a design system those outputs stay throwaway prototypes, 'fast, but wrong.' Connecting generated output to existing components, tokens, and Code Connect is what makes it production-ready, repeatable, and on-brand, often doubling velocity. Teams reported reaching 80-87% one-shot accuracy once the system was made legible to the agent via MCP and golden sets.",
+   "talk_ids": [
+    "078",
+    "035",
+    "080",
+    "075",
+    "038",
+    "061"
+   ]
+  },
+  {
+   "headline": "Code enters the canvas natively",
+   "explanation": "Figma's flagship launches blurred design and code: Make lets designers work in their local codebase, Code layers bring code onto the canvas, and MCP plus Code Connect feed agents precise implementation context for one continuous idea-to-production workflow. Generative plugins let anyone build a real plugin by describing it, with a free-to-run cost model. Studios and enterprises showed pushing design directly into Git repositories rather than handing off.",
+   "talk_ids": [
+    "050",
+    "002",
+    "034",
+    "032",
+    "016",
+    "063"
+   ]
+  },
+  {
+   "headline": "Expression goes native: Motion, Shaders, Draw, Weave",
+   "explanation": "Figma dramatically expanded its creative surface with a full Motion mode (timeline, keyframes, easing variables), native GPU shaders as effects and fills, Draw for 2D-into-3D sculpting, and the node-based Weave for AI creative workflows. Many of these are agent-generated from plain language, then hand-edited by the designer. The throughline is bringing visual expressiveness and craft back into the tool itself.",
+   "talk_ids": [
+    "005",
+    "040",
+    "066",
+    "029",
+    "047"
+   ]
+  },
+  {
+   "headline": "The interface becomes a colleague, not a tool",
+   "explanation": "Designers are shifting from interaction design to relationship design: rather than cramming fluid intelligence into chat boxes and allow-buttons that mimic command lines, AI should behave like a teammate you cooperate with. Value compounds over repeated small moments of reading intent and adjusting, versus today's 'permanent first date.' Content designers increasingly craft the frames around intelligence, prompt starters, voice, copy, rather than the model's words.",
+   "talk_ids": [
+    "022",
+    "023",
+    "017",
+    "089",
+    "088"
+   ]
+  },
+  {
+   "headline": "Trust is designed, progressive, and earned",
+   "explanation": "As products act on users' behalf, the central challenge becomes communicating intent so people feel in control, with smart defaults, human approval, and an escape hatch in high-stakes moments. Trust is built like onboarding a new teammate, small tasks first, autonomy added as confidence accrues, and sometimes by deliberately adding friction so users internalize and feel ownership. High-emotion or life-critical contexts should keep humans at the center.",
+   "talk_ids": [
+    "008",
+    "022",
+    "023",
+    "094",
+    "075"
+   ]
+  },
+  {
+   "headline": "Measure well, not just move fast",
+   "explanation": "A speed-versus-confidence gap is opening: 91% of designers say work moves faster with AI but only 15% feel more confident it's better. The teams winning own evaluation, defining what 'good' means in human terms and validating against real research, customer feedback, and in-the-moment insight, turning evals and high-fidelity feedback into the new competitive moat. Defensibility through validation is the variable separating higher-risk from lower-risk teams.",
+   "talk_ids": [
+    "084",
+    "076",
+    "019",
+    "057",
+    "028"
+   ]
+  },
+  {
+   "headline": "Agency over agents: leading orgs into AI",
+   "explanation": "Leadership talks reframe the goal from deploying agents to giving teams genuine agency over their work, mapping the messy reality of grassroots-versus-directive adoption. Prescriptions include creating protected space to explore, enabling the explorers, modeling hands-on behavior, and writing the operating playbook in real time as you become AI-native. As roles across design, product, and engineering blur, orgs hire hybrid player-coach managers and treat the real magic as T-shaped people plus AI in small pods, not the seductive solo-with-an-agent narrative.",
+   "talk_ids": [
+    "003",
+    "015",
+    "030",
+    "036",
+    "020",
+    "058",
+    "082"
+   ]
+  },
+  {
+   "headline": "Keep the human and the feeling at the center",
+   "explanation": "Against the automation tide, artists and designers insist the imperfect, the personal, and the emotionally resonant are what make work unmistakably yours and durable as differentiators, what AI's averaged output erodes. The centaur-versus-minotaur framing and 'design the feel, not the graph' share one conviction: systems should amplify human dignity, voice, and craft rather than puppeteer the people inside them. Following curiosity and protecting the felt experience of software are positioned as strategy, not sentiment.",
+   "talk_ids": [
+    "001",
+    "007",
+    "091",
+    "070",
+    "047",
+    "092"
+   ]
+  },
+  {
+   "headline": "Community, care, and inclusion are the moat",
+   "explanation": "When everyone can build fast and well, the old engineering edge erodes and belonging becomes the durable differentiator, features get copied, belonging does not, and the people who care most become your best product signal and growth channel. Designing for relationships, public space, and whose voice isn't in the room is reframed as strategic, including partnering with the Deaf community and designing for seniors and robots. Care and reciprocity beat extractive, attention-trapping patterns.",
+   "talk_ids": [
+    "033",
+    "054",
+    "041",
+    "065",
+    "010"
+   ]
+  }
+ ],
+ "deep_dives": [
+  {
+   "id": "009",
+   "reason": "The definitive 'taste and the last 5%' argument from Airbnb and Figma design leadership, plus why solo-with-an-agent loses to T-shaped teams."
+  },
+  {
+   "id": "087",
+   "reason": "Sharpest intellectual frame of the event: warns against 'cognitive surrender' and argues precise, spec-driven context yields leaner code and lower AI usage."
+  },
+  {
+   "id": "022",
+   "reason": "Original 'humanism over skeuomorphism' thesis reframing AI interfaces as colleagues, with the counterintuitive add-friction-to-build-trust principle."
+  },
+  {
+   "id": "008",
+   "reason": "Concrete trust-at-scale playbook from Capital One's card migration to Accor's emotion-intensity rule for when AI should hand off to a human."
+  },
+  {
+   "id": "078",
+   "reason": "Rigorous account of why AI is 'fast but wrong' and how golden sets plus co-developing MCP got Meta to 87% one-shot design-system accuracy."
+  }
+ ]
+}

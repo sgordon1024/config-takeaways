@@ -1,0 +1,15 @@
+{
+ "id": "034",
+ "title": "From handoffs to upstream",
+ "speakers": "Frederick Andersen (Founder, EDL )",
+ "stage": "Level 2 Stage",
+ "source": "abstract",
+ "video": null,
+ "key_points": [
+  "EDL, a design studio, made a deliberate bet a year ago, not on a tool or trend, but on a person and a reimagined idea of what a design studio could own.",
+  "The studio now pushes directly to clients' Git repos, runs their design systems in code, and positions itself upstream of clients' engineering teams rather than handing off downstream.",
+  "The talk tells the full story of this shift: the moment the team spotted the opportunity, the rituals that operationalized it, and the metrics that proved it worked.",
+  "Frederick Andersen frames the journey as intentional and replicable, addressing design leaders wondering whether their own team could move upstream the same way."
+ ],
+ "quotes": []
+}

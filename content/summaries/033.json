@@ -1,0 +1,25 @@
+{
+ "id": "033",
+ "title": "The most important component: community",
+ "speakers": "Alicia Kranjc (Figma Community Product Manager, Figma)",
+ "stage": "Community Stage",
+ "source": "transcript",
+ "video": "U4bSieNNFU8",
+ "key_points": [
+  "Core thesis: with AI making it easy to build fast and well, the old engineering/craft edge is gone, and community is now the real differentiator and 'moat.' Kranjc defines community as 'your users' relationship with you and their relationship with one another', something most teams never design for.",
+  "Three reasons designing for community matters: (1) 'Features get copied, but belonging does not' (PostHog's distinct, radically transparent identity); (2) community is your best product signal, what users say to each other unprompted beats surveys (Linear's engineers evangelizing and filing feature requests unprompted); (3) the people who care are your best growth channel (Notion grew to 100M+ users largely via community, hiring an early fan who'd built an 80,000-monthly-visitor fan site).",
+  "Figma's four directives for fostering community: build products that foster connection (widgets, the photo booth from Maker Week, emote streams), build for lasting creative expression (new profiles with 'riffs,' FigPals), bring people together where they are (Make-a-thons, Friends of Figma), stay flexible / do things that don't scale (campus leaders, listening), and celebrate community publicly.",
+  "Concrete numbers: the latest Make-a-thon drew over 11,000 participants; Friends of Figma is 250+ groups across 82 countries running 900+ events last year; campus leaders grew from 66 to 187 in a year; the Made in Figma campaign turned creators' work into a San Francisco city-wide billboard takeover featuring their names and stories.",
+  "Three actions to start next week: meet five community members and have a real conversation about what they love/hate; celebrate one of them publicly (retweet, shout-out, newsletter); and brainstorm how your product can foster connection (real-time or lasting) even if it never ships. Example of listening: Figma reversed a change after backlash to moving the community tab to a secondary spot."
+ ],
+ "quotes": [
+  {
+   "text": "features get copied, but belonging does not.",
+   "talk": "The most important component: community"
+  },
+  {
+   "text": "community is your users' relationship with you and their relationship with one another. And most teams never think to design it.",
+   "talk": "The most important component: community"
+  }
+ ]
+}

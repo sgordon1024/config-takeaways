@@ -1,0 +1,25 @@
+{
+ "id": "078",
+ "title": "Designed to be read: making a system AI can actually use",
+ "speakers": "Harvey Whiting (Product Designer, Meta)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "TQaYwH6f4DA",
+ "key_points": [
+  "AI design tools create a new category Meta calls \"fast, but wrong\", failing consistently in three ways: low fidelity (wrong type/color, malformed or missing components), low repeatability (same prompt yields different results, eroding trust), and context collapse (a single form works, but a full Ads Manager experience falls off a cliff).",
+  "Three root causes for the agent failing: proprietary internal code libraries an open-web-trained model can't bridge, sheer design system complexity (hundreds of components plus do's/don'ts and intentional friction), and unrealistic one-shot expectations for work even experienced designers iterate on.",
+  "Meta got scientific using \"golden sets\" (large batches of test cases run repeatedly with metrics), rebuilt components pixel-exact, and set a goalpost of 80% high accuracy (perfect, production-ready, using every required component), ultimately hitting 87%.",
+  "Since manual feedback loops don't scale, Meta co-developed MCP (Model Context Protocol) with Figma to capture every dimension of the design system, color, type, spacing, components, documentation, content standards, illustrations, producing design-system-aligned output in one shot without a template; now broadly available in Figma.",
+  "Proposed layered stack for the industry: context (the foundation, anything unspecified gets randomized), then skills (knowing when/why to apply knowledge, launching natively in Figma), then agents. Three takeaways: audit your context, embrace the feedback loop, and prepare for agents."
+ ],
+ "quotes": [
+  {
+   "text": "The question isn't whether AI is part of the workflow, it already is. The question is whether we let it ship slop, or we teach it taste.",
+   "talk": "Designed to be read: making a system AI can actually use"
+  },
+  {
+   "text": "Speed without quality is just expensive noise. So, to unlock AI design, we have to solve quality first.",
+   "talk": "Designed to be read: making a system AI can actually use"
+  }
+ ]
+}

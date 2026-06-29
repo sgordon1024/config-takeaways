@@ -1,0 +1,21 @@
+{
+ "id": "008",
+ "title": "Trust as a through line",
+ "speakers": "Thomas Vidal (VP Product Design, Accor), Deidre Kolarick (Managing Vice President, Head of Design for Bank, Business, and Card, Capital One), Katie Szeto (Manager, Product Management, Figma)",
+ "stage": "Leadership Collective Deep Dives",
+ "source": "transcript",
+ "video": "XAePK-hlkdQ",
+ "key_points": [
+  "Capital One's Discover migration (mass debit-card reissuance) preserved trust via three principles: communicate early and often with 'no surprises' (a delivery/activation tracker), make switching easy (centralized view of recurring charges, direct merchant updates), and progressive nudging tuned to each user's spending behavior. Result: service call volume came in lower than prior reissuances.",
+  "Accor's framework for AI vs. high-emotion moments: the higher the 'intensity of the emotional signal,' the less AI should act, for special/personal moments AI should detect the signal and hand off to the human hotelier (hôtelier), keeping the human at the center.",
+  "Research finding on AI transparency in servicing: customers largely don't want to know every behind-the-scenes detail of AI, they want to feel in control and have an escape hatch in high-stakes moments (e.g., managing a deceased relative's estate vs. a routine lost-card call).",
+  "Accor built an 'AI design system' with layered rules, 'golden rules' (e.g., guests 'want to be known but not watching'), guardrails/error and human-escalation rules, and per-brand tone of voice across 40+ brands and 100+ countries, staffed by a dedicated team of AI product and content designers.",
+  "EPD triad shift: roles are blurring and delivery/QA/back-and-forth time shrinks (Accor shipped a ChatGPT app in January with just 3 people, one PM, one designer, one data scientist), freeing teams to fix long-neglected critical journeys and treat trust as a measurable core product requirement."
+ ],
+ "quotes": [
+  {
+   "text": "the question is not only can AI do it, but should AI do it?",
+   "talk": "Trust as a through line"
+  }
+ ]
+}

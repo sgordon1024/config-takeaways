@@ -1,0 +1,25 @@
+{
+ "id": "075",
+ "title": "Preparing Rocket for the AI era",
+ "speakers": "Emily Strobl (Director, Product Design - AI & Design Systems, Rocket), Will Hobick (Design Engineering Lead, Rocket)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "TThJrINckys",
+ "key_points": [
+  "Rocket built an end-to-end home ownership platform after acquiring Mr. Cooper (servicing book grew from 2M to 10M homes overnight) and Redfin; the AI platform handles 800,000 chats, 1.8M+ texts, and 160M+ calls per year, and they ship 5x faster than two years ago.",
+  "Their foundation is layered: semantic tokens (the name tells you WHY it exists), the Nova design system on top, annotations for intent, and Code Connect so the Figma MCP can read implementation code and verify code matches design.",
+  "Live demo walked the pre-approval letter component (in Rocket Assist) end-to-end: PRD to draft, A/B research on blue vs. green variants prototyped and one-click published in Figma Make, research embedded on the Figma canvas, then a design-system drift check that caught detached colors, a contrast failure, and detached dimensions.",
+  "Implementation in VS Code used a skill that avoids one-shotting MCP output, it drafts the component, applies annotations, then swaps in design-system utilities; a second Playwright-based skill screenshots Storybook and Figma to compare code and visuals for parity.",
+  "Memorable stats: only ~13% of Americans believe home ownership is within reach; 61% of millennial and 65% of Gen Z buyers cried at least once; the connected-workflow experiments drove a $1 billion incremental monthly origination volume increase in Q1 2026 alone."
+ ],
+ "quotes": [
+  {
+   "text": "The hardest part of going AI native isn't getting access to the tools. It's making sure the tools have something solid to build on.",
+   "talk": "Preparing Rocket for the AI era"
+  },
+  {
+   "text": "As AI and new tools make it easier to build these new experiences quickly, speed alone is no longer the differentiator.",
+   "talk": "Preparing Rocket for the AI era"
+  }
+ ]
+}

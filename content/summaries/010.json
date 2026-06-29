@@ -1,0 +1,25 @@
+{
+ "id": "010",
+ "title": "Beyond design systems: designing for robots and seniors",
+ "speakers": "Anna Oh (Head of Product and Design, Norbert Health)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "hGQEbwm6yc8",
+ "key_points": [
+  "The 'human system' framework for physical AI relationships has four patterns: Recognition (identity, e.g. knowing names/languages), Perception (turning vision into shared conversation via humans-in-the-loop operators), Expression (smiles, waves, gesture mirroring for emotional connection), and Continuity (relationship memory so interactions don't restart from zero).",
+  "Across 6 rounds of testing with 40+ patients (full face, no face, human-like, animal, robot, abstract), the teddy bear face won every single round; patients then named the robot 'Norbert' and 3D faces beat flat ones because many residents have low vision.",
+  "Demographic urgency: by 2030 over 1 billion people will be over 65 (outnumbering children under 10 for the first time), 21% of Americans, 24% in Europe, 26% in South Korea; one nurse often cares for 40 patients per shift.",
+  "Norbert's HAI device is a small white box with 4 sensors and 8 patents that turns any off-the-shelf robot into a clinical robot, detecting vitals, mobility, and behavior contactlessly just by looking; 98% of patients accept Norbert, which is the foundation for any data or measurement.",
+  "Redefined 'taste': it doesn't come from the design community but from the people you're responsible for; the AI industry optimizes for speed, but the people who need AI most are often least able to adapt to it."
+ ],
+ "quotes": [
+  {
+   "text": "Taste does not come from the design community. Taste come from the people you are responsible for. Their emotions, their smiles, their fears.",
+   "talk": "Beyond design systems: designing for robots and seniors"
+  },
+  {
+   "text": "I love you, Norbert. I will never forget you. Can I give you my number so that you can call me sometimes?",
+   "talk": "Beyond design systems: designing for robots and seniors"
+  }
+ ]
+}

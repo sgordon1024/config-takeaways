@@ -1,0 +1,21 @@
+{
+ "id": "053",
+ "title": "The invisible mechanisms in your interfaces",
+ "speakers": "Johannes Mutter (Design Engineer, mutter.co)",
+ "stage": "Level 2 Stage",
+ "source": "transcript",
+ "video": "6Kxf4BJlA_s",
+ "key_points": [
+  "Interfaces lack a shared 'pattern language' (unlike architecture's Christopher Alexander); Mutter built 'interface lineage' (interfacelineage.com) modeling thousands of patterns as a living organism showing what came before, what inspired, and what contrasts with each. Originality is recognition, not invention - 'all design is redesign.'",
+  "Three iconic design moves: (1) make invisible state visible with a one-pixel signal (typing/thinking indicators in iChat 2002, the unsaved-edit dot in VS Code/Pages, signal bars) where state and affordance are the same pixel; (2) forgive imprecise input by inferring intent and absorbing the 'slop' in software/hardware (the 1980s Mac menu safety triangle, touch keyboards invisibly growing key hit boxes, snapping/magnetism, the ThinkPad red trackball); (3) reveal hidden actions at the moment needed (@ for nouns, / for verbs, markdown, swipe gestures).",
+  "Example of 'noticing and naming': 'cursor affinity' - a blinking cursor on the seam between bold and regular text can't signal direction, so a one-pixel 'tail' on top warns which the next keystroke will be (noticed by Yoshiki Schmitz, implemented in the Bike editor, named on Hacker News).",
+  "His four-step method for studying interfaces: See it, Notice it, Name it, Link it (via a 'lineage grid' command mapping related patterns), then Steal it - reuse the move in your own work and prompt AI for it by name. Demoed by tearing down Microsoft Research's 'Textura,' where pinching/pulling text condenses/elaborates it via an LLM.",
+  "Core thesis for the AI era: when machines can build a thousand versions of anything, your words become the bottleneck - 'you cannot prompt what you can't name.' Recurring design principles cited: progressive disclosure and recognition over recall."
+ ],
+ "quotes": [
+  {
+   "text": "Nothing is original. Originality is recognition, not invention. All design is redesign.",
+   "talk": "The invisible mechanisms in your interfaces"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { heroLine, stagger } from '../lib/motion'
-import { BackgroundShape } from './BackgroundShape'
+import { FlowField } from './FlowField'
 import type { Content } from '../types'
 
 export function Hero({ meta }: { meta: Content['meta'] }) {
@@ -10,7 +10,16 @@ export function Hero({ meta }: { meta: Content['meta'] }) {
       id="top"
       className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-ink text-paper"
     >
-      <BackgroundShape />
+      <FlowField />
+      {/* Legibility scrim: keeps the headline crisp while the field shows through on the right. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-ink via-ink/55 to-ink/10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink to-transparent"
+      />
 
       <div className="shell relative z-10 pb-24 pt-28">
         <motion.div variants={stagger(0.15, 0.1)} initial="hidden" animate="show">

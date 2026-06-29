@@ -18,6 +18,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+        hand: ['Kalam', 'ui-rounded', 'cursive'],
       },
       letterSpacing: {
         tightest: '-0.045em',

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { Fragment, useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { Mandelbulb } from './Mandelbulb'
 import { ForecastArt } from './ForecastArt'
@@ -33,6 +33,9 @@ const FORECASTS = [
     body: 'With shaders, motion, and generative tools native to the canvas, interfaces get texture, depth, and movement back. The beige decade ends, and the next one has a pulse.',
   },
 ]
+
+const INTRO =
+  'When anyone can build anything, building stops being the job. Here is where that goes. A forecast, not a fact, but every theme on this site is pointing the same direction.'
 
 export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
@@ -71,13 +74,32 @@ export function PredictionPage() {
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
         <div className="shell py-20 sm:py-28 lg:py-36">
-        <Reveal>
-          <p className="max-w-3xl text-balance text-xl font-semibold leading-snug tracking-tight text-white/90 sm:text-2xl">
-            Config 2026 said the quiet part loud: when anyone can build anything, building stops being
-            the job. Here is where that goes. A forecast, not a fact, but every theme on this site is
-            pointing the same direction.
-          </p>
-        </Reveal>
+        <motion.p
+          className="mx-auto max-w-4xl text-balance text-center font-hand text-4xl font-bold leading-[1.2] text-white sm:text-5xl lg:text-6xl"
+          initial={reduce ? 'show' : 'hidden'}
+          whileInView="show"
+          viewport={{ once: true, margin: '0px 0px -15% 0px' }}
+          variants={{ show: { transition: { staggerChildren: 0.04 } } }}
+        >
+          {INTRO.split(' ').map((w, i) => (
+            <Fragment key={i}>
+              <motion.span
+                className="inline-block"
+                variants={{
+                  hidden: { opacity: 0, y: 10, clipPath: 'inset(0 100% -10% 0)' },
+                  show: {
+                    opacity: 1,
+                    y: 0,
+                    clipPath: 'inset(0 0% -10% 0)',
+                    transition: { duration: 0.34, ease: [0.2, 0.65, 0.3, 0.9] },
+                  },
+                }}
+              >
+                {w}
+              </motion.span>{' '}
+            </Fragment>
+          ))}
+        </motion.p>
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2">
           {FORECASTS.map((f, i) => {

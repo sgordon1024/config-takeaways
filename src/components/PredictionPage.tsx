@@ -68,8 +68,15 @@ export function PredictionPage() {
       {/* Roughening filter applied to the handwritten intro for a gritty, inked texture. */}
       <svg width="0" height="0" aria-hidden="true" className="absolute">
         <filter id="handGrit" x="-15%" y="-15%" width="130%" height="130%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="n" />
-          <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G" />
+          {/* roughen the edges */}
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="warp" />
+          <feDisplacementMap in="SourceGraphic" in2="warp" scale="2.5" xChannelSelector="R" yChannelSelector="G" result="rough" />
+          {/* speckle the fill so it isn't flat/solid: modulate alpha by fine noise */}
+          <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2" seed="8" result="grain" />
+          <feComponentTransfer in="grain" result="grainA">
+            <feFuncA type="linear" slope="0.6" intercept="0.4" />
+          </feComponentTransfer>
+          <feComposite in="rough" in2="grainA" operator="in" />
         </filter>
       </svg>
 
@@ -106,38 +113,30 @@ export function PredictionPage() {
               <span className="inline-block whitespace-nowrap">
                 {letters.map(({ ch, i }) => {
                   // Per-character hand-lettered variation: size, tilt, baseline drift.
+                  // These are STATIC (applied via transform) so characters never resize while
+                  // animating; only the clip reveals each one, as if being drawn in.
                   const rot = (rnd(i * 4 + 1) - 0.5) * 13 // ~ -6.5deg .. 6.5deg
                   const scale = 0.86 + rnd(i * 4 + 2) * 0.3 // 0.86 .. 1.16
                   const dy = (rnd(i * 4 + 3) - 0.5) * 16 // px baseline drift
-                  const delay = i * 0.07 + (rnd(i * 4 + 4) - 0.5) * 0.05
-                  const stiffness = 90 + rnd(i * 4 + 2) * 220 // some settle fast, some slow
-                  const rest = { opacity: 1, rotate: rot, scale, y: dy }
-                  if (reduce) {
-                    return (
-                      <span
-                        key={i}
-                        className="inline-block"
-                        style={{ transform: `translateY(${dy}px) rotate(${rot}deg) scale(${scale})`, transformOrigin: '50% 80%' }}
-                      >
-                        {ch}
-                      </span>
-                    )
-                  }
+                  const delay = i * 0.07 + (rnd(i * 4 + 4) - 0.5) * 0.04
+                  const dur = 0.22 + rnd(i * 4 + 2) * 0.24 // some draw fast, some slow
+                  const transform = `translateY(${dy}px) rotate(${rot}deg) scale(${scale})`
                   return (
-                    <motion.span
-                      key={i}
-                      className="inline-block"
-                      style={{ transformOrigin: '50% 80%' }}
-                      initial={{ opacity: 0, rotate: rot + (rnd(i * 4 + 1) - 0.5) * 55, scale: scale * 0.16, y: 36 }}
-                      whileInView={rest}
-                      viewport={{ once: true, margin: '0px 0px -10% 0px' }}
-                      transition={{
-                        default: { type: 'spring', stiffness, damping: 12, delay },
-                        opacity: { duration: 0.1, delay },
-                      }}
-                    >
-                      {ch}
-                    </motion.span>
+                    <span key={i} className="inline-block" style={{ transform, transformOrigin: '50% 85%' }}>
+                      {reduce ? (
+                        ch
+                      ) : (
+                        <motion.span
+                          className="inline-block"
+                          initial={{ clipPath: 'inset(-25% 100% -25% -8%)' }}
+                          whileInView={{ clipPath: 'inset(-25% 0% -25% -8%)' }}
+                          viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+                          transition={{ duration: dur, ease: [0.55, 0.05, 0.5, 1], delay }}
+                        >
+                          {ch}
+                        </motion.span>
+                      )}
+                    </span>
                   )
                 })}
               </span>

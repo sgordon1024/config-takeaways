@@ -34,10 +34,6 @@ const FORECASTS = [
   },
 ]
 
-// Subtle monochrome film grain for the illustration panels.
-const GRAIN =
-  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='170'%3E%3Cfilter id='fg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23fg)'/%3E%3C/svg%3E\")"
-
 export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
   const reduce = useReducedMotion()
@@ -89,14 +85,10 @@ export function PredictionPage() {
             return (
               <Reveal key={f.title}>
                 <article className="h-full overflow-hidden rounded-2xl bg-[#0b0b0b] ring-1 ring-white/10">
-                  {/* Illustration panel with film grain */}
-                  <div className="relative aspect-square overflow-hidden bg-[#181818]">
-                    <div
-                      aria-hidden="true"
-                      className="absolute inset-0 opacity-20"
-                      style={{ backgroundImage: GRAIN, backgroundSize: '170px 170px' }}
-                    />
-                    <ForecastArt id={`pred-${n}`} className="absolute inset-[9%]" />
+                  {/* Illustration is full-bleed on the same #0b0b0b base. Its baked grain matches the
+                      page grain exactly, so the panel has no visible edge. */}
+                  <div className="relative aspect-square overflow-hidden">
+                    <ForecastArt id={`pred-${n}`} className="absolute inset-0" />
                   </div>
                   {/* Text */}
                   <div className="border-t border-white/10 p-8 sm:p-9">

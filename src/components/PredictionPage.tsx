@@ -39,6 +39,13 @@ const INTRO = 'When anyone can build anything, building stops being the job.'
 // Wider container just for the forecast page.
 const WIDE = 'mx-auto w-full max-w-[1560px] px-6 sm:px-10 lg:px-16'
 
+// Stable per-index pseudo-random (0..1) so the hand-lettered layout is the same
+// every render instead of reshuffling.
+const rnd = (n: number) => {
+  const x = Math.sin(n * 127.1) * 43758.5453
+  return x - Math.floor(x)
+}
+
 export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
   const reduce = useReducedMotion()
@@ -91,24 +98,48 @@ export function PredictionPage() {
       <section className="relative">
         <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
         <p
-          className="mx-auto max-w-6xl text-center font-hand text-5xl font-bold leading-[1.05] text-white sm:text-7xl lg:text-8xl"
+          className="mx-auto max-w-5xl text-center font-hand text-5xl font-bold leading-[1.25] text-white sm:text-7xl lg:text-8xl"
           style={{ filter: 'url(#handGrit)' }}
         >
           {introWords.map((letters, wi) => (
             <Fragment key={wi}>
               <span className="inline-block whitespace-nowrap">
-                {letters.map(({ ch, i }) => (
-                  <motion.span
-                    key={i}
-                    className="inline-block"
-                    initial={reduce ? false : { opacity: 0, clipPath: 'inset(0 100% -18% 0)' }}
-                    whileInView={reduce ? undefined : { opacity: 1, clipPath: 'inset(0 0% -18% 0)' }}
-                    viewport={{ once: true, margin: '0px 0px -15% 0px' }}
-                    transition={{ duration: 0.16, ease: [0.3, 0.7, 0.3, 1], delay: i * 0.034 }}
-                  >
-                    {ch}
-                  </motion.span>
-                ))}
+                {letters.map(({ ch, i }) => {
+                  // Per-character hand-lettered variation: size, tilt, baseline drift.
+                  const rot = (rnd(i * 4 + 1) - 0.5) * 13 // ~ -6.5deg .. 6.5deg
+                  const scale = 0.86 + rnd(i * 4 + 2) * 0.3 // 0.86 .. 1.16
+                  const dy = (rnd(i * 4 + 3) - 0.5) * 16 // px baseline drift
+                  const delay = i * 0.07 + (rnd(i * 4 + 4) - 0.5) * 0.05
+                  const stiffness = 90 + rnd(i * 4 + 2) * 220 // some settle fast, some slow
+                  const rest = { opacity: 1, rotate: rot, scale, y: dy }
+                  if (reduce) {
+                    return (
+                      <span
+                        key={i}
+                        className="inline-block"
+                        style={{ transform: `translateY(${dy}px) rotate(${rot}deg) scale(${scale})`, transformOrigin: '50% 80%' }}
+                      >
+                        {ch}
+                      </span>
+                    )
+                  }
+                  return (
+                    <motion.span
+                      key={i}
+                      className="inline-block"
+                      style={{ transformOrigin: '50% 80%' }}
+                      initial={{ opacity: 0, rotate: rot + (rnd(i * 4 + 1) - 0.5) * 55, scale: scale * 0.16, y: 36 }}
+                      whileInView={rest}
+                      viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+                      transition={{
+                        default: { type: 'spring', stiffness, damping: 12, delay },
+                        opacity: { duration: 0.1, delay },
+                      }}
+                    >
+                      {ch}
+                    </motion.span>
+                  )
+                })}
               </span>
               {wi < introWords.length - 1 ? ' ' : ''}
             </Fragment>

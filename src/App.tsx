@@ -8,7 +8,6 @@ import { Themes } from './components/Themes'
 import { DeepDives } from './components/DeepDives'
 import { PredictionCta } from './components/PredictionCta'
 import { PredictionPage } from './components/PredictionPage'
-import { Archive } from './components/Archive'
 import { Stats } from './components/Stats'
 import { Closing } from './components/Closing'
 import { Footer } from './components/Footer'
@@ -53,7 +52,6 @@ export default function App() {
           <Themes themes={content.themes} talksById={talksById} />
           <DeepDives talks={deepDiveTalks} />
           <PredictionCta />
-          <Archive talks={content.talks} />
           <Stats stats={content.meta.stats} />
           <Closing meta={content.meta} />
         </main>

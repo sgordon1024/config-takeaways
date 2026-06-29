@@ -57,16 +57,11 @@ function ThemeCard({ theme, talksById }: { theme: Theme; talksById: Map<string, 
               const t = talksById.get(id)
               if (!t) return null
               return (
-                <li key={id}>
-                  <a
-                    href={`#talk-${id}`}
-                    className="block rounded-lg px-2 py-1.5 text-sm transition-colors hover:bg-surface dark:hover:bg-white/5"
-                  >
-                    <span className="font-semibold">{t.title}</span>
-                    {t.speakers !== 'Unattributed' && (
-                      <span className="text-muted">, {t.speakers.replace(/\s*\(.*?\)/g, '')}</span>
-                    )}
-                  </a>
+                <li key={id} className="px-2 py-1.5 text-sm">
+                  <span className="font-semibold">{t.title}</span>
+                  {t.speakers !== 'Unattributed' && (
+                    <span className="text-muted">, {t.speakers.replace(/\s*\(.*?\)/g, '')}</span>
+                  )}
                 </li>
               )
             })}

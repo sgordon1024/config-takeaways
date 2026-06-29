@@ -68,12 +68,12 @@ export function Hero({ meta }: { meta: Content['meta'] }) {
               Read the takeaways
             </motion.a>
             <motion.a
-              href="#archive"
+              href="#/prediction"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               className="pill border border-white/25 text-paper hover:bg-white/10"
             >
-              Browse {meta.stats.totalTalks} talks
+              See the forecast
             </motion.a>
           </motion.div>
 

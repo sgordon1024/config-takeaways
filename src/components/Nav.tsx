@@ -5,7 +5,6 @@ import { softSpring } from '../lib/motion'
 const LINKS = [
   { href: '#themes', label: 'Themes' },
   { href: '#deep-dives', label: 'Deep dives' },
-  { href: '#archive', label: 'Archive' },
 ]
 
 function SunMoon({ dark }: { dark: boolean }) {

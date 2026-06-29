@@ -32,12 +32,12 @@ export function Closing({ meta }: { meta: Content['meta'] }) {
             Back to top
           </motion.a>
           <motion.a
-            href="#archive"
+            href="#/prediction"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
             className="pill border border-hairline text-ink hover:border-accent dark:border-white/20 dark:text-paper"
           >
-            Revisit the archive
+            See the forecast
           </motion.a>
         </div>
       </Reveal>

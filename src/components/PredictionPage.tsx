@@ -34,8 +34,10 @@ const FORECASTS = [
   },
 ]
 
-const INTRO =
-  'When anyone can build anything, building stops being the job. Here is where that goes. A forecast, not a fact, but every theme on this site is pointing the same direction.'
+const INTRO = 'When anyone can build anything, building stops being the job.'
+
+// Wider container just for the forecast page.
+const WIDE = 'mx-auto w-full max-w-[1560px] px-6 sm:px-10 lg:px-16'
 
 export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
@@ -57,7 +59,7 @@ export function PredictionPage() {
           <Mandelbulb />
         </motion.div>
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/55" />
-        <motion.div style={{ y: fgY, opacity: fgOpacity }} className="shell relative z-10 pb-16 pt-28">
+        <motion.div style={{ y: fgY, opacity: fgOpacity }} className={`${WIDE} relative z-10 pb-16 pt-28`}>
           <a href="#top" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-white/70 hover:text-white">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -73,7 +75,7 @@ export function PredictionPage() {
 
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
-        <div className="shell py-20 sm:py-28 lg:py-36">
+        <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
         <motion.p
           className="mx-auto max-w-4xl text-balance text-center font-hand text-4xl font-bold leading-[1.2] text-white sm:text-5xl lg:text-6xl"
           initial={reduce ? 'show' : 'hidden'}
@@ -101,16 +103,18 @@ export function PredictionPage() {
           ))}
         </motion.p>
 
-        <div className="mt-16 grid gap-5 sm:grid-cols-2">
+        <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {
             const n = String(i + 1).padStart(2, '0')
             return (
               <Reveal key={f.title}>
                 <article className="h-full overflow-hidden rounded-2xl bg-[#0b0b0b] ring-1 ring-white/10">
-                  {/* Illustration is full-bleed on the same #0b0b0b base. Its baked grain matches the
-                      page grain exactly, so the panel has no visible edge. */}
-                  <div className="relative aspect-square overflow-hidden">
-                    <ForecastArt id={`pred-${n}`} className="absolute inset-0" />
+                  {/* Shorter panel: a full-width square illustration, vertically centered and
+                      cover-cropped, so the grain stays seamless and the art isn't distorted. */}
+                  <div className="relative aspect-[5/4] overflow-hidden">
+                    <div className="absolute inset-x-0 top-1/2 aspect-square -translate-y-1/2">
+                      <ForecastArt id={`pred-${n}`} className="absolute inset-0" />
+                    </div>
                   </div>
                   {/* Text */}
                   <div className="border-t border-white/10 p-8 sm:p-9">

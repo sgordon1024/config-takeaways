@@ -14,7 +14,7 @@ import { useReducedMotion } from 'framer-motion'
 const NUM = 30000
 const SUB_STEPS = 2
 const DT = 0.012
-const WORLD_SCALE = 150
+const WORLD_SCALE = 165
 const RESPAWN = 6.0
 const AZ = { a: 0.95, b: 0.7, c: 0.6, d: 3.5, e: 0.25, f: 0.1 }
 
@@ -52,6 +52,7 @@ export function Stardust() {
         let liveA = AZ.a
         let liveB = AZ.b
         let autoAngle = 0
+        let driftT = 0
         const k1 = [0, 0, 0], k2 = [0, 0, 0], k3 = [0, 0, 0], k4 = [0, 0, 0]
 
         const aizawa = (x: number, y: number, z: number, out: number[]) => {
@@ -87,15 +88,17 @@ export function Stardust() {
         }
         const render = () => {
           p.background(0)
-          const offX = p.width * 0.17
-          const offY = -p.height * 0.02
-          // subtle mouse parallax around the auto-rotation
+          // slow floating drift so the galaxy wanders and the composition keeps changing
+          const offX = p.width * 0.18 + Math.sin(driftT * 0.13) * p.width * 0.045
+          const offY = -p.height * 0.02 + Math.cos(driftT * 0.17) * p.height * 0.06
+          // subtle mouse parallax layered on top
           const par = (mouse.x - 0.5) * 0.5
           const tilt = -0.35 + (mouse.y - 0.5) * 0.35
           p.push()
           p.translate(offX, offY, 0)
-          p.rotateY(autoAngle + par)
-          p.rotateX(tilt)
+          p.rotateY(autoAngle + par + Math.sin(driftT * 0.08) * 0.3)
+          p.rotateX(tilt + Math.sin(driftT * 0.11) * 0.12)
+          p.rotateZ(Math.sin(driftT * 0.05) * 0.12)
           p.scale(WORLD_SCALE)
           p.blendMode(p.ADD)
           p.strokeWeight(1.9)
@@ -152,6 +155,7 @@ export function Stardust() {
             const h = DT / SUB_STEPS
             for (let s = 0; s < SUB_STEPS; s++) integrate(h)
             autoAngle += 0.0016
+            driftT += 0.016
           }
           render()
         }

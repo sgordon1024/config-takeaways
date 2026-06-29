@@ -11,6 +11,25 @@ function ytUrl(id: string | null) {
 function DeepCard({ talk, index }: { talk: Talk; index: number }) {
   const quote = talk.quotes[0]
   const link = ytUrl(talk.video)
+  // Alternate the media panel: card 1 right, card 2 left, and so on.
+  const flip = index % 2 === 1
+  const num = String(index + 1).padStart(2, '0')
+  const mediaOrder = flip ? 'md:order-1' : 'md:order-2'
+
+  const media = quote ? (
+    <div className={`flex items-center bg-accent p-8 text-accent-ink sm:p-10 ${mediaOrder}`}>
+      <blockquote className="text-2xl font-extrabold leading-snug tracking-tight sm:text-3xl">
+        <span aria-hidden className="mr-1 opacity-40">“</span>
+        {quote.text}
+        <span aria-hidden className="opacity-40">”</span>
+      </blockquote>
+    </div>
+  ) : (
+    <div className={`hidden items-center justify-center bg-white/[0.03] md:flex ${mediaOrder}`}>
+      <span className="font-extrabold leading-none tracking-tightest text-white/[0.06] text-[10rem]">{num}</span>
+    </div>
+  )
+
   return (
     <motion.article
       whileHover={{ y: -4 }}
@@ -18,10 +37,10 @@ function DeepCard({ talk, index }: { talk: Talk; index: number }) {
       id={`talk-${talk.id}`}
       className="scroll-mt-24 overflow-hidden rounded-3xl bg-ink text-paper ring-1 ring-black/10 dark:bg-[#161616] dark:ring-white/10"
     >
-      <div className="grid gap-0 md:grid-cols-[1.1fr_1fr]">
-        <div className="p-8 sm:p-10">
+      <div className="grid gap-0 md:grid-cols-2">
+        <div className={`p-8 sm:p-10 ${flip ? 'md:order-2' : 'md:order-1'}`}>
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.18em] text-accent">
-            <span>Deep dive {String(index + 1).padStart(2, '0')}</span>
+            <span>Deep dive {num}</span>
             <span className="h-1 w-1 rounded-full bg-accent" />
             <span className="text-white/50">{talk.stage}</span>
           </div>
@@ -35,7 +54,7 @@ function DeepCard({ talk, index }: { talk: Talk; index: number }) {
             {talk.keyPoints.slice(0, 4).map((kp, i) => (
               <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-white/80">
                 <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
-                <span>{kp}</span>
+                <span className="line-clamp-2 min-w-0 flex-1">{kp}</span>
               </li>
             ))}
           </ul>
@@ -56,17 +75,7 @@ function DeepCard({ talk, index }: { talk: Talk; index: number }) {
           )}
         </div>
 
-        {quote ? (
-          <div className="flex items-center bg-accent p-8 text-accent-ink sm:p-10">
-            <blockquote className="text-2xl font-extrabold leading-snug tracking-tight sm:text-3xl">
-              <span aria-hidden className="mr-1 opacity-40">“</span>
-              {quote.text}
-              <span aria-hidden className="opacity-40">”</span>
-            </blockquote>
-          </div>
-        ) : (
-          <div className="hidden bg-white/5 md:block" />
-        )}
+        {media}
       </div>
     </motion.article>
   )

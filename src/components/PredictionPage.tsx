@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { Mandelbulb } from './Mandelbulb'
 import { ForecastArt } from './ForecastArt'
-import { Section } from './Section'
 import { Reveal } from './Reveal'
+import grainBg from '../illustrations/bg-grain.svg'
 
 // Forward-looking forecast, extrapolated from the 12 synthesized themes. It is
 // explicitly a prediction, not something any speaker said outright.
@@ -48,7 +48,10 @@ export function PredictionPage() {
   const fgOpacity = useTransform(scrollYProgress, [0, 0.85], [1, reduce ? 1 : 0.1])
 
   return (
-    <div className="bg-ink text-paper">
+    <div
+      className="text-paper"
+      style={{ backgroundColor: '#0b0b0b', backgroundImage: `url(${grainBg})`, backgroundRepeat: 'repeat', backgroundSize: '320px 320px' }}
+    >
       {/* Hero with the bright Mandelbulb + scroll parallax */}
       <header ref={headerRef} className="relative isolate flex min-h-[88vh] items-end overflow-hidden">
         <motion.div style={{ y: bgY }} className="absolute inset-x-0 -top-[14%] h-[128%]">
@@ -69,8 +72,9 @@ export function PredictionPage() {
         </motion.div>
       </header>
 
-      {/* The forecast */}
-      <Section tone="dark">
+      {/* The forecast (transparent so the page-wide grain shows through) */}
+      <section className="relative">
+        <div className="shell py-20 sm:py-28 lg:py-36">
         <Reveal>
           <p className="max-w-3xl text-balance text-xl font-semibold leading-snug tracking-tight text-white/90 sm:text-2xl">
             Config 2026 said the quiet part loud: when anyone can build anything, building stops being
@@ -123,7 +127,8 @@ export function PredictionPage() {
             Back to the takeaways
           </motion.a>
         </Reveal>
-      </Section>
+        </div>
+      </section>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
 import { Overview } from './components/Overview'
 import { Themes } from './components/Themes'
+import { ShaderInterlude } from './components/ShaderInterlude'
 import { DeepDives } from './components/DeepDives'
 import { Archive } from './components/Archive'
 import { Stats } from './components/Stats'
@@ -35,6 +36,7 @@ export default function App() {
         <Hero meta={content.meta} />
         <Overview meta={content.meta} />
         <Themes themes={content.themes} talksById={talksById} />
+        <ShaderInterlude />
         <DeepDives talks={deepDiveTalks} />
         <Archive talks={content.talks} />
         <Stats stats={content.meta.stats} />

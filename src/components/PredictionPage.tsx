@@ -58,6 +58,14 @@ export function PredictionPage() {
       className="text-paper"
       style={{ backgroundColor: '#0b0b0b', backgroundImage: `url(${grainBg})`, backgroundRepeat: 'repeat', backgroundSize: '320px 320px' }}
     >
+      {/* Roughening filter applied to the handwritten intro for a gritty, inked texture. */}
+      <svg width="0" height="0" aria-hidden="true" className="absolute">
+        <filter id="handGrit" x="-15%" y="-15%" width="130%" height="130%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="n" />
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </svg>
+
       {/* Hero with the bright Mandelbulb + scroll parallax */}
       <header ref={headerRef} className="relative isolate flex min-h-[88vh] items-end overflow-hidden">
         <motion.div style={{ y: bgY }} className="absolute inset-x-0 -top-[14%] h-[128%]">
@@ -82,7 +90,10 @@ export function PredictionPage() {
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
         <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
-        <p className="mx-auto max-w-6xl text-center font-hand text-5xl font-bold leading-[1.05] text-white sm:text-7xl lg:text-8xl">
+        <p
+          className="mx-auto max-w-6xl text-center font-hand text-5xl font-bold leading-[1.05] text-white sm:text-7xl lg:text-8xl"
+          style={{ filter: 'url(#handGrit)' }}
+        >
           {introWords.map((letters, wi) => (
             <Fragment key={wi}>
               <span className="inline-block whitespace-nowrap">

@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Abstract greyscale liquid-metal field with a soft green glow and fine halftone grain</title>
+  <defs>
+    <radialGradient id="hero_metal1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#dcdcdc"></stop>
+      <stop offset="45%" stop-color="#5a5a5a"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="hero_metal2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9c9c9c"></stop>
+      <stop offset="50%" stop-color="#2b2b2b"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="hero_metal3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4c4c4c"></stop>
+      <stop offset="60%" stop-color="#141414"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="hero_green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06C167" stop-opacity="0.8"></stop>
+      <stop offset="38%" stop-color="#06C167" stop-opacity="0.3"></stop>
+      <stop offset="100%" stop-color="#06C167" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="hero_vig" cx="62%" cy="58%" r="78%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"></stop>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.94"></stop>
+    </radialGradient>
+    <radialGradient id="hero_dotmask" cx="1010" cy="560" r="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="100%" stop-color="#000000"></stop>
+    </radialGradient>
+    <mask id="hero_dotmaskM"><rect width="1440" height="900" fill="url(#hero_dotmask)"></rect></mask>
+    <pattern id="hero_dots" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="2.5" r="0.9" fill="#ffffff"></circle>
+    </pattern>
+    <filter id="hero_soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="70"></feGaussianBlur>
+    </filter>
+    <filter id="hero_grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="hn"></feTurbulence>
+      <feColorMatrix in="hn" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.45 0.45 0.45 0 -0.45"></feColorMatrix>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="900" fill="#000000"></rect>
+
+  <g filter="url(#hero_soft)">
+    <ellipse cx="980" cy="520" rx="470" ry="380" fill="url(#hero_metal1)" opacity="0.9"></ellipse>
+    <ellipse cx="1200" cy="300" rx="360" ry="320" fill="url(#hero_metal2)" opacity="0.75"></ellipse>
+    <ellipse cx="760" cy="780" rx="520" ry="340" fill="url(#hero_metal3)" opacity="0.8"></ellipse>
+    <ellipse cx="1080" cy="560" rx="230" ry="200" fill="url(#hero_metal1)" opacity="0.7"></ellipse>
+    <ellipse cx="540" cy="610" rx="300" ry="280" fill="url(#hero_metal3)" opacity="0.5"></ellipse>
+  </g>
+
+  <ellipse cx="1080" cy="600" rx="380" ry="320" fill="url(#hero_green)" filter="url(#hero_soft)"></ellipse>
+
+  <rect width="1440" height="900" fill="url(#hero_dots)" opacity="0.5" mask="url(#hero_dotmaskM)"></rect>
+
+  <rect width="1440" height="900" fill="#ffffff" filter="url(#hero_grain)" opacity="0.5"></rect>
+
+  <rect width="1440" height="900" fill="url(#hero_vig)"></rect>
+</svg>

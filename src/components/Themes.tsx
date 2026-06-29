@@ -3,9 +3,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Section } from './Section'
 import { Reveal } from './Reveal'
 import { softSpring, spring } from '../lib/motion'
+import { ThemeMark, markId } from './ThemeMark'
 import type { Talk, Theme } from '../types'
 
-function ThemeCard({ theme, index, talksById }: { theme: Theme; index: number; talksById: Map<string, Talk> }) {
+function ThemeCard({ theme, talksById }: { theme: Theme; talksById: Map<string, Talk> }) {
   const [open, setOpen] = useState(false)
   const panelId = `theme-panel-${theme.id}`
   return (
@@ -15,16 +16,14 @@ function ThemeCard({ theme, index, talksById }: { theme: Theme; index: number; t
       transition={spring}
       className="group flex flex-col rounded-2xl bg-paper p-7 text-ink shadow-sm ring-1 ring-black/5 dark:bg-[#161616] dark:text-paper dark:ring-white/10 sm:p-8"
     >
-      <div className="flex items-baseline justify-between gap-4">
-        <span className="font-extrabold tracking-tightest text-muted/50 tabular-nums text-2xl">
-          {String(index + 1).padStart(2, '0')}
-        </span>
+      <div className="flex items-center justify-between gap-4">
+        <ThemeMark id={markId(theme.id)} className="h-14 w-14" />
         <span className="rounded-full bg-accent/12 px-3 py-1 text-xs font-bold uppercase tracking-wide text-accent-ink dark:bg-accent/20 dark:text-accent">
           from {theme.talkCount} talks
         </span>
       </div>
 
-      <h3 className="mt-4 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">
+      <h3 className="mt-5 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">
         {theme.headline}
       </h3>
       <p className="mt-3 text-[15px] leading-relaxed text-muted">{theme.explanation}</p>
@@ -97,8 +96,8 @@ export function Themes({ themes, talksById }: { themes: Theme[]; talksById: Map<
       </Reveal>
 
       <div className="mt-14 grid grid-cols-1 gap-5 lg:grid-cols-2">
-        {themes.map((theme, i) => (
-          <ThemeCard key={theme.id} theme={theme} index={i} talksById={talksById} />
+        {themes.map((theme) => (
+          <ThemeCard key={theme.id} theme={theme} talksById={talksById} />
         ))}
       </div>
     </Section>

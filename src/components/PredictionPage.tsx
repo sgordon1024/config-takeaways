@@ -34,6 +34,10 @@ const FORECASTS = [
   },
 ]
 
+// Subtle monochrome film grain for the illustration panels.
+const GRAIN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='170'%3E%3Cfilter id='fg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23fg)'/%3E%3C/svg%3E\")"
+
 export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
   const reduce = useReducedMotion()
@@ -75,19 +79,31 @@ export function PredictionPage() {
           </p>
         </Reveal>
 
-        <div className="mt-16 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2">
-          {FORECASTS.map((f, i) => (
-            <Reveal key={f.title}>
-              <div className="h-full bg-ink p-8 dark:bg-[#0b0b0b] sm:p-10">
-                <ForecastArt id={`pred-${String(i + 1).padStart(2, '0')}`} className="mb-7 aspect-square w-full max-w-[240px]" />
-                <span className="text-sm font-bold tabular-nums tracking-wide text-accent">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h3 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">{f.title}</h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-white/65">{f.body}</p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mt-16 grid gap-5 sm:grid-cols-2">
+          {FORECASTS.map((f, i) => {
+            const n = String(i + 1).padStart(2, '0')
+            return (
+              <Reveal key={f.title}>
+                <article className="h-full overflow-hidden rounded-2xl bg-[#0b0b0b] ring-1 ring-white/10">
+                  {/* Illustration panel with film grain */}
+                  <div className="relative aspect-square overflow-hidden bg-[#181818]">
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 opacity-20"
+                      style={{ backgroundImage: GRAIN, backgroundSize: '170px 170px' }}
+                    />
+                    <ForecastArt id={`pred-${n}`} className="absolute inset-[9%]" />
+                  </div>
+                  {/* Text */}
+                  <div className="border-t border-white/10 p-8 sm:p-9">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">Forecast {n}</p>
+                    <h3 className="mt-3 text-2xl font-extrabold leading-tight tracking-tight">{f.title}</h3>
+                    <p className="mt-3 text-[15px] leading-relaxed text-white/60">{f.body}</p>
+                  </div>
+                </article>
+              </Reveal>
+            )
+          })}
         </div>
 
         <Reveal>

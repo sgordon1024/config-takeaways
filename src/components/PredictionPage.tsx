@@ -48,6 +48,11 @@ export function PredictionPage() {
   const fgY = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '-22%'])
   const fgOpacity = useTransform(scrollYProgress, [0, 0.85], [1, reduce ? 1 : 0.1])
 
+  // Split the intro into words (kept unbreakable) of letters with a global index,
+  // so each letter can be "written" on in sequence.
+  let gi = 0
+  const introWords = INTRO.split(' ').map((word) => [...word].map((ch) => ({ ch, i: gi++ })))
+
   return (
     <div
       className="text-paper"
@@ -58,7 +63,8 @@ export function PredictionPage() {
         <motion.div style={{ y: bgY }} className="absolute inset-x-0 -top-[14%] h-[128%]">
           <Mandelbulb />
         </motion.div>
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/55" />
+        {/* Bottom-only fade for headline legibility; the rest stays clear so the blob is prominent. */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
         <motion.div style={{ y: fgY, opacity: fgOpacity }} className={`${WIDE} relative z-10 pb-16 pt-28`}>
           <a href="#top" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-white/70 hover:text-white">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -76,32 +82,27 @@ export function PredictionPage() {
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
         <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
-        <motion.p
-          className="mx-auto max-w-4xl text-balance text-center font-hand text-4xl font-bold leading-[1.2] text-white sm:text-5xl lg:text-6xl"
-          initial={reduce ? 'show' : 'hidden'}
-          whileInView="show"
-          viewport={{ once: true, margin: '0px 0px -15% 0px' }}
-          variants={{ show: { transition: { staggerChildren: 0.04 } } }}
-        >
-          {INTRO.split(' ').map((w, i) => (
-            <Fragment key={i}>
-              <motion.span
-                className="inline-block"
-                variants={{
-                  hidden: { opacity: 0, y: 10, clipPath: 'inset(0 100% -10% 0)' },
-                  show: {
-                    opacity: 1,
-                    y: 0,
-                    clipPath: 'inset(0 0% -10% 0)',
-                    transition: { duration: 0.34, ease: [0.2, 0.65, 0.3, 0.9] },
-                  },
-                }}
-              >
-                {w}
-              </motion.span>{' '}
+        <p className="mx-auto max-w-6xl text-center font-hand text-5xl font-bold leading-[1.05] text-white sm:text-7xl lg:text-8xl">
+          {introWords.map((letters, wi) => (
+            <Fragment key={wi}>
+              <span className="inline-block whitespace-nowrap">
+                {letters.map(({ ch, i }) => (
+                  <motion.span
+                    key={i}
+                    className="inline-block"
+                    initial={reduce ? false : { opacity: 0, clipPath: 'inset(0 100% -18% 0)' }}
+                    whileInView={reduce ? undefined : { opacity: 1, clipPath: 'inset(0 0% -18% 0)' }}
+                    viewport={{ once: true, margin: '0px 0px -15% 0px' }}
+                    transition={{ duration: 0.16, ease: [0.3, 0.7, 0.3, 1], delay: i * 0.034 }}
+                  >
+                    {ch}
+                  </motion.span>
+                ))}
+              </span>
+              {wi < introWords.length - 1 ? ' ' : ''}
             </Fragment>
           ))}
-        </motion.p>
+        </p>
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {

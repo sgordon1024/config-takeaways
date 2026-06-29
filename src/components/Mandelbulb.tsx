@@ -88,18 +88,18 @@ void main(){
     // Bright multicolor body: hue swept by the orbit trap and time.
     vec3 base = palette(trap*1.5 + uTime*0.08);
     float fres = pow(1.0-max(dot(n,-rd),0.0),3.0);
-    vec3 lit = base*(0.3*ao)
-             + base*key*1.3*ao
-             + base*fill*vec3(0.7,0.8,1.0)*0.6*ao;
-    lit += fres * palette(trap*1.5 + uTime*0.08 + 0.35) * 1.3; // colored rim glow
+    vec3 lit = base*(0.5*ao)
+             + base*key*1.7*ao
+             + base*fill*vec3(0.7,0.8,1.0)*0.85*ao;
+    lit += fres * palette(trap*1.5 + uTime*0.08 + 0.35) * 1.7; // colored rim glow
     vec3 hh = normalize(keyDir-rd);
     float spec = pow(max(dot(n,hh),0.0),40.0);
-    lit += spec*vec3(1.0)*ao*0.9;
+    lit += spec*vec3(1.0)*ao*1.1;
     col = lit; col = mix(col,bg,smoothstep(MAX_DIST*0.75,MAX_DIST,t));
   }
-  col *= 1.3;
+  col *= 1.8;
   col = col/(col+vec3(1.0)); col = pow(col,vec3(0.42));
-  float vig = smoothstep(1.65,0.2,length(uv)); col *= mix(0.8,1.0,vig);
+  float vig = smoothstep(1.85,0.25,length(uv)); col *= mix(0.92,1.0,vig);
   gl_FragColor = vec4(clamp(col,0.0,1.0),1.0);
 }
 `
@@ -111,7 +111,7 @@ uniform sampler2D uTex;
 void main(){ gl_FragColor = texture2D(uTex,vUv); }
 `
 
-const RENDER_SCALE = 0.55
+const RENDER_SCALE = 0.65
 
 export function Mandelbulb({ className = '' }: { className?: string }) {
   const hostRef = useRef<HTMLDivElement>(null)

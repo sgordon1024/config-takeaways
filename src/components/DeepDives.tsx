@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Section } from './Section'
 import { Reveal } from './Reveal'
 import { spring } from '../lib/motion'
+import { DeepPanel } from './DeepPanel'
 import type { Talk } from '../types'
 
 function ytUrl(id: string | null) {
@@ -9,24 +10,20 @@ function ytUrl(id: string | null) {
 }
 
 function DeepCard({ talk, index }: { talk: Talk; index: number }) {
-  const quote = talk.quotes[0]
   const link = ytUrl(talk.video)
-  // Alternate the media panel: card 1 right, card 2 left, and so on.
+  // Alternate the panel: card 1 right, card 2 left, and so on.
   const flip = index % 2 === 1
   const num = String(index + 1).padStart(2, '0')
   const mediaOrder = flip ? 'md:order-1' : 'md:order-2'
 
-  const media = quote ? (
-    <div className={`flex items-center bg-accent p-8 text-accent-ink sm:p-10 ${mediaOrder}`}>
-      <blockquote className="text-2xl font-extrabold leading-snug tracking-tight sm:text-3xl">
-        <span aria-hidden className="mr-1 opacity-40">“</span>
-        {quote.text}
-        <span aria-hidden className="opacity-40">”</span>
-      </blockquote>
-    </div>
-  ) : (
-    <div className={`hidden items-center justify-center bg-white/[0.03] md:flex ${mediaOrder}`}>
-      <span className="font-extrabold leading-none tracking-tightest text-white/[0.06] text-[10rem]">{num}</span>
+  // Green illustration surface. The art is currentColor line-work, so the panel
+  // sets the deep-green ink (#004824) on the brand green (#06C167) and it inherits.
+  const media = (
+    <div
+      className={`flex items-center justify-center bg-accent p-[8%] ${mediaOrder}`}
+      style={{ color: '#004824' }}
+    >
+      <DeepPanel id={`dd-${num}`} className="aspect-square w-[82%] max-w-[380px]" />
     </div>
   )
 

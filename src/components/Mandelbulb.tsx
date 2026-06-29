@@ -61,6 +61,10 @@ vec3 calcNormal(vec3 p){
   vec3 n = vec3(dx,dy,dz); float l = length(n);
   return l>1e-6 ? n/l : vec3(0.0,1.0,0.0);
 }
+// Bright multicolor cosine palette (Inigo Quilez style).
+vec3 palette(float t){
+  return 0.5 + 0.5*cos(6.28318*(vec3(1.0)*t + vec3(0.0,0.33,0.67)));
+}
 void main(){
   vec2 uv = (vUv*2.0-1.0);
   float aspect = uResolution.x/max(uResolution.y,1.0); uv.x *= aspect;
@@ -70,8 +74,8 @@ void main(){
   vec3 up = cross(fwd,right);
   vec3 rd = normalize(fwd + uv.x*right + uv.y*up);
   vec3 hit = raymarch(ro,rd);
-  vec3 bg = vec3(0.02);
-  bg += GREEN*0.06*smoothstep(1.3,0.0,length(uv));
+  vec3 bg = vec3(0.015);
+  bg += palette(uTime*0.05 + length(uv)*0.3) * 0.06 * smoothstep(1.4,0.0,length(uv));
   vec3 col = bg;
   if (hit.x>0.0){
     float t=hit.x; float trap=hit.y; float iterRatio=hit.z;
@@ -81,17 +85,21 @@ void main(){
     float key = max(dot(n,keyDir),0.0); float fill = max(dot(n,fillDir),0.0);
     float ao = 1.0-iterRatio; ao = clamp(ao*ao,0.0,1.0);
     float distAO = clamp(1.0-t/MAX_DIST,0.0,1.0); ao *= mix(0.55,1.0,distAO);
-    vec3 base = vec3(mix(0.05,0.8,trap));
+    // Bright multicolor body: hue swept by the orbit trap and time.
+    vec3 base = palette(trap*1.5 + uTime*0.08);
     float fres = pow(1.0-max(dot(n,-rd),0.0),3.0);
-    vec3 lit = base*(0.16*ao) + base*key*ao + base*fill*0.45*ao;
-    lit += fres*GREEN*1.25;
+    vec3 lit = base*(0.3*ao)
+             + base*key*1.3*ao
+             + base*fill*vec3(0.7,0.8,1.0)*0.6*ao;
+    lit += fres * palette(trap*1.5 + uTime*0.08 + 0.35) * 1.3; // colored rim glow
     vec3 hh = normalize(keyDir-rd);
-    float spec = pow(max(dot(n,hh),0.0),32.0);
-    lit += spec*vec3(1.0)*ao*0.55;
-    col = lit; col = mix(col,bg,smoothstep(MAX_DIST*0.7,MAX_DIST,t));
+    float spec = pow(max(dot(n,hh),0.0),40.0);
+    lit += spec*vec3(1.0)*ao*0.9;
+    col = lit; col = mix(col,bg,smoothstep(MAX_DIST*0.75,MAX_DIST,t));
   }
-  col = col/(col+vec3(1.0)); col = pow(col,vec3(0.4545));
-  float vig = smoothstep(1.5,0.3,length(uv)); col *= mix(0.7,1.0,vig);
+  col *= 1.3;
+  col = col/(col+vec3(1.0)); col = pow(col,vec3(0.42));
+  float vig = smoothstep(1.65,0.2,length(uv)); col *= mix(0.8,1.0,vig);
   gl_FragColor = vec4(clamp(col,0.0,1.0),1.0);
 }
 `

@@ -1,7 +1,8 @@
-import { Fragment, useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { Mandelbulb } from './Mandelbulb'
 import { ForecastArt } from './ForecastArt'
+import { HandDrawText } from './HandDrawText'
 import { Reveal } from './Reveal'
 import grainBg from '../illustrations/bg-grain.svg'
 
@@ -34,17 +35,11 @@ const FORECASTS = [
   },
 ]
 
-const INTRO = 'When anyone can build anything, building stops being the job.'
+// The intro statement, split into hand-lettered lines.
+const INTRO_LINES = ['When anyone can build', 'anything, building stops', 'being the job.']
 
 // Wider container just for the forecast page.
 const WIDE = 'mx-auto w-full max-w-[1560px] px-6 sm:px-10 lg:px-16'
-
-// Stable per-index pseudo-random (0..1) so the hand-lettered layout is the same
-// every render instead of reshuffling.
-const rnd = (n: number) => {
-  const x = Math.sin(n * 127.1) * 43758.5453
-  return x - Math.floor(x)
-}
 
 export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
@@ -54,11 +49,6 @@ export function PredictionPage() {
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '30%'])
   const fgY = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '-22%'])
   const fgOpacity = useTransform(scrollYProgress, [0, 0.85], [1, reduce ? 1 : 0.1])
-
-  // Split the intro into words (kept unbreakable) of letters with a global index,
-  // so each letter can be "written" on in sequence.
-  let gi = 0
-  const introWords = INTRO.split(' ').map((word) => [...word].map((ch) => ({ ch, i: gi++ })))
 
   return (
     <div
@@ -104,46 +94,7 @@ export function PredictionPage() {
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
         <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
-        <p
-          className="mx-auto max-w-5xl text-center font-hand text-5xl font-bold leading-[1.25] text-white sm:text-7xl lg:text-8xl"
-          style={{ filter: 'url(#handGrit)' }}
-        >
-          {introWords.map((letters, wi) => (
-            <Fragment key={wi}>
-              <span className="inline-block whitespace-nowrap">
-                {letters.map(({ ch, i }) => {
-                  // Per-character hand-lettered variation: size, tilt, baseline drift.
-                  // These are STATIC (applied via transform) so characters never resize while
-                  // animating; only the clip reveals each one, as if being drawn in.
-                  const rot = (rnd(i * 4 + 1) - 0.5) * 13 // ~ -6.5deg .. 6.5deg
-                  const scale = 0.86 + rnd(i * 4 + 2) * 0.3 // 0.86 .. 1.16
-                  const dy = (rnd(i * 4 + 3) - 0.5) * 16 // px baseline drift
-                  const delay = i * 0.07 + (rnd(i * 4 + 4) - 0.5) * 0.04
-                  const dur = 0.22 + rnd(i * 4 + 2) * 0.24 // some draw fast, some slow
-                  const transform = `translateY(${dy}px) rotate(${rot}deg) scale(${scale})`
-                  return (
-                    <span key={i} className="inline-block" style={{ transform, transformOrigin: '50% 85%' }}>
-                      {reduce ? (
-                        ch
-                      ) : (
-                        <motion.span
-                          className="inline-block"
-                          initial={{ clipPath: 'inset(-25% 100% -25% -8%)' }}
-                          whileInView={{ clipPath: 'inset(-25% 0% -25% -8%)' }}
-                          viewport={{ once: true, margin: '0px 0px -10% 0px' }}
-                          transition={{ duration: dur, ease: [0.55, 0.05, 0.5, 1], delay }}
-                        >
-                          {ch}
-                        </motion.span>
-                      )}
-                    </span>
-                  )
-                })}
-              </span>
-              {wi < introWords.length - 1 ? ' ' : ''}
-            </Fragment>
-          ))}
-        </p>
+        <HandDrawText lines={INTRO_LINES} className="mx-auto block w-full max-w-5xl text-white" />
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {

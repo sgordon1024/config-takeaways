@@ -14,7 +14,7 @@ import { useReducedMotion } from 'framer-motion'
 const NUM = 30000
 const SUB_STEPS = 2
 const DT = 0.012
-const WORLD_SCALE = 165
+const WORLD_SCALE = 198
 const RESPAWN = 6.0
 const AZ = { a: 0.95, b: 0.7, c: 0.6, d: 3.5, e: 0.25, f: 0.1 }
 
@@ -89,8 +89,8 @@ export function Stardust() {
         const render = () => {
           p.background(0)
           // slow floating drift so the galaxy wanders and the composition keeps changing
-          const offX = p.width * 0.18 + Math.sin(driftT * 0.13) * p.width * 0.045
-          const offY = -p.height * 0.02 + Math.cos(driftT * 0.17) * p.height * 0.06
+          const offX = p.width * 0.18 + Math.sin(driftT * 0.13) * p.width * 0.054
+          const offY = -p.height * 0.02 + Math.cos(driftT * 0.17) * p.height * 0.072
           // subtle mouse parallax layered on top
           const par = (mouse.x - 0.5) * 0.5
           const tilt = -0.35 + (mouse.y - 0.5) * 0.35

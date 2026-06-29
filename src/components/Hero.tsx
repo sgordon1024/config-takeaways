@@ -85,8 +85,8 @@ export function Hero({ meta }: { meta: Content['meta'] }) {
 
       {/* Animated scroll cue */}
       <motion.a
-        href="#overview"
-        aria-label="Scroll to overview"
+        href="#themes"
+        aria-label="Scroll to themes"
         className="absolute inset-x-0 bottom-7 z-10 mx-auto flex w-fit flex-col items-center gap-2 text-white/55 hover:text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

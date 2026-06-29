@@ -4,7 +4,6 @@ import type { Content, Talk } from './types'
 import { useTheme } from './lib/useTheme'
 import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
-import { Overview } from './components/Overview'
 import { Themes } from './components/Themes'
 import { DeepDives } from './components/DeepDives'
 import { Archive } from './components/Archive'
@@ -33,7 +32,6 @@ export default function App() {
       <Nav theme={theme} onToggleTheme={toggle} />
       <main>
         <Hero meta={content.meta} />
-        <Overview meta={content.meta} />
         <Themes themes={content.themes} talksById={talksById} />
         <DeepDives talks={deepDiveTalks} />
         <Archive talks={content.talks} />

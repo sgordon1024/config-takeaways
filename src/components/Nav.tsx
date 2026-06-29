@@ -3,7 +3,6 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-
 import { softSpring } from '../lib/motion'
 
 const LINKS = [
-  { href: '#overview', label: 'Overview' },
   { href: '#themes', label: 'Themes' },
   { href: '#deep-dives', label: 'Deep dives' },
   { href: '#archive', label: 'Archive' },

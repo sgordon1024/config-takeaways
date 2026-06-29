@@ -45,7 +45,7 @@ export function Hero({ meta }: { meta: Content['meta'] }) {
             <motion.span variants={heroLine} className="block text-accent">
               taste gets
             </motion.span>
-            <motion.span variants={heroLine} className="block">
+            <motion.span variants={heroLine} className="block text-accent">
               expensive.
             </motion.span>
           </h1>

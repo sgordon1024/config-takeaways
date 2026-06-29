@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { Mandelbulb } from './Mandelbulb'
+import { ForecastArt } from './ForecastArt'
 import { Section } from './Section'
 import { Reveal } from './Reveal'
 
@@ -78,10 +79,11 @@ export function PredictionPage() {
           {FORECASTS.map((f, i) => (
             <Reveal key={f.title}>
               <div className="h-full bg-ink p-8 dark:bg-[#0b0b0b] sm:p-10">
-                <span className="font-extrabold tracking-tightest tabular-nums text-accent text-2xl">
+                <ForecastArt id={`pred-${String(i + 1).padStart(2, '0')}`} className="mb-7 aspect-square w-full max-w-[240px]" />
+                <span className="text-sm font-bold tabular-nums tracking-wide text-accent">
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <h3 className="mt-4 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">{f.title}</h3>
+                <h3 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">{f.title}</h3>
                 <p className="mt-3 text-[15px] leading-relaxed text-white/65">{f.body}</p>
               </div>
             </Reveal>

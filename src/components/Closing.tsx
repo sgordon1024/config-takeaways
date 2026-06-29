@@ -11,7 +11,7 @@ export function Closing({ meta }: { meta: Content['meta'] }) {
       </Reveal>
       <Reveal delay={0.05}>
         <h2 className="mt-6 max-w-[16ch] font-extrabold tracking-tightest text-display">
-          The tools got faster. The <span className="text-accent">taste</span> is on us.
+          The tools got faster. <span className="text-accent">The taste is on us.</span>
         </h2>
       </Reveal>
       <Reveal delay={0.1}>

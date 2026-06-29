@@ -120,13 +120,11 @@ export function PredictionPage() {
             const n = String(i + 1).padStart(2, '0')
             return (
               <Reveal key={f.title}>
-                <article className="h-full overflow-hidden rounded-2xl bg-[#0b0b0b] ring-1 ring-white/10">
-                  {/* Shorter panel: a full-width square illustration, vertically centered and
-                      cover-cropped, so the grain stays seamless and the art isn't distorted. */}
-                  <div className="relative aspect-[5/4] overflow-hidden">
-                    <div className="absolute inset-x-0 top-1/2 aspect-square -translate-y-1/2">
-                      <ForecastArt id={`pred-${n}`} className="absolute inset-0" />
-                    </div>
+                <article className="h-full overflow-hidden rounded-2xl ring-1 ring-white/10">
+                  {/* Square panel; art contained with padding so nothing is cut off. Cards are
+                      transparent, so the page grain shows through and stays seamless. */}
+                  <div className="relative aspect-square">
+                    <ForecastArt id={`pred-${n}`} className="absolute inset-[12%]" />
                   </div>
                   {/* Text */}
                   <div className="border-t border-white/10 p-8 sm:p-9">

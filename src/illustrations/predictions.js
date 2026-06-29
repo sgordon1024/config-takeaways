@@ -48,7 +48,6 @@ export const predictions = {
       <path d="M126 262 q12 -12 26 -2"/>
     </g>
   </g>
-  <rect width="320" height="320" fill="#fff" opacity="0.32" filter="url(#p01_grain)"/>
 </svg>`,
   'pred-02': `<svg viewBox="0 0 320 320" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Your taste becomes a file: loose, messy marks distilling into one tidy artifact</title>
@@ -88,7 +87,6 @@ export const predictions = {
       <line x1="36" y1="80" x2="68" y2="80" opacity="0.5"/>
     </g>
   </g>
-  <rect width="320" height="320" fill="#fff" opacity="0.32" filter="url(#p02_grain)"/>
 </svg>`,
   'pred-03': `<svg viewBox="0 0 320 320" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>The handoff is dead: a canvas and a code block dissolving into one continuous organic loop</title>
@@ -119,7 +117,6 @@ export const predictions = {
       <animateMotion dur="4.5s" repeatCount="indefinite"><mpath xlink:href="#p03_loop" xmlns:xlink="http://www.w3.org/1999/xlink"/></animateMotion>
     </circle>
   </g>
-  <rect width="320" height="320" fill="#fff" opacity="0.32" filter="url(#p03_grain)"/>
 </svg>`,
   'pred-04': `<svg viewBox="0 0 320 320" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Your product becomes a coworker: a person and a not-quite-person side by side, sharing one idea</title>
@@ -159,7 +156,6 @@ export const predictions = {
       <path d="M166 244 Q174 196 214 196 Q254 196 262 244"/>
     </g>
   </g>
-  <rect width="320" height="320" fill="#fff" opacity="0.32" filter="url(#p04_grain)"/>
 </svg>`,
   'pred-05': `<svg viewBox="0 0 320 320" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Models are free, taste is the tiebreaker: a discerning eye and a hand giving the verdict</title>
@@ -200,7 +196,6 @@ export const predictions = {
       <circle cx="23" cy="-34" r="5" fill="#06C167" stroke="none"/>
     </g>
   </g>
-  <rect width="320" height="320" fill="#fff" opacity="0.32" filter="url(#p05_grain)"/>
 </svg>`,
   'pred-06': `<svg viewBox="0 0 320 320" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Flat is over, software gets weird again: exuberant liquid blobs spilling out of a rigid frame</title>
@@ -242,6 +237,5 @@ export const predictions = {
   <g filter="url(#p06_liquid)" fill="none" stroke="currentColor" stroke-width="3" opacity="0.45">
     <circle cx="112" cy="138" r="20"/>
   </g>
-  <rect width="320" height="320" fill="#fff" opacity="0.36" filter="url(#p06_grain)"/>
 </svg>`
 };

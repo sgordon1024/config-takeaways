@@ -9,8 +9,13 @@ const rnd = (n: number) => {
 }
 
 // Per-line, per-gap spacing overrides (extra units after each character),
-// dialed in with the spacing tool (#/spacing). undefined = even spacing.
-const GAPS: number[][] | undefined = undefined
+// dialed in by hand with the spacing tool. Index [li][ci] = extra units after
+// character ci on line li. Must stay in sync with INTRO_LINES' lengths.
+const GAPS: number[][] = [
+  [12, 1, 4, 0, 0, 6, 8, 6, 6, 8, 0, 0, 5, 6, 0, 0, 5, 6, 2, 3],
+  [6, 8, 6, 3, 5, 2, 8, 4, 0, 0, 5, 6, 2, 3, 6, 2, 8, 0, 0, 4, 3, 6, 7],
+  [6, 4, 2, 8, 0, 0, 3, 5, 0, 0, 2, 6, 1],
+]
 
 /**
  * Writes text on one letter at a time by drawing each glyph's single stroke

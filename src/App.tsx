@@ -7,7 +7,6 @@ import { Themes } from './components/Themes'
 import { DeepDives } from './components/DeepDives'
 import { PredictionCta } from './components/PredictionCta'
 import { PredictionPage } from './components/PredictionPage'
-import { LetterSpacingEditor } from './components/LetterSpacingEditor'
 import { Stats } from './components/Stats'
 import { Closing } from './components/Closing'
 import { Footer } from './components/Footer'
@@ -38,9 +37,6 @@ export default function App() {
     () => content.deepDives.map((id) => talksById.get(id)).filter((t): t is Talk => Boolean(t)),
     [talksById],
   )
-
-  // Temporary letter-spacing tool.
-  if (hash.startsWith('#/spacing')) return <LetterSpacingEditor />
 
   return (
     <div className="min-h-screen bg-paper text-ink">

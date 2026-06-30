@@ -8,6 +8,7 @@ import { DeepDives } from './components/DeepDives'
 import { PredictionCta } from './components/PredictionCta'
 import { PredictionPage } from './components/PredictionPage'
 import { ProcessPage } from './components/ProcessPage'
+import { ProcessDetail } from './components/ProcessDetail'
 import { Stats } from './components/Stats'
 import { Closing } from './components/Closing'
 import { Footer } from './components/Footer'
@@ -25,9 +26,10 @@ export default function App() {
   }, [])
   const isPrediction = hash.startsWith('#/prediction')
   const isProcess = hash.startsWith('#/process')
+  const processSlug = hash.startsWith('#/process/') ? hash.slice('#/process/'.length) : ''
   useEffect(() => {
     if (isPrediction || isProcess) window.scrollTo(0, 0)
-  }, [isPrediction, isProcess])
+  }, [isPrediction, isProcess, processSlug])
 
   const talksById = useMemo(() => {
     const m = new Map<string, Talk>()
@@ -46,7 +48,11 @@ export default function App() {
       {isPrediction ? (
         <PredictionPage />
       ) : isProcess ? (
-        <ProcessPage />
+        processSlug ? (
+          <ProcessDetail slug={processSlug} />
+        ) : (
+          <ProcessPage />
+        )
       ) : (
         <main>
           <Hero meta={content.meta} />

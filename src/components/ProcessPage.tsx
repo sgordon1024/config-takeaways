@@ -106,6 +106,7 @@ type Stage = {
   tools: string[]
   how: string
   example: string
+  detailHref?: string
 }
 
 const STAGES: Stage[] = [
@@ -120,6 +121,7 @@ const STAGES: Stage[] = [
     how: 'The agent clusters assumptions and counter-arguments; you hand-write the conviction and the bet. Gate each idea by how much context it needs, how novel it is, and the cost of being wrong.',
     example:
       "Decide onboarding's job is activation, not a tour. Write the bet: “first value in under 2 minutes.” Named approvers co-sign before anyone builds.",
+    detailHref: '#/process/framing',
   },
   {
     n: '02',
@@ -259,6 +261,31 @@ function StageCard({ s, last }: { s: Stage; last: boolean }) {
         <div className="mt-4 rounded-xl bg-surface px-4 py-3 text-sm leading-relaxed">
           <span className="font-bold text-accent-ink">Example. </span>
           <span className="text-ink/70">{s.example}</span>
+        </div>
+
+        <div className="mt-5">
+          {s.detailHref ? (
+            <a
+              href={s.detailHref}
+              className="inline-flex items-center gap-1.5 rounded-full border border-ink/15 px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-ink/40 hover:bg-black/[0.03]"
+            >
+              Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          ) : (
+            <span
+              aria-disabled="true"
+              title="Detail coming soon"
+              className="inline-flex cursor-not-allowed items-center gap-2 rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-muted/60"
+            >
+              Learn more
+              <span className="rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-muted/70">
+                soon
+              </span>
+            </span>
+          )}
         </div>
       </div>
     </Reveal>

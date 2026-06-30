@@ -67,7 +67,7 @@ export function PredictionPage() {
         {/* Oversized rotated intro: floats on top of everything, vertically
             centered on the seam between the hero and the forecast so it spans
             both sections. */}
-        <div className="pointer-events-none absolute left-1/2 top-0 z-30 flex -translate-x-1/2 -translate-y-1/2 justify-center">
+        <div className="pointer-events-none absolute left-1/2 top-[-100px] z-30 flex -translate-x-1/2 -translate-y-1/2 justify-center">
           <div className="origin-center" style={{ transform: 'rotate(-5deg)' }}>
             <HandDrawText
               lines={INTRO_LINES}

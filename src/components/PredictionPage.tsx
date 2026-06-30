@@ -36,7 +36,7 @@ const FORECASTS = [
 ]
 
 // The intro statement, split into hand-lettered lines.
-const INTRO_LINES = ['When anyone can build', 'anything, building stops', 'being the job.']
+const INTRO_LINES = ['When anyone can build anything,', 'building stops being the job.', 'Taste becomes the work.']
 
 // Wider container just for the forecast page.
 const WIDE = 'mx-auto w-full max-w-[1560px] px-6 sm:px-10 lg:px-16'
@@ -79,7 +79,7 @@ export function PredictionPage() {
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
         <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
-        <HandDrawText lines={INTRO_LINES} className="mx-auto block w-full max-w-5xl text-white" />
+        <HandDrawText lines={INTRO_LINES} className="mx-auto block w-full text-white" />
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {

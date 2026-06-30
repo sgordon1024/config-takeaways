@@ -45,10 +45,8 @@ export function PredictionPage() {
   const headerRef = useRef<HTMLElement>(null)
   const reduce = useReducedMotion()
   const { scrollYProgress } = useScroll({ target: headerRef, offset: ['start start', 'end start'] })
-  // Parallax: the blob drifts down slowly, the headline lifts away faster.
+  // Parallax: the blob drifts down slowly as you scroll.
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '30%'])
-  const fgY = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '-22%'])
-  const fgOpacity = useTransform(scrollYProgress, [0, 0.85], [1, reduce ? 1 : 0.1])
 
   return (
     <div
@@ -60,27 +58,16 @@ export function PredictionPage() {
         <motion.div style={{ y: bgY }} className="absolute inset-x-0 -top-[14%] h-[128%]">
           <Mandelbulb />
         </motion.div>
-        {/* Bottom-only fade for headline legibility; the rest stays clear so the blob is prominent. */}
+        {/* Bottom fade so the oversized intro stays legible over the blob. */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
-        <motion.div style={{ y: fgY, opacity: fgOpacity }} className={`${WIDE} relative z-10 pb-16 pt-28`}>
-          <a href="#top" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-white/70 hover:text-white">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            Back to the takeaways
-          </a>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">A prediction</p>
-          <h1 className="mt-4 max-w-[15ch] font-extrabold tracking-tightest text-display">
-            Where product design goes <span className="text-accent">next</span>.
-          </h1>
-        </motion.div>
       </header>
 
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
-        {/* EXPERIMENT: oversized rotated intro, clipped so it bleeds into the
-            hero above and the forecast tiles below */}
-        <div className="relative flex items-center justify-center overflow-hidden h-[clamp(150px,23vw,330px)]">
+        {/* Oversized rotated intro: floats on top of everything, vertically
+            centered on the seam between the hero and the forecast so it spans
+            both sections. */}
+        <div className="pointer-events-none absolute left-1/2 top-0 z-30 flex -translate-x-1/2 -translate-y-1/2 justify-center">
           <div className="origin-center" style={{ transform: 'rotate(-5deg)' }}>
             <HandDrawText
               lines={INTRO_LINES}
@@ -90,7 +77,7 @@ export function PredictionPage() {
           </div>
         </div>
 
-        <div className={`${WIDE} pb-20 sm:pb-28 lg:pb-36`}>
+        <div className={`${WIDE} pt-[clamp(80px,16vw,220px)] pb-20 sm:pb-28 lg:pb-36`}>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {
             const n = String(i + 1).padStart(2, '0')

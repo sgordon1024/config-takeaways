@@ -1,68 +1,35 @@
 import { useMemo } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import scriptFont from '../illustrations/hershey-stroke.json'
+import { layoutText } from './handLayout'
 
-// Hershey "Script 1-stroke": each glyph is open polyline strokes (a true single
-// stroke), so a letter is ONE path drawn as one motion (no fill/border split).
-// The chars array starts at '!' (ascii 33), so the index is charCode - 33.
-type GlyphData = { d: string; o: number }
-const CHARS = (scriptFont as { chars: GlyphData[] }).chars
-const LINE_H = 42
-const SPACE_ADV = 14
-const TRACK = 0 // cursive connector strokes overshoot the advance and join naturally
-
-function glyphFor(ch: string): GlyphData | null {
-  if (ch === ' ') return null
-  const idx = ch.charCodeAt(0) - 33
-  return idx >= 0 && idx < CHARS.length ? CHARS[idx] : null
-}
-
-// Stable per-glyph pseudo-random for subtle hand-lettered variation.
+// Stable per-glyph pseudo-random for the draw cadence.
 const rnd = (n: number) => {
   const x = Math.sin(n * 127.1) * 43758.5453
   return x - Math.floor(x)
 }
 
-type Placed = { d: string; x: number; y: number; delay: number; dur: number }
+// Per-line, per-gap spacing overrides (extra units after each character),
+// dialed in with the spacing tool (#/spacing). undefined = even spacing.
+const GAPS: number[][] | undefined = undefined
 
 /**
- * Writes text on, one letter at a time, by drawing each glyph's single stroke
- * along its own path (Framer `pathLength`). Each letter is one path: only the
- * stroke draws (no separate fill), and it stays hidden until its turn, so there
- * are no pre-draw fragments and only one letter animates at any moment.
+ * Writes text on one letter at a time by drawing each glyph's single stroke
+ * along its own path (Framer `pathLength`). One path per letter (no fill/border
+ * split), hidden until its turn so there are no pre-draw fragments.
  */
 export function HandDrawText({ lines, className = '' }: { lines: string[]; className?: string }) {
   const reduce = useReducedMotion()
 
-  const { glyphs, viewBox } = useMemo(() => {
-    const lineWidth = (s: string) =>
-      [...s].reduce((w, ch) => w + (ch === ' ' ? SPACE_ADV : (glyphFor(ch)?.o ?? SPACE_ADV) + TRACK), 0)
-    const maxW = Math.max(...lines.map(lineWidth))
-
-    const placed: Placed[] = []
-    let t = 0 // cumulative time so each letter starts only when the previous finishes
-    let gi = 0
-    lines.forEach((line, li) => {
-      let penX = (maxW - lineWidth(line)) / 2
-      for (const ch of line) {
-        const g = glyphFor(ch)
-        if (!g) {
-          t += 0.06 // a written pause for spaces
-          penX += SPACE_ADV
-          continue
-        }
-        const dur = 0.1 + rnd(gi * 3 + 2) * 0.1
-        // Consistent baseline, size, and tracking so it reads as one steady hand.
-        placed.push({ d: g.d, x: penX, y: li * LINE_H, delay: t, dur })
-        t += dur
-        penX += g.o + TRACK
-        gi++
-      }
+  const { timed, viewBox } = useMemo(() => {
+    const { glyphs, viewBox } = layoutText(lines, GAPS)
+    let t = 0
+    const timed = glyphs.map((g) => {
+      const dur = 0.1 + rnd(g.order * 3 + 2) * 0.1
+      const item = { ...g, delay: t, dur }
+      t += dur
+      return item
     })
-
-    const pad = 12
-    const h = (lines.length - 1) * LINE_H + 37
-    return { glyphs: placed, viewBox: `${-pad} ${-3 - pad} ${maxW + 2 * pad} ${h + 2 * pad}` }
+    return { timed, viewBox }
   }, [lines])
 
   return (
@@ -80,7 +47,7 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
         </filter>
       </defs>
       <g filter="url(#hsGrit)">
-        {glyphs.map((g, i) => (
+        {timed.map((g, i) => (
           <g key={i} transform={`translate(${g.x} ${g.y})`}>
             <motion.path
               d={g.d}

@@ -5,6 +5,8 @@ import { softSpring } from '../lib/motion'
 const LINKS = [
   { href: '#themes', label: 'Themes' },
   { href: '#deep-dives', label: 'Deep dives' },
+  { href: '#/process', label: 'Process' },
+  { href: '#/prediction', label: 'Forecast' },
 ]
 
 export function Nav() {

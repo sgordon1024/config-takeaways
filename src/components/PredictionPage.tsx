@@ -55,21 +55,6 @@ export function PredictionPage() {
       className="text-paper"
       style={{ backgroundColor: '#0b0b0b', backgroundImage: `url(${grainBg})`, backgroundRepeat: 'repeat', backgroundSize: '320px 320px' }}
     >
-      {/* Roughening filter applied to the handwritten intro for a gritty, inked texture. */}
-      <svg width="0" height="0" aria-hidden="true" className="absolute">
-        <filter id="handGrit" x="-15%" y="-15%" width="130%" height="130%">
-          {/* roughen the edges */}
-          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="warp" />
-          <feDisplacementMap in="SourceGraphic" in2="warp" scale="2.5" xChannelSelector="R" yChannelSelector="G" result="rough" />
-          {/* speckle the fill so it isn't flat/solid: modulate alpha by fine noise */}
-          <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2" seed="8" result="grain" />
-          <feComponentTransfer in="grain" result="grainA">
-            <feFuncA type="linear" slope="0.6" intercept="0.4" />
-          </feComponentTransfer>
-          <feComposite in="rough" in2="grainA" operator="in" />
-        </filter>
-      </svg>
-
       {/* Hero with the bright Mandelbulb + scroll parallax */}
       <header ref={headerRef} className="relative isolate flex min-h-[88vh] items-end overflow-hidden">
         <motion.div style={{ y: bgY }} className="absolute inset-x-0 -top-[14%] h-[128%]">

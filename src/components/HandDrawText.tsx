@@ -18,8 +18,8 @@ const GAPS: number[][] = [
   [12, 1, 4, 0, 0, 6, 8, 6, 6, 8, 0, 0, 5, 6, 0, 0, 5, 6, 2, 3, 0, 0, 6, 8, 6, 3, 5, 2, 8, 4],
   // "building stops being the job."
   [5, 6, 2, 3, 6, 2, 8, 0, 0, 4, 3, 6, 7, 0, 0, 6, 4, 2, 8, 0, 0, 3, 5, 0, 0, 2, 6, 1],
-  // "Taste becomes the work."
-  [6, 4, 5, 5, 0, 0, 5, 4, 5, 6, 4, 5, 0, 0, 4, 5, 0, 0, 5, 6, 4, 3],
+  // "Taste becomes the work." (derived from the tuned per-letter spacing above)
+  [5, 6, 4, 3, 0, 0, 6, 4, 5, 6, 8, 4, 0, 0, 3, 5, 0, 0, 6, 6, 4, 2],
 ]
 
 /**

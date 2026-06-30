@@ -8,7 +8,8 @@ import scriptFont from '../illustrations/hershey-stroke.json'
 type GlyphData = { d: string; o: number }
 const CHARS = (scriptFont as { chars: GlyphData[] }).chars
 const LINE_H = 42
-const SPACE_ADV = 12
+const SPACE_ADV = 16
+const TRACK = 7 // extra space between letters (the cursive advances are tight)
 
 function glyphFor(ch: string): GlyphData | null {
   if (ch === ' ') return null
@@ -35,7 +36,7 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
 
   const { glyphs, viewBox } = useMemo(() => {
     const lineWidth = (s: string) =>
-      [...s].reduce((w, ch) => w + (ch === ' ' ? SPACE_ADV : glyphFor(ch)?.o ?? SPACE_ADV), 0)
+      [...s].reduce((w, ch) => w + (ch === ' ' ? SPACE_ADV : (glyphFor(ch)?.o ?? SPACE_ADV) + TRACK), 0)
     const maxW = Math.max(...lines.map(lineWidth))
 
     const placed: Placed[] = []
@@ -57,13 +58,13 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
           y: li * LINE_H + (rnd(gi * 3 + 3) - 0.5) * 4,
           cx: g.o / 2,
           cy: 11,
-          rot: (rnd(gi * 3 + 1) - 0.5) * 8,
-          scale: 0.95 + rnd(gi * 3 + 2) * 0.12,
+          rot: (rnd(gi * 3 + 1) - 0.5) * 7,
+          scale: 0.97 + rnd(gi * 3 + 2) * 0.07,
           delay: t,
           dur,
         })
         t += dur
-        penX += g.o
+        penX += g.o + TRACK
         gi++
       }
     })

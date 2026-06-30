@@ -78,10 +78,20 @@ export function PredictionPage() {
 
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
-        <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
-        <HandDrawText lines={INTRO_LINES} highlightLines={[2]} className="mx-auto block w-full text-white" />
+        {/* EXPERIMENT: oversized rotated intro, clipped so it bleeds into the
+            hero above and the forecast tiles below */}
+        <div className="relative flex items-center justify-center overflow-hidden h-[clamp(150px,23vw,330px)]">
+          <div className="origin-center" style={{ transform: 'rotate(-5deg)' }}>
+            <HandDrawText
+              lines={INTRO_LINES}
+              highlightLines={[2]}
+              className="block w-[min(1700px,128vw)] max-w-none text-white"
+            />
+          </div>
+        </div>
 
-        <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className={`${WIDE} pb-20 sm:pb-28 lg:pb-36`}>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {
             const n = String(i + 1).padStart(2, '0')
             return (

@@ -23,7 +23,7 @@ const rnd = (n: number) => {
   return x - Math.floor(x)
 }
 
-type Placed = { d: string; x: number; y: number; cx: number; cy: number; rot: number; scale: number; delay: number; dur: number }
+type Placed = { d: string; x: number; y: number; delay: number; dur: number }
 
 /**
  * Writes text on, one letter at a time, by drawing each glyph's single stroke
@@ -52,17 +52,8 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
           continue
         }
         const dur = 0.1 + rnd(gi * 3 + 2) * 0.1
-        placed.push({
-          d: g.d,
-          x: penX,
-          y: li * LINE_H + (rnd(gi * 3 + 3) - 0.5) * 4,
-          cx: g.o / 2,
-          cy: 11,
-          rot: (rnd(gi * 3 + 1) - 0.5) * 7,
-          scale: 0.97 + rnd(gi * 3 + 2) * 0.07,
-          delay: t,
-          dur,
-        })
+        // Consistent baseline, size, and tracking so it reads as one steady hand.
+        placed.push({ d: g.d, x: penX, y: li * LINE_H, delay: t, dur })
         t += dur
         penX += g.o + TRACK
         gi++
@@ -90,10 +81,7 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
       </defs>
       <g filter="url(#hsGrit)">
         {glyphs.map((g, i) => (
-          <g
-            key={i}
-            transform={`translate(${g.x} ${g.y}) translate(${g.cx} ${g.cy}) rotate(${g.rot}) scale(${g.scale}) translate(${-g.cx} ${-g.cy})`}
-          >
+          <g key={i} transform={`translate(${g.x} ${g.y})`}>
             <motion.path
               d={g.d}
               fill="none"

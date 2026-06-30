@@ -7,36 +7,7 @@ const LINKS = [
   { href: '#deep-dives', label: 'Deep dives' },
 ]
 
-function SunMoon({ dark }: { dark: boolean }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      {dark ? (
-        <path
-          d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"
-          fill="currentColor"
-        />
-      ) : (
-        <>
-          <circle cx="12" cy="12" r="4.2" fill="currentColor" />
-          {[...Array(8)].map((_, i) => (
-            <rect
-              key={i}
-              x="11.2"
-              y="0.5"
-              width="1.6"
-              height="3.4"
-              rx="0.8"
-              fill="currentColor"
-              transform={`rotate(${i * 45} 12 12)`}
-            />
-          ))}
-        </>
-      )}
-    </svg>
-  )
-}
-
-export function Nav({ theme, onToggleTheme }: { theme: 'light' | 'dark'; onToggleTheme: () => void }) {
+export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const { scrollY } = useScroll()
@@ -68,13 +39,6 @@ export function Nav({ theme, onToggleTheme }: { theme: 'light' | 'dark'; onToggl
           </div>
 
           <div className="flex items-center gap-2">
-            <button
-              onClick={onToggleTheme}
-              aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-              className="grid h-11 w-11 place-items-center rounded-full transition-colors duration-200 hover:bg-black/5 dark:hover:bg-white/10"
-            >
-              <SunMoon dark={theme === 'dark'} />
-            </button>
             <motion.a
               href="#themes"
               whileHover={{ scale: 1.04 }}

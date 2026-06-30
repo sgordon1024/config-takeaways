@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import contentData from './data/content.json'
 import type { Content, Talk } from './types'
-import { useTheme } from './lib/useTheme'
 import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
 import { Themes } from './components/Themes'
@@ -15,8 +14,6 @@ import { Footer } from './components/Footer'
 const content = contentData as Content
 
 export default function App() {
-  const { theme, toggle } = useTheme()
-
   // Tiny hash router: #/prediction shows the forecast page, everything else
   // (including the in-page #section / #talk- anchors) shows the main page.
   const [hash, setHash] = useState(() => (typeof window !== 'undefined' ? window.location.hash : ''))
@@ -42,8 +39,8 @@ export default function App() {
   )
 
   return (
-    <div className="min-h-screen bg-paper text-ink transition-colors duration-500 dark:bg-ink dark:text-paper">
-      <Nav theme={theme} onToggleTheme={toggle} />
+    <div className="min-h-screen bg-paper text-ink">
+      <Nav />
       {isPrediction ? (
         <PredictionPage />
       ) : (

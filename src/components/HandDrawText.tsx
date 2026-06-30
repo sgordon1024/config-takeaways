@@ -1,5 +1,5 @@
-import { useMemo } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { useMemo, useRef } from 'react'
+import { motion, useReducedMotion, useInView } from 'framer-motion'
 import { layoutText } from './handLayout'
 
 // Stable per-glyph pseudo-random for the draw cadence.
@@ -38,6 +38,11 @@ export function HandDrawText({
   highlightLines?: number[]
 }) {
   const reduce = useReducedMotion()
+  // Trigger the whole write-on ONCE when the SVG enters view, then let each
+  // glyph's `delay` drive the order. (Per-glyph whileInView would trigger each
+  // letter by its own position, scrambling the order for large/rotated text.)
+  const ref = useRef<SVGSVGElement>(null)
+  const inView = useInView(ref, { once: true, margin: '0px 0px -10% 0px' })
 
   const { timed, viewBox } = useMemo(() => {
     const { glyphs, viewBox } = layoutText(lines, GAPS)
@@ -52,7 +57,7 @@ export function HandDrawText({
   }, [lines])
 
   return (
-    <svg className={className} viewBox={viewBox} role="img" aria-label={lines.join(' ')} fill="none">
+    <svg ref={ref} className={className} viewBox={viewBox} role="img" aria-label={lines.join(' ')} fill="none">
       <defs>
         {/* grit tuned for this (small) coordinate space: roughen + texture the strokes */}
         <filter id="hsGrit" x="-25%" y="-25%" width="150%" height="150%">
@@ -78,8 +83,9 @@ export function HandDrawText({
               strokeLinecap="round"
               strokeLinejoin="round"
               initial={reduce ? { pathLength: 1, opacity: 1 } : { pathLength: 0, opacity: 0 }}
-              whileInView={{ pathLength: 1, opacity: 1 }}
-              viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+              animate={
+                reduce || inView ? { pathLength: 1, opacity: 1 } : { pathLength: 0, opacity: 0 }
+              }
               transition={
                 reduce
                   ? { duration: 0 }

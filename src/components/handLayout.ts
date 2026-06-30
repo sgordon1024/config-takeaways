@@ -16,7 +16,7 @@ export function glyphFor(ch: string): GlyphData | null {
 
 const advanceOf = (ch: string) => (ch === ' ' ? SPACE_ADV : glyphFor(ch)?.o ?? SPACE_ADV)
 
-export type PlacedGlyph = { d: string; x: number; y: number; order: number }
+export type PlacedGlyph = { d: string; x: number; y: number; order: number; li: number }
 export type GapMark = { li: number; ci: number; x: number; y: number } // gap after char ci on line li
 export type LayoutResult = { glyphs: PlacedGlyph[]; gapMarks: GapMark[]; viewBox: string }
 
@@ -36,7 +36,7 @@ export function layoutText(lines: string[], gaps?: number[][]): LayoutResult {
     chars.forEach((ch, ci) => {
       const g = glyphFor(ch)
       if (g) {
-        glyphs.push({ d: g.d, x: penX, y, order })
+        glyphs.push({ d: g.d, x: penX, y, order, li })
         order++
       }
       penX += advanceOf(ch)

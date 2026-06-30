@@ -79,7 +79,7 @@ export function PredictionPage() {
       {/* The forecast (transparent so the page-wide grain shows through) */}
       <section className="relative">
         <div className={`${WIDE} py-20 sm:py-28 lg:py-36`}>
-        <HandDrawText lines={INTRO_LINES} className="mx-auto block w-full text-white" />
+        <HandDrawText lines={INTRO_LINES} highlightLines={[2]} className="mx-auto block w-full text-white" />
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FORECASTS.map((f, i) => {

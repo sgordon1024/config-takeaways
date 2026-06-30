@@ -27,7 +27,16 @@ const GAPS: number[][] = [
  * along its own path (Framer `pathLength`). One path per letter (no fill/border
  * split), hidden until its turn so there are no pre-draw fragments.
  */
-export function HandDrawText({ lines, className = '' }: { lines: string[]; className?: string }) {
+export function HandDrawText({
+  lines,
+  className = '',
+  highlightLines = [],
+}: {
+  lines: string[]
+  className?: string
+  /** Line indices to render in the accent green, a touch bolder. */
+  highlightLines?: number[]
+}) {
   const reduce = useReducedMotion()
 
   const { timed, viewBox } = useMemo(() => {
@@ -57,13 +66,15 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
         </filter>
       </defs>
       <g filter="url(#hsGrit)">
-        {timed.map((g, i) => (
+        {timed.map((g, i) => {
+          const hi = highlightLines.includes(g.li)
+          return (
           <g key={i} transform={`translate(${g.x} ${g.y})`}>
             <motion.path
               d={g.d}
               fill="none"
-              stroke="#ffffff"
-              strokeWidth={1.8}
+              stroke={hi ? '#06C167' : '#ffffff'}
+              strokeWidth={hi ? 2.6 : 1.8}
               strokeLinecap="round"
               strokeLinejoin="round"
               initial={reduce ? { pathLength: 1, opacity: 1 } : { pathLength: 0, opacity: 0 }}
@@ -79,7 +90,8 @@ export function HandDrawText({ lines, className = '' }: { lines: string[]; class
               }
             />
           </g>
-        ))}
+          )
+        })}
       </g>
     </svg>
   )

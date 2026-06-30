@@ -9,7 +9,7 @@ type GlyphData = { d: string; o: number }
 const CHARS = (scriptFont as { chars: GlyphData[] }).chars
 const LINE_H = 42
 const SPACE_ADV = 14
-const TRACK = 2 // small: the cursive connector strokes overshoot the advance and join
+const TRACK = 0 // cursive connector strokes overshoot the advance and join naturally
 
 function glyphFor(ch: string): GlyphData | null {
   if (ch === ' ') return null

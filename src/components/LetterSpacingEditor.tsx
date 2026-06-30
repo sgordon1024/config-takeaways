@@ -6,10 +6,16 @@ const LINES = ['When anyone can build', 'anything, building stops', 'being the j
 
 const emptyGaps = () => LINES.map((l) => Array<number>(Math.max(0, [...l].length - 1)).fill(0))
 
+// Ordered list of every gap (line-major), for Shift+arrow navigation.
+const ALL_GAPS = LINES.flatMap((l, li) =>
+  Array.from({ length: Math.max(0, [...l].length - 1) }, (_, ci) => ({ li, ci })),
+)
+
 /**
  * Temporary spacing tool (route #/spacing). Click between two letters to drop a
- * blinking cursor on that gap, then use ←/→ to lower/raise the spacing there
- * (Shift = ±5). Save prints the per-gap values to bake into HandDrawText.
+ * blinking cursor on that gap (or Shift+←/→ to step the cursor between gaps),
+ * then use ←/→ to lower/raise the spacing there. Save prints the per-gap values
+ * to bake into HandDrawText.
  */
 export function LetterSpacingEditor() {
   const [gaps, setGaps] = useState<number[][]>(emptyGaps)
@@ -21,13 +27,26 @@ export function LetterSpacingEditor() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (!sel) return
       if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return
       e.preventDefault()
-      const step = (e.shiftKey ? 5 : 1) * (e.key === 'ArrowRight' ? 1 : -1)
+      const dir = e.key === 'ArrowRight' ? 1 : -1
+      if (e.shiftKey) {
+        // Shift+arrow steps the cursor to the next/previous gap.
+        if (ALL_GAPS.length === 0) return
+        const idx = sel
+          ? ALL_GAPS.findIndex((g) => g.li === sel.li && g.ci === sel.ci)
+          : dir > 0
+            ? -1
+            : ALL_GAPS.length
+        const ni = Math.max(0, Math.min(ALL_GAPS.length - 1, idx + dir))
+        setSel(ALL_GAPS[ni])
+        return
+      }
+      // Plain arrow lowers/raises the spacing at the selected gap (hold to repeat).
+      if (!sel) return
       setGaps((prev) => {
         const next = prev.map((a) => a.slice())
-        next[sel.li][sel.ci] = Math.max(-12, Math.min(60, (next[sel.li][sel.ci] ?? 0) + step))
+        next[sel.li][sel.ci] = Math.max(-12, Math.min(60, (next[sel.li][sel.ci] ?? 0) + dir))
         return next
       })
     }
@@ -83,8 +102,9 @@ export function LetterSpacingEditor() {
       <div className="mx-auto max-w-5xl">
         <h1 className="font-hand text-3xl">Letter-spacing tool</h1>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/60">
-          Click between two letters to place the cursor, then press ← / → to lower / raise the spacing
-          at that gap (hold Shift for ±5). When it looks right, hit Save and paste the result back to me.
+          Click between two letters to place the cursor (or <strong className="text-white/80">Shift + ← / →</strong> to
+          step it between gaps). Then press <strong className="text-white/80">← / →</strong> to lower / raise the spacing
+          at that gap — hold to repeat. When it looks right, hit Save and paste the result back to me.
         </p>
         <p className="mt-2 text-sm font-semibold text-accent">
           {sel ? `Gap after line ${sel.li + 1}, char ${sel.ci + 1}: ${selVal}` : 'No gap selected'}

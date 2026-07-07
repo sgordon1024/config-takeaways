@@ -1,0 +1,163 @@
+/* Sprout kit tokens — synced from the Figma Components page. */
+:root {
+  --ink: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #06c167;
+  --accent-ink: #04341d;
+  --sage: #e7f5ec;
+  --page: #f4f1ea;
+  --surface: #ffffff;
+  --border: #e4e2da;
+  --border-control: #dad8ce;
+  --warm: #f0efe7;
+  --warm-hover: #e6e4da;
+  --warm-pressed: #dbd9cd;
+  --btn-primary: #ff0000;
+  --btn-primary-hover: #e30e0e;
+  --btn-primary-pressed: #c10e0e;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --touch: 44px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--page);
+  color: var(--ink);
+}
+
+#root { max-width: 420px; margin: 0 auto; min-height: 100vh; padding: 20px; }
+
+/* Button — Uber pill */
+button.sprout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--touch);
+  padding: 12px 20px;
+  border-radius: 999px;
+  font: 600 15px 'Inter', sans-serif;
+  cursor: pointer;
+  border: none;
+}
+button.sprout-btn[data-variant='primary'] { background: var(--btn-primary); color: #fff; }
+button.sprout-btn[data-variant='secondary'] { background: var(--warm); color: #000; }
+button.sprout-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* SearchField — pill */
+input[type='search'] {
+  width: 100%;
+  min-height: var(--touch);
+  padding: 12px 18px;
+  border: 1.5px solid var(--border-control);
+  border-radius: 999px;
+  font: 400 15px 'Inter', sans-serif;
+  color: #000;
+  background: var(--surface);
+}
+input[type='search']::placeholder { color: var(--muted); }
+
+/* Card */
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+.card-image { width: 100%; height: 140px; object-fit: cover; background: var(--sage); display: block; }
+.card-content { padding: 0 16px 16px; }
+.card-title { font: 600 16px 'Inter', sans-serif; margin: 12px 0 4px; }
+.card-subtitle { font: 400 14px 'Inter', sans-serif; color: var(--muted); margin: 0; }
+
+/* ListRow */
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: none;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  cursor: pointer;
+}
+.list-row-thumb { width: 40px; height: 40px; border-radius: 12px; background: var(--sage); object-fit: cover; }
+.list-row-text { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.list-row-title { font-weight: 600; font-size: 15px; color: var(--ink); }
+.list-row-subtitle { font-size: 13px; color: var(--muted); }
+.list-row-chevron { color: var(--muted); font-size: 20px; }
+
+/* Chip */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font: 600 13px 'Inter', sans-serif;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border: 1.5px solid var(--border-control);
+}
+.chip[data-variant='selected'] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+/* EmptyState */
+.empty-state { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 32px 24px; text-align: center; }
+.empty-state-icon { width: 48px; height: 48px; border-radius: 50%; background: var(--sage); }
+.empty-state-title { font: 600 16px 'Inter', sans-serif; margin: 0; }
+.empty-state-subtitle { font: 400 14px 'Inter', sans-serif; color: var(--muted); margin: 0; }
+
+/* Onboarding flow */
+.eyebrow { font: 700 11px 'Inter', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 8px; }
+.screen-title { font: 700 24px 'Inter', sans-serif; margin: 0 0 4px; }
+.screen-sub { font: 400 14px 'Inter', sans-serif; color: var(--muted); margin: 0 0 16px; }
+.rows { margin-top: 12px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--surface); }
+.rows .list-row:last-child { border-bottom: none; }
+.added-badge { font: 600 13px 'Inter', sans-serif; color: var(--accent-ink); margin: 0 0 12px; }
+.schedule-card, .care-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 16px; margin: 12px 0; }
+.schedule-label, .care-label, .group-label { font: 700 11px 'Inter', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.group-label { margin-top: 16px; }
+.schedule-cadence { font: 700 24px 'Inter', sans-serif; margin: 0; }
+.schedule-hint { font: 400 13px 'Inter', sans-serif; color: var(--muted); margin: 4px 0 12px; }
+.schedule-next { display: flex; align-items: baseline; gap: 8px; background: var(--sage); border-radius: 8px; padding: 10px 12px; font: 400 13px 'Inter', sans-serif; }
+.schedule-next strong { font: 600 14px 'Inter', sans-serif; }
+.schedule-amount { margin-left: auto; font: 600 14px 'Inter', sans-serif; }
+.care-card p, .care-card li { font: 400 14px 'Inter', sans-serif; line-height: 1.5; margin: 0; }
+.care-card ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.refine-row { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: var(--touch); padding: 12px 16px; border: 1px dashed var(--border-control); border-radius: var(--radius-lg); background: transparent; font: 600 14px 'Inter', sans-serif; cursor: pointer; margin: 0 0 16px; }
+.refine-optional { font: 400 12px 'Inter', sans-serif; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.back { background: none; border: none; font-size: 20px; cursor: pointer; padding: 8px 8px 8px 0; min-height: var(--touch); }
+.week { display: flex; justify-content: space-between; margin: 8px 0 12px; }
+.week-day { display: flex; flex-direction: column; align-items: center; gap: 6px; font: 600 11px 'Inter', sans-serif; color: var(--muted); }
+.week-dot { width: 32px; height: 32px; border-radius: 50%; background: #ece9e1; display: grid; place-items: center; font-size: 14px; }
+.week-dot-active { background: var(--accent); }
+.light-confirm { font: 600 13px 'Inter', sans-serif; color: var(--accent-ink); margin: 8px 0 0; }
+.skip-link { background: none; border: none; font: 600 13px 'Inter', sans-serif; color: var(--muted); text-decoration: underline; cursor: pointer; min-height: var(--touch); }
+
+/* Interaction states — synced from the Figma State variants. */
+button.sprout-btn, .chip, .list-row, .refine-row, .card, input[type='search'] {
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+}
+button.sprout-btn[data-variant='primary']:hover:not(:disabled) { background: var(--btn-primary-hover); }
+button.sprout-btn[data-variant='primary']:active:not(:disabled) { background: var(--btn-primary-pressed); }
+button.sprout-btn[data-variant='secondary']:hover:not(:disabled) { background: var(--warm-hover); }
+button.sprout-btn[data-variant='secondary']:active:not(:disabled) { background: var(--warm-pressed); }
+button.sprout-btn:active:not(:disabled) { transform: scale(0.98); }
+
+.chip:hover { background: var(--warm); border-color: #c6c4b9; }
+.chip[data-variant='selected']:hover { background: #05a156; border-color: #05a156; }
+
+.list-row:hover { background: #f6f5f0; }
+.list-row:active { background: #edebe3; }
+.refine-row:hover { background: #f6f5f0; border-color: #c6c4b9; }
+
+.card:hover { border-color: #c9c7bd; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+
+input[type='search']:focus { outline: none; border: 2px solid #000; }
+
+:focus-visible { outline: 3px solid #000; outline-offset: 2px; border-radius: 4px; }

@@ -125,6 +125,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '02',
+    detailHref: '#/process/context',
     name: 'Context authoring',
     dur: '~2-5 days, reused after',
     lead: 'Shared infrastructure',
@@ -137,6 +138,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '03',
+    detailHref: '#/process/exploration',
     name: 'Divergent exploration',
     dur: '~4-6 days',
     lead: 'Generate, then curate',
@@ -149,6 +151,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '04',
+    detailHref: '#/process/build',
     name: 'Build: idea to code',
     dur: '~1-2 weeks',
     lead: 'AI-compressed',
@@ -161,6 +164,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '05',
+    detailHref: '#/process/qa',
     name: 'Parity & QA checks',
     dur: '~0.5-2 days',
     lead: 'AI-compressed',
@@ -173,6 +177,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '06',
+    detailHref: '#/process/validation',
     name: 'Validation & evals',
     dur: '~2-4 days',
     lead: 'Human-led',
@@ -185,6 +190,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '07',
+    detailHref: '#/process/polish',
     name: 'The final 5% + trust',
     dur: '~2-4 days',
     lead: 'Human-led',
@@ -197,6 +203,7 @@ const STAGES: Stage[] = [
   },
   {
     n: '08',
+    detailHref: '#/process/ship',
     name: 'Ship & iterate',
     dur: 'continuous',
     lead: 'Looped',

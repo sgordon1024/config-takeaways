@@ -1,0 +1,1250 @@
+{
+  "framing": {
+    "n": "01",
+    "name": "Framing & direction",
+    "dur": "~3-7 days",
+    "purpose": "Framing decides whether this is the right thing to build and sets a point of view you can defend, before cheap generation tempts you into building the wrong thing fast. The output is not screens. It is a written bet and a definition of good.",
+    "output": [
+      "A one-page conviction brief (the bet, in writing)",
+      "A definition of \"good\": 1-2 measurable signals",
+      "A hand-vs-agent triage for the major tasks",
+      "A thinking file that seeds every later agent session"
+    ],
+    "examplesTitle": "What a good bet looks like.",
+    "examples": [
+      {
+        "label": "Consumer app: new onboarding (the running example)",
+        "rows": [
+          {
+            "k": "Bet",
+            "v": "Users reach first real value in under 2 minutes."
+          },
+          {
+            "k": "Good means",
+            "v": "Day-1 activation rate, not tutorial completion."
+          }
+        ],
+        "note": "Skip the product tour. Get them to one genuine outcome fast."
+      },
+      {
+        "label": "B2B analytics dashboard",
+        "rows": [
+          {
+            "k": "Bet",
+            "v": "Answer the one question users open it for in 5 seconds."
+          },
+          {
+            "k": "Good means",
+            "v": "Time-to-first-answer, plus weekly return rate."
+          }
+        ],
+        "note": "Refuse the kitchen-sink request. Pick the single job it must nail."
+      },
+      {
+        "label": "Checkout flow rework",
+        "rows": [
+          {
+            "k": "Bet",
+            "v": "Remove the top 2 reasons people abandon on mobile."
+          },
+          {
+            "k": "Good means",
+            "v": "Mobile completion rate, plus checkout support tickets."
+          }
+        ],
+        "note": "High cost of being wrong, so weight validation heavier downstream."
+      },
+      {
+        "label": "AI writing assistant feature",
+        "rows": [
+          {
+            "k": "Bet",
+            "v": "Augment the user's voice, never overwrite it."
+          },
+          {
+            "k": "Good means",
+            "v": "Suggestions kept vs discarded, plus a trust survey."
+          }
+        ],
+        "note": "Decide up front where the human must stay in control."
+      }
+    ],
+    "promptsTitle": "Steal these. Fill the brackets.",
+    "promptsIntro": "Paste into your model of choice as a sparring partner. The point is to be argued with, not agreed with.",
+    "prompts": [
+      {
+        "title": "Pressure-test the bet",
+        "note": "Use a capable model as a skeptic, not a cheerleader.",
+        "body": "You are a skeptical product lead. Here is my bet for what we should build:\n\n[paste your one-sentence bet]\n\nDo three things:\n1. Make the strongest argument that this is the wrong bet.\n2. List the hidden assumptions it depends on.\n3. Tell me what would have to be true for it to succeed, and how I could check each one cheaply this week.\n\nBe blunt. Do not validate me."
+      },
+      {
+        "title": "Surface the users I am ignoring",
+        "body": "Context: [one line about the product and who it is for].\nMy current bet: [bet].\n\nList the users and use cases I am probably ignoring, especially people who are not the easy-to-reach default: brand-new users, power users, disabled users, and regulated or high-stakes cases. For each one, say in a single line how it would change the design if I took it seriously."
+      },
+      {
+        "title": "Triage: hand vs agent (the 3 questions)",
+        "note": "Decides what to one-shot with an agent and what to protect for human work.",
+        "body": "For each task below, score it 1-5 on three axes: how much context it needs, how novel or divergent it is, and the cost of getting it wrong. Then recommend HUMAN (do it by hand) or AGENT (safe to generate), with one sentence of reasoning.\n\nTasks:\n- [task]\n- [task]\n- [task]\n\nRule of thumb: high context + high novelty + high cost = human. Low on all three = agent."
+      },
+      {
+        "title": "Draft the conviction brief",
+        "body": "Draft a one-page conviction brief from these inputs:\nProblem: [...]\nWho it is for: [...]\nThe bet (one sentence): [...]\nWhy now: [...]\nWhat we will deliberately NOT do: [...]\n\nReturn: a one-paragraph point of view, three principles that every decision should be checked against, and the single metric that tells us we were right. Keep it under 250 words."
+      },
+      {
+        "title": "Turn \"good\" into metrics",
+        "body": "My bet: [bet].\n\nTurn this into success measures: 1-2 primary metrics that prove the bet worked, plus 1-2 guardrail metrics that would warn me I broke something else. For each, give a rough target and how to measure it. Avoid vanity metrics."
+      }
+    ],
+    "guide": {
+      "eyebrow": "Run the workshop",
+      "title": "A 90-minute framing session.",
+      "intro": "A 90-minute framing session. The goal is to leave with a signed bet and a definition of good, not a backlog of features. Timebox hard. Conviction is the deliverable.",
+      "steps": [
+        {
+          "time": "0-10 min",
+          "title": "Frame the problem",
+          "detail": "State the problem, not a solution. No UI talk yet. The facilitator writes it on the board in one sentence."
+        },
+        {
+          "time": "10-30 min",
+          "title": "Diverge on the bet",
+          "detail": "Everyone writes their one-sentence bet silently into FigJam. The agent clusters them into themes while you read."
+        },
+        {
+          "time": "30-50 min",
+          "title": "Pressure-test",
+          "detail": "Run the pressure-test prompt on the leading 2-3 bets. Argue against each one. Kill the weak bets out loud."
+        },
+        {
+          "time": "50-70 min",
+          "title": "Triage the work",
+          "detail": "Run the 3-question triage on the major tasks. Mark each hand vs agent so the build stage knows what to one-shot and what to protect."
+        },
+        {
+          "time": "70-85 min",
+          "title": "Commit",
+          "detail": "Write the conviction statement and the definition of good. Named approvers co-sign in the room."
+        },
+        {
+          "time": "85-90 min",
+          "title": "Seed the system",
+          "detail": "Paste the brief, the bet, and the definition of good into the thinking file or skills so every downstream agent session starts from it."
+        }
+      ],
+      "roles": "Facilitator: the player-coach lead. Approvers: sponsor, brand owner, and legal or compliance if regulated. Scribe: captures decisions straight into the thinking file.",
+      "artifacts": [
+        "One-page conviction brief",
+        "Definition of good (metrics + guardrails)",
+        "Kill list (what you said no to)",
+        "Hand-vs-agent triage table",
+        "The thinking file for later stages"
+      ]
+    },
+    "pitfallsTitle": "Four ways framing goes wrong.",
+    "pitfalls": [
+      "Building before the bet is signed. If approvers have not co-signed, you are guessing.",
+      "Design-by-committee. Conviction is owned by one lead; partners pressure-test, they do not vote on direction.",
+      "Vague \"make it better.\" If you cannot name the metric of good, you cannot tell success from slop.",
+      "Skipping cost-of-wrong. High-stakes bets need heavier validation later, so decide that now."
+    ]
+  },
+  "context": {
+    "n": "02",
+    "name": "Context authoring",
+    "dur": "~2-5 days, reused after",
+    "purpose": "Context authoring is where you teach agents your standards once, so you stop re-explaining them every session. The output is not a screen or a flow. It is infrastructure: a few tight skills, accessibility built into tokens, an MCP wired to your real system, and a small golden set so you can check one-shot accuracy honestly. It is real work to build the first time and cheap to reuse on later projects, including the onboarding flow you are about to ship, as long as someone keeps it current.",
+    "output": [
+      "A handful of tight skills that encode brand voice, component rules, and what \"done\" means",
+      "Accessibility built into tokens (semantic naming, AA contrast pairs) so it is structural, not a checklist",
+      "Figma MCP and Code Connect wired so agents read your real components instead of guessing",
+      "A small golden set: paired prompts and known-good outputs you can re-run to check one-shot accuracy"
+    ],
+    "examplesTitle": "What good context encodes.",
+    "examples": [
+      {
+        "label": "Onboarding flow: a \"done means\" skill",
+        "rows": [
+          {
+            "k": "Skill",
+            "v": "Onboarding screen rules"
+          },
+          {
+            "k": "Encodes",
+            "v": "AA contrast, uses real button and input tokens, copy at an 8th-grade reading level"
+          }
+        ],
+        "note": "Now \"build the onboarding step\" starts from your bar, not the model's average."
+      },
+      {
+        "label": "Brand voice as a skill",
+        "rows": [
+          {
+            "k": "Skill",
+            "v": "Product voice"
+          },
+          {
+            "k": "Encodes",
+            "v": "Plain language, second person, no exclamation marks, three before/after rewrite pairs"
+          }
+        ],
+        "note": "Examples teach voice faster than adjectives. Show the rewrite, do not describe it."
+      },
+      {
+        "label": "Code Connect mapping",
+        "rows": [
+          {
+            "k": "Maps",
+            "v": "Figma Button to <Button> in code"
+          },
+          {
+            "k": "Costs",
+            "v": "You author the map by hand, the MCP read-tools are seat-gated, and it only pays off once your system is mapped"
+          }
+        ],
+        "note": "Bitovi said this might roughly triple one-shot likelihood, in their experience. Treat that as a hedged anecdote, not a number you can count on."
+      },
+      {
+        "label": "Golden set for checking",
+        "rows": [
+          {
+            "k": "Set",
+            "v": "About 10 prompts with known-good outputs"
+          },
+          {
+            "k": "Catches",
+            "v": "Drift when a skill or token changes"
+          }
+        ],
+        "note": "Meta reported 80-87% one-shot, but only with pixel-exact rebuilds, golden sets, and an MCP they co-developed. That number is conditional, not something that carries over to your setup."
+      }
+    ],
+    "promptsTitle": "Steal these. Wire them in.",
+    "promptsIntro": "These are skill skeletons and a golden-set check, not chat prompts. Fill the brackets with your real system, then keep them in version control like any other infrastructure.",
+    "prompts": [
+      {
+        "title": "Skill skeleton",
+        "note": "Precision over volume. One tight skill beats five vague ones.",
+        "body": "# Skill: [name, e.g. Onboarding screen rules]\n\n## When to use\n[the trigger, e.g. building or editing any onboarding step]\n\n## Rules (non-negotiable)\n- Use only these components: [list real component names]\n- Use only these tokens: [list semantic token names]\n- Accessibility: WCAG AA contrast, visible focus, labeled inputs\n- Copy: [voice constraints, e.g. plain language, second person]\n\n## Done means\n[the measurable bar, e.g. matches tokens, passes AA, copy at an 8th-grade level]\n\n## Examples\n[2-3 before/after pairs that show the rule rather than describe it]"
+      },
+      {
+        "title": "Encode \"done\" as a definition",
+        "note": "If \"done\" is not written down, every session negotiates it again.",
+        "body": "Write a DONE.md that an agent reads before finishing any screen.\n\nA screen is done when:\n1. Every color, spacing, and type value resolves to a named token. No raw hex, no magic numbers.\n2. Text and interactive elements meet WCAG AA contrast.\n3. Every interactive element is keyboard reachable and has a visible focus state.\n4. Every component used exists in [design system name]. No invented variants.\n5. Copy follows [voice skill] and is reviewed by a human before merge.\n\nA human owns the merge and the final quality call. \"The AI did it\" is never an acceptable answer for a defect that ships."
+      },
+      {
+        "title": "Bake a11y into tokens, not reviews",
+        "note": "Structural accessibility scales. A checklist at the end does not.",
+        "body": "Audit my token set for accessibility. For each token pair used together (text on surface, text on button, border on background):\n\n1. Compute the contrast ratio.\n2. Flag any pair below WCAG AA (4.5:1 body text, 3:1 large text and non-text).\n3. Propose a corrected token value that holds the same visual intent.\n4. Suggest semantic names that make misuse obvious, e.g. text-on-brand vs text-primary.\n\nReturn a table with these columns: pair, current ratio, pass/fail, proposed fix."
+      },
+      {
+        "title": "Build the golden set",
+        "note": "Small and real beats large and synthetic. Ten honest cases is plenty to start.",
+        "body": "Help me build a golden set to check one-shot accuracy.\n\n1. I will give you [N] representative tasks, e.g. \"build the email-capture onboarding step.\"\n2. For each, I will paste the known-good output, the version a human approved.\n3. Define a scoring rubric covering token compliance, component fidelity, a11y pass, and copy match. Score each 0-2.\n4. Output a re-runnable checklist so I can re-score after any skill or token change and see whether accuracy moved.\n\nKeep it strict. A pass is full marks, not \"close enough.\""
+      },
+      {
+        "title": "Verify the MCP reads your real system",
+        "note": "Wiring is not the same as working. Confirm it pulls real components before you trust the output.",
+        "body": "Using the Figma MCP and Code Connect, build [one small known component, e.g. the primary onboarding button] from [Figma node link].\n\nThen tell me:\n1. Which real components and tokens did you actually read, versus infer?\n2. Did Code Connect resolve to the mapped code component, or did you guess?\n3. List anything you could not find a mapping for.\n\nIf you guessed anything, stop. That gap is the next mapping to author."
+      }
+    ],
+    "guide": {
+      "eyebrow": "Set it up",
+      "title": "Build it once, reuse it across projects.",
+      "intro": "This is infrastructure work, not a one-off project. Timebox the first build to a few days as a planning estimate, ship it deliberately rough, then let real sessions tell you what to tighten. A shared infrastructure team should own it so every designer inherits it.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Pick the few skills that matter",
+          "detail": "Brand voice, the component set, and one \"done means\" definition. Three tight skills, not thirty thin ones."
+        },
+        {
+          "time": "Step 2",
+          "title": "Bake a11y into tokens",
+          "detail": "Semantic names, AA-safe pairs. Make the wrong choice hard to make, so accessibility is structural rather than a final-step audit."
+        },
+        {
+          "time": "Step 3",
+          "title": "Wire the MCP and Code Connect",
+          "detail": "Map Figma components to real code components. It is hand-authored and the read-tools are seat-gated, but it is what makes agents read your system instead of guessing."
+        },
+        {
+          "time": "Step 4",
+          "title": "Build a small golden set",
+          "detail": "About ten paired prompts and known-good outputs. This is how you check one-shot accuracy instead of guessing at it."
+        },
+        {
+          "time": "Step 5",
+          "title": "Test on one real task",
+          "detail": "Run the onboarding step through the full setup. Watch where the agent guesses. Each guess is the next thing to encode."
+        },
+        {
+          "time": "Step 6",
+          "title": "Version and hand off",
+          "detail": "Put skills, tokens, and the golden set in source control. Name an owner so it stays current as the system evolves."
+        }
+      ],
+      "roles": "Owner: shared infrastructure team. Contributors: design systems (tokens, mappings), design engineering (MCP and Code Connect wiring), content design (voice skill). Consumers: every product designer who runs an agent session afterward.",
+      "artifacts": [
+        "A small set of versioned skills",
+        "Accessibility-safe semantic tokens",
+        "A live Figma MCP and Code Connect mapping",
+        "A re-runnable golden set",
+        "A written definition of \"done\""
+      ]
+    },
+    "pitfallsTitle": "Four ways context authoring goes wrong.",
+    "pitfalls": [
+      "Volume over precision. Twenty vague skills the agent ignores, instead of three it actually follows.",
+      "Treating Code Connect as free or automatic. It is hand-authored, the MCP read-tools are seat-gated, and it only pays off once your system is mapped.",
+      "Quoting accuracy numbers as guarantees. Meta's 80-87% was conditional on their setup and Bitovi's tripling was a hedged anecdote. Neither is a portable promise.",
+      "Building it once and letting it rot. Unowned skills and stale mappings quietly teach agents the wrong system, and a human still owns every merge and the final quality call."
+    ]
+  },
+  "exploration": {
+    "n": "03",
+    "name": "Divergent exploration",
+    "dur": "~4-6 days",
+    "purpose": "Divergent exploration spends the cheap generation you earned by framing first. The point is not one good screen. It is to put genuinely different bets in front of your taste at the same time, then kill most of them. The real output is one direction you have argued for against live alternatives, not a folder of variations you are now too attached to delete.",
+    "output": [
+      "Three to five distinct directions for the same flow, generated in parallel from your system, not from scratch",
+      "A kill list: which directions died and the one-line reason each lost",
+      "One survivor, hand-edited past the generated draft, with the motion actually tuned",
+      "A short note on what each dead direction taught you, so the choice is defensible in review"
+    ],
+    "examplesTitle": "What good divergence looks like.",
+    "examples": [
+      {
+        "label": "Onboarding flow: three structures at once",
+        "rows": [
+          {
+            "k": "Generate",
+            "v": "Checklist, wizard, and progressive-disclosure versions of the same onboarding flow, as three parallel prompts."
+          },
+          {
+            "k": "Kill",
+            "v": "Wizard (too many steps before first value), checklist (no momentum)."
+          },
+          {
+            "k": "Keep",
+            "v": "Progressive disclosure, then hand-tune reveal timing."
+          }
+        ],
+        "note": "Three real structures competing beats ten color variants of one."
+      },
+      {
+        "label": "Empty state for the onboarding dashboard",
+        "rows": [
+          {
+            "k": "Generate",
+            "v": "Illustration-led, action-led, and sample-data-led versions of the first-run screen."
+          },
+          {
+            "k": "Kill",
+            "v": "Illustration-led: it stalls people instead of moving them toward setup."
+          },
+          {
+            "k": "Keep",
+            "v": "Sample-data-led: it shows value before the user does any work."
+          }
+        ],
+        "note": "Constrain the variable. Same copy, same components, vary only the strategy."
+      },
+      {
+        "label": "Motion on the onboarding completion moment",
+        "rows": [
+          {
+            "k": "Generate",
+            "v": "Three transition feels for the final step: snappy, settled, celebratory."
+          },
+          {
+            "k": "Kill",
+            "v": "Celebratory: it reads as noise on a step users repeat."
+          },
+          {
+            "k": "Tune",
+            "v": "Settled: hand-edit easing and duration on the survivor."
+          }
+        ],
+        "note": "Motion is a direction too. Generate the feel, then edit the curve by hand."
+      },
+      {
+        "label": "All from the system, not the void",
+        "rows": [
+          {
+            "k": "Pull from",
+            "v": "Your tokens and any components already mapped via Code Connect, not generic UI."
+          },
+          {
+            "k": "Why",
+            "v": "Variations stay comparable and stay closer to shippable."
+          },
+          {
+            "k": "Caveat",
+            "v": "Code Connect is a manual map you author and maintain, and the Figma read-tools are seat-gated. It only pays off where the design system is already mapped."
+          }
+        ],
+        "note": "If the variations do not use your system, you are comparing decoration, not directions."
+      }
+    ],
+    "promptsTitle": "Fire these in parallel. Fill the brackets.",
+    "promptsIntro": "Run these as separate, simultaneous sessions so the directions do not contaminate each other. The goal is contrast you can judge, then a hard cut.",
+    "prompts": [
+      {
+        "title": "Constrained parallel variations",
+        "note": "Run one session per direction. Change one variable, hold the rest fixed.",
+        "body": "Generate the onboarding flow for [product] as a [checklist / wizard / progressive-disclosure] structure.\n\nConstraints, do not deviate:\n- Use only components and tokens from my system: [paste token names, or point to the mapped library]\n- Same copy and same content in every variation\n- The only thing that changes between directions is the structure\n- Optimize for the goal from framing: [e.g. user reaches first value in under two minutes]\n\nReturn the screens plus a two-line rationale for why this structure serves that goal."
+      },
+      {
+        "title": "Force real difference, not reskins",
+        "note": "Use when your variations come back as the same idea in three coats of paint.",
+        "body": "Here are my current directions for the onboarding flow:\n\n[paste or describe the variations]\n\nThese are too similar. Propose three structurally different approaches that move a new user through onboarding in genuinely different ways. For each, name the core bet, who it is best for, and the main risk. Structural difference only, no visual restyling."
+      },
+      {
+        "title": "Curate with a kill bias",
+        "note": "Most options should get a no. Make the model argue for cuts, not for keeping.",
+        "body": "I have [N] directions for the onboarding flow. My definition of good is [the signal from framing, e.g. first value in under two minutes].\n\nAssume I can ship exactly one. For each direction:\n1. Score it against that definition of good, bluntly.\n2. Name the single reason it would lose.\n3. Recommend kill or keep.\n\nThen tell me which one survives and what its biggest remaining weakness is. Do not hedge. Default to killing."
+      },
+      {
+        "title": "Tune the motion on the survivor",
+        "note": "For the one that lived. Editing curves by hand beats accepting the generated default.",
+        "body": "This is the surviving onboarding direction. Here is the moment I want to tune: [the completion / reveal / step transition].\n\n[describe or paste the current motion]\n\nThe feel I want is [settled / snappy / calm]. Propose specific easing curves and durations in ms for each transition, and explain the tradeoff of each. Keep it consistent with motion already used elsewhere in [product]. I will hand-edit from here."
+      },
+      {
+        "title": "Defend the cut",
+        "note": "Write the kill list now, while the dead directions are still fresh, so the choice holds up in review.",
+        "body": "For the onboarding flow I kept [survivor] and killed [list of dead directions].\n\nWrite the kill list as: direction, one-line reason it lost, one thing it taught me that the survivor should keep. Be concrete. This needs to make sense to a reviewer who was not in the room."
+      }
+    ],
+    "guide": {
+      "eyebrow": "Run the loop",
+      "title": "A divergence loop, roughly 4 to 6 days.",
+      "intro": "Generate wide, edit by hand, then cut hard. The discipline is the cut, not the generation. If everything survives, you diverged for nothing. The day range is a planning estimate, not a measured cadence.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Set the constraint",
+          "detail": "Pick the one variable that differs across directions. Lock copy, content, and components so you compare strategy, not styling."
+        },
+        {
+          "time": "Step 2",
+          "title": "Fire parallel prompts",
+          "detail": "Run three to five directions as separate sessions, each pulling from your system. Do not let them cross-pollinate."
+        },
+        {
+          "time": "Step 3",
+          "title": "Hand-edit the drafts",
+          "detail": "Generated output is a draft, not a deliverable. Bring each contender up to a fair fight before you judge it."
+        },
+        {
+          "time": "Step 4",
+          "title": "Curate hard",
+          "detail": "Score against the definition of good. Most directions get a no. Write the one-line reason each lost."
+        },
+        {
+          "time": "Step 5",
+          "title": "Tune the survivor",
+          "detail": "Hand-tune the motion and the details on the one that lived. This is where lead taste shows up."
+        },
+        {
+          "time": "Step 6",
+          "title": "Write the kill list",
+          "detail": "Record what died and what each loss taught you, while it is fresh, so the choice is defensible in the next stage."
+        }
+      ],
+      "roles": "Driver: the designer running the parallel sessions and making the cut. Lead taste: owns the final keep-or-kill call and the survivor's polish. A human owns that decision and the merge. \"The AI did it\" is never the reason a weak direction shipped.",
+      "artifacts": [
+        "Three to five hand-edited directions for the onboarding flow",
+        "A kill list with one-line reasons",
+        "One tuned survivor with hand-edited motion",
+        "A short note on what each dead direction taught you"
+      ]
+    },
+    "pitfallsTitle": "Four ways divergence goes wrong.",
+    "pitfalls": [
+      "Variations that are reskins, not real structural difference. Three coats of paint on one idea.",
+      "Generating from the void instead of from your system, so nothing is comparable or close to shippable.",
+      "Keeping everything. Falling in love with options instead of making the cut.",
+      "Shipping the raw generated draft of the survivor without hand-tuning the motion and details."
+    ]
+  },
+  "build": {
+    "n": "04",
+    "name": "Build: idea to code",
+    "dur": "~1-2 weeks",
+    "purpose": "This is where the design becomes running code in your real repo, built against actual components and tokens instead of throwaway markup. The stage is AI-compressed but not AI-owned. You draft against the codebase, annotate what the agent got wrong, and swap in system components and tokens by hand. The real output is a branch a human can review and defend, not a demo that looks finished and breaks the moment someone touches it.",
+    "output": [
+      "A feature branch for the onboarding flow, built against the real codebase using real components and tokens",
+      "A clear split of what the agent generated versus what you hand-authored",
+      "A pull request a human owns, with the AI-generated parts flagged for review",
+      "Drift notes fed back into the thinking file: where the agent reached outside the system"
+    ],
+    "examplesTitle": "Where the agent helps and where you take over.",
+    "examples": [
+      {
+        "label": "Onboarding wizard: the happy path",
+        "rows": [
+          {
+            "k": "Task",
+            "v": "Generate the multi-step signup form against real components in a local codebase (Make Local or your own checkout)."
+          },
+          {
+            "k": "Who",
+            "v": "Agent drafts, you verify the component swaps."
+          }
+        ],
+        "note": "Layout, validation wiring, and step navigation are mechanical. Let the agent type, then confirm it pulled from the system and not from invented markup."
+      },
+      {
+        "label": "Onboarding wizard: the edge moments",
+        "rows": [
+          {
+            "k": "Task",
+            "v": "The empty state before the first project exists and the success screen after the user reaches first value."
+          },
+          {
+            "k": "Who",
+            "v": "You hand-author both."
+          }
+        ],
+        "note": "These carry the bet you set in framing. The agent fills them with placeholder cheer. Write them yourself."
+      },
+      {
+        "label": "Error and loading states",
+        "rows": [
+          {
+            "k": "Task",
+            "v": "Generate error, loading, and disabled states for each async step (submit, save, fetch profile)."
+          },
+          {
+            "k": "Who",
+            "v": "Agent drafts, you rewrite the copy."
+          }
+        ],
+        "note": "Agents are good at exhaustive state coverage and bad at error wording. Keep the states, fix the words."
+      },
+      {
+        "label": "Design system drift",
+        "rows": [
+          {
+            "k": "Task",
+            "v": "Agent reaches for a raw hex value or a one-off div instead of a system component."
+          },
+          {
+            "k": "Catch",
+            "v": "Grep the diff for hardcoded values before review."
+          }
+        ],
+        "note": "If your design system is mapped through Code Connect, the agent is more likely to reach for the real component, but mapping is manual and partial and it is not a guarantee. Check the diff."
+      }
+    ],
+    "promptsTitle": "Steal these. Point the agent at your repo.",
+    "promptsIntro": "These are agent instructions and review checklists, not chat prompts. They assume you are building in a local codebase. If your design system is mapped through Code Connect, the agent can reach mapped components directly; if not, name the component paths yourself in the brief. Replace the bracketed paths with your repo.",
+    "prompts": [
+      {
+        "title": "Brief the build agent",
+        "note": "Run against a local codebase, not a blank canvas. Name the system explicitly.",
+        "body": "You are building a feature in this codebase.\n\nFeature: [paste the one-page conviction brief and the screen spec for the onboarding flow]\n\nRules:\n1. Use existing components from [path to component library]. Do not author new primitives.\n2. Use tokens from [path to tokens]. No raw hex, no magic numbers, no inline px.\n3. Match the patterns in [path to a similar existing feature].\n4. Generate the happy path plus error, loading, and disabled states. Leave the empty state and the success screen as stubs with a TODO; I will hand-author those.\n5. List every place you could not find a system component and had to improvise.\n\nShow the file plan before writing any code."
+      },
+      {
+        "title": "Annotate, do not one-shot",
+        "note": "The second pass is where the quality is. Force the swap.",
+        "body": "Here is the diff you generated:\n\n[paste or point to the diff]\n\nGo back through it and:\n1. Replace every improvised element with the closest real component from [path to component library].\n2. Replace every raw value with a token from [path to tokens]. List any value that has no matching token.\n3. Flag any copy you invented so I can rewrite it.\n\nDo not add features. Only swap toward the system."
+      },
+      {
+        "title": "Pre-PR self-review checklist",
+        "note": "Run before you open the PR, not after someone complains.",
+        "body": "Review this branch against the checklist and report pass or fail per item, with file and line for each fail:\n\n- [ ] All UI uses real system components, no one-off markup\n- [ ] No hardcoded colors, spacing, or type sizes; tokens only\n- [ ] Error and loading states present for every async action\n- [ ] Empty state and success screen are hand-authored, not placeholder\n- [ ] No dead code or unused imports left behind\n- [ ] Labels, focus order, and contrast checked on new elements\n- [ ] Copy reads like a human wrote it"
+      },
+      {
+        "title": "PR description with the AI split called out",
+        "note": "Reviewers need to know what to scrutinize.",
+        "body": "Write a PR description for this branch:\n\n[paste the branch summary]\n\nInclude:\n1. What the feature does and which bet it serves\n2. Generated versus hand-authored: which files and sections came from the agent\n3. Where I overrode the agent and why\n4. What still needs a careful human eye\n\nKeep it short. A reviewer should know where to look in under a minute."
+      },
+      {
+        "title": "Capture the drift for next time",
+        "note": "This is what makes the next session faster.",
+        "body": "Based on this build, append to the thinking file:\n\n1. Components or patterns the agent kept missing or improvising\n2. Tokens it could not find, so we know what gaps to close in the system\n3. Instructions that worked and ones it ignored\n\nWrite it as guidance for the next agent session, not a postmortem."
+      }
+    ],
+    "guide": {
+      "eyebrow": "The loop",
+      "title": "Draft, annotate, swap, merge.",
+      "intro": "This is not a single generation. It is a tight loop where the agent does the volume and you own the judgment. Never push a one-shot straight to review. A human owns the merge and the final quality call.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Point at the codebase",
+          "detail": "Work in a local repo, not a blank canvas. If your design system is mapped through Code Connect, confirm the components you need are actually mapped; if not, name their paths in the brief. Load the thinking file and the conviction brief into the session."
+        },
+        {
+          "time": "Step 2",
+          "title": "Draft the mechanical parts",
+          "detail": "Have the agent generate the happy path plus error, loading, and disabled states for the onboarding flow. Tell it to stub the empty state and the success screen. Volume coverage is what the agent is for."
+        },
+        {
+          "time": "Step 3",
+          "title": "Annotate the drift",
+          "detail": "Read the diff. Mark every improvised element, raw value, and invented string. Do not fix it conversationally yet; collect the list first."
+        },
+        {
+          "time": "Step 4",
+          "title": "Swap in system components",
+          "detail": "Run the annotate pass: replace improvised markup with real components and raw values with tokens. Anything with no token is a system gap to flag, not a license to hardcode."
+        },
+        {
+          "time": "Step 5",
+          "title": "Hand-author the moments that matter",
+          "detail": "Write the empty state, the success screen, and the error copy yourself. These carry the bet, and the agent fills them with filler."
+        },
+        {
+          "time": "Step 6",
+          "title": "Self-review, then open the PR",
+          "detail": "Run the pre-PR checklist. Write a description that calls out what was generated and what needs a careful eye. Push to a branch. A human reviews and merges."
+        }
+      ],
+      "roles": "Driver: the design engineer or front-end designer running the loop. Reviewer: a human who owns the merge and the quality call. System owner: consulted when the agent surfaces a missing component or token.",
+      "artifacts": [
+        "A feature branch on the real codebase",
+        "An annotated diff showing generated versus hand-authored work",
+        "A PR description with the AI split flagged",
+        "A list of design system gaps to close",
+        "Updated drift notes in the thinking file"
+      ]
+    },
+    "pitfallsTitle": "Four ways the build goes wrong.",
+    "pitfalls": [
+      "One-shotting straight to a PR. The first pass looks done and is full of improvised markup and hardcoded values.",
+      "Treating accuracy claims as guarantees. The vendor numbers from Config were conditional (pixel-exact rebuilds, golden sets, co-developed tooling) or hedged anecdote. Code Connect may improve the odds of a clean generation, but it never removes the review.",
+      "Letting the agent write the empty state, success screen, and error copy. These carry the bet and need a human hand.",
+      "Saying the AI did it. A human owns every merge, and that is never an acceptable answer for a shipped defect."
+    ]
+  },
+  "qa": {
+    "n": "05",
+    "name": "Parity & QA checks",
+    "dur": "~0.5-2 days",
+    "purpose": "This stage proves the build matches design-system truth instead of trusting that it does. Automated checks run the comparison: token drift, contrast, visual diff against a reference, and a golden-set score if you have one. The real output is not a green checkmark. It is a short, specific list of where the build diverged, routed back to the agent, plus a human-owned definition of what done and parity actually mean for this work.",
+    "output": [
+      "A pass/fail report per check: drift, contrast, visual diff, golden-set score",
+      "A written definition of parity and done for this flow, owned by a human",
+      "A scoped fix list: only the failing items, routed back to the agent",
+      "A signed-off record of what a human reviewed and accepted before merge"
+    ],
+    "examplesTitle": "What a check actually catches.",
+    "examples": [
+      {
+        "label": "Onboarding flow: drift check",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "Token drift against the mapped design system"
+          },
+          {
+            "k": "Catches",
+            "v": "One detached color, one hard-coded spacing value"
+          },
+          {
+            "k": "Route",
+            "v": "Those two items back to the agent, nothing else"
+          }
+        ],
+        "note": "The visual diff passes on the next run. You never reopened the 40 components that were already correct."
+      },
+      {
+        "label": "Contrast check",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "WCAG contrast on text and interactive states"
+          },
+          {
+            "k": "Catches",
+            "v": "Disabled-button label sitting at 3.1 to 1"
+          },
+          {
+            "k": "Owner",
+            "v": "Accessibility sets the threshold, the agent does not"
+          }
+        ],
+        "note": "Common miss: the welcome screen passes while the disabled and error states quietly fail."
+      },
+      {
+        "label": "Visual diff",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "Storybook diff plus Playwright parity vs reference"
+          },
+          {
+            "k": "Catches",
+            "v": "4px label shift on the consent step at mobile width"
+          },
+          {
+            "k": "Verdict",
+            "v": "A human decides: real regression or accepted change"
+          }
+        ],
+        "note": "A diff flags difference, not wrongness. A human approves the new baseline or rejects it."
+      },
+      {
+        "label": "Golden-set score",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "Build scored against a curated set of known-good screens"
+          },
+          {
+            "k": "Catches",
+            "v": "A drop below the bar you set for this surface"
+          },
+          {
+            "k": "Caveat",
+            "v": "Only meaningful if you actually built and maintain the set"
+          }
+        ],
+        "note": "Golden sets are a practice, not a switch. A score with no maintained reference set tells you nothing."
+      }
+    ],
+    "promptsTitle": "Copy these in. Adapt to your stack.",
+    "promptsIntro": "These are check configs and routing instructions, not chat prompts. Adapt them to your stack, then run them on every build before a human reviews.",
+    "prompts": [
+      {
+        "title": "Scope the fix, nothing more",
+        "note": "Give the agent only the failures, not the whole file. This is what keeps a planned two-day stage from sliding into two weeks.",
+        "body": "Here is the parity report for [flow / screen]:\n\n[paste the failing items only: check name, location, expected vs actual]\n\nFix only these items. Do not touch any component or token not listed above. For each fix, tell me which design-system token or rule you applied. If a fix is ambiguous, stop and ask rather than guessing."
+      },
+      {
+        "title": "Drift check against mapped truth",
+        "note": "Only meaningful once Code Connect maps Figma components to real code components. Without the map there is no truth to drift from.",
+        "body": "Audit [build path / Storybook] for design-system drift against [design system / Code Connect map]:\n\n1. List every hard-coded color, spacing, radius, or type value that should reference a token.\n2. List every component not mapped to its design-system source.\n3. Output as a table: location, found value, expected token, severity.\n\nDo not fix anything. Report only."
+      },
+      {
+        "title": "Define done before you check",
+        "note": "Write this with QA and accessibility before the agent builds, not after. The definition is the contract the checks enforce.",
+        "body": "For [flow], define parity and done as a checklist a human can sign:\n\n- Visual: which breakpoints and states must match reference, and the diff threshold\n- Tokens: zero detached values, all components mapped\n- Contrast: WCAG level and the states it covers (default, hover, focus, disabled, error)\n- Behavior: which Playwright flows must pass\n\nKeep it to one page. Flag anything that cannot be checked automatically and must be reviewed by hand."
+      },
+      {
+        "title": "Triage the diff",
+        "note": "Use a capable model to sort noise from regressions, but a human owns the final call on each item.",
+        "body": "Here is a visual-diff report for [flow]:\n\n[paste diffs: location, pixel delta, screenshot refs]\n\nFor each diff, classify as: (a) real regression, (b) intended change needing a new baseline, or (c) flaky rendering noise. Give your reasoning. Do not update any baseline. I will approve each one."
+      },
+      {
+        "title": "Pre-merge review gate",
+        "note": "The list a human walks before approving. The AI did it is never an acceptable answer for a shipped defect.",
+        "body": "Before merging [branch], confirm and record:\n\n1. All four checks pass or have a written, approved exception: drift, contrast, visual diff, golden-set score.\n2. Each accepted diff has a named approver.\n3. Failing items were routed and re-checked, not waived.\n4. A human ran the flow once by hand.\n\nName the person signing off. Do not merge on a green pipeline alone."
+      }
+    ],
+    "guide": {
+      "eyebrow": "The runbook",
+      "title": "One parity pass, scoped and signed.",
+      "intro": "Run the checks, route only the failures, let a human make the calls a diff cannot. Aim for one or two tight loops, not an open-ended cleanup. Timebox each loop.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Define done first",
+          "detail": "Write parity and done for this flow with QA and accessibility, before the agent builds. This is the contract the checks enforce."
+        },
+        {
+          "time": "Step 2",
+          "title": "Run all four checks",
+          "detail": "Drift, contrast, visual diff, golden-set score if you have one. Let them run unattended and collect one report."
+        },
+        {
+          "time": "Step 3",
+          "title": "Triage the output",
+          "detail": "Sort each finding: real regression, intended change, or noise. A human owns this call. The diff only flags difference."
+        },
+        {
+          "time": "Step 4",
+          "title": "Route only failures",
+          "detail": "Send the agent the failing items and nothing else. Untouched components stay untouched."
+        },
+        {
+          "time": "Step 5",
+          "title": "Re-check, do not re-build",
+          "detail": "Run the same checks again. Confirm the failures cleared without new drift. Repeat once if needed, then stop."
+        },
+        {
+          "time": "Step 6",
+          "title": "Human signs the merge",
+          "detail": "Walk the pre-merge gate, run the flow by hand once, name the approver, then merge. A human owns the final quality call."
+        }
+      ],
+      "roles": "Lead: design eng, owns the loop. Accessibility: sets contrast thresholds and reviews states. QA: defines done and triages diffs. Approver: the human who signs the merge.",
+      "artifacts": [
+        "Per-check pass/fail report",
+        "One-page definition of parity and done",
+        "Scoped fix list routed to the agent",
+        "Approved-baseline log with named approvers",
+        "Signed pre-merge record"
+      ]
+    },
+    "pitfallsTitle": "Four ways this stage goes wrong.",
+    "pitfalls": [
+      "Re-running the agent on the whole build instead of routing only the failing items.",
+      "Treating a green pipeline as sign-off, with no human running the flow or owning the merge.",
+      "Checking the happy path only, so disabled, focus, and error states ship broken.",
+      "Trusting a golden-set score with no maintained reference set, or a drift check with no Code Connect map behind it."
+    ]
+  },
+  "validation": {
+    "n": "06",
+    "name": "Validation & evals",
+    "dur": "~2-4 days",
+    "purpose": "Validation turns \"good\" from an opinion into something you can score and a real user can break. You write evals that re-run on every change, then put the build in front of target users before it ships. The output is not a thumbs-up. It is a pass/fail bar, the evidence behind it, and a short list of what to rework, weighted by how hard each thing is to undo.",
+    "output": [
+      "An eval set that scores the build against the definition of good, runnable on demand",
+      "A user-test readout: where real people stalled, with clips or transcripts",
+      "A reversibility-weighted rework list, ranked by cost-to-undo",
+      "A signed go/no-go call with the human owner named on it"
+    ],
+    "examplesTitle": "What validation actually catches.",
+    "examples": [
+      {
+        "label": "Onboarding flow: moderated user test",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "Five target users reach first value in under 2 minutes"
+          },
+          {
+            "k": "Catches",
+            "v": "Two stall on step 3; the build is under the activation bar"
+          }
+        ],
+        "note": "Step 3 gets reworked before it ships, not after."
+      },
+      {
+        "label": "Eval set for the definition of good",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "Day-1 activation, not tutorial completion, scored per run"
+          },
+          {
+            "k": "Catches",
+            "v": "A copy change that lifted completion but dropped activation"
+          }
+        ],
+        "note": "Reruns on every build. The signal you chose in framing is the signal you grade."
+      },
+      {
+        "label": "Whose voice is not in the room",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "Test with screen-reader and slow-connection users, not just the happy path"
+          },
+          {
+            "k": "Catches",
+            "v": "Onboarding step 2 unusable on a slow connection; invisible to the core sample"
+          }
+        ],
+        "note": "The cheapest place to find an exclusion is before launch."
+      },
+      {
+        "label": "Reversibility weighting",
+        "rows": [
+          {
+            "k": "Check",
+            "v": "How hard is each fix to undo after ship?"
+          },
+          {
+            "k": "Catches",
+            "v": "A user-table schema change is one-way; a button label is not"
+          }
+        ],
+        "note": "Spend your rigor where a mistake is permanent. Ship the cheap-to-revert things fast."
+      }
+    ],
+    "promptsTitle": "Copy these. Fill the brackets.",
+    "promptsIntro": "These build the eval set and run the test. Treat eval scores as evidence, not verdicts. A human reads the failures and owns the call.",
+    "prompts": [
+      {
+        "title": "Draft the eval set from the definition of good",
+        "note": "Start from the signal you committed to in framing.",
+        "body": "My definition of good is:\n\n[paste the 1-2 measurable signals from framing]\n\nWrite 8-12 eval cases that score a build against this. For each: the input or scenario, the expected outcome, and a pass/fail rule a script could check. Include at least 3 edge cases and 2 cases for users not in the core sample (accessibility, slow connection, non-native language). Flag any signal that cannot be measured automatically and say what a human has to judge instead."
+      },
+      {
+        "title": "Write the moderated test script",
+        "note": "For a moderated session with target users, with or without an AI moderator.",
+        "body": "Task: [the flow, e.g. complete onboarding and reach first real value].\n\nWrite a 15-minute usability test script for 5 target users. Include: a warm-up, 3-4 realistic tasks phrased as goals not instructions, neutral probes for when a user stalls (no leading questions), and a post-task question that maps to my success signal: [paste signal]. Mark exactly where to capture time-to-value. Do not coach the user toward the answer."
+      },
+      {
+        "title": "Grade a transcript against the bar",
+        "note": "Run per user, then look at the spread, not just the average.",
+        "body": "Here is the definition of good and the pass bar:\n\n[paste bar]\n\nHere is one test session transcript:\n\n[paste transcript]\n\nScore it against each eval case. Output a table: case, pass/fail, the exact quote or moment that is the evidence. Then list where this user stalled, hesitated, or recovered on their own. Do not infer success from politeness. End with the single biggest blocker for this user."
+      },
+      {
+        "title": "Build the reversibility-weighted rework list",
+        "note": "Rank by cost-to-undo, not by how loud the bug feels.",
+        "body": "Here are the failures from evals and user tests:\n\n[paste failures]\n\nFor each, estimate: cost to fix now, cost to undo if we ship it wrong, and whether it is one-way (data, schema, public API) or easy to revert (copy, layout, a single screen). Rank the list so the one-way and under-bar items are at the top. Recommend which to fix before ship and which can ship and iterate. Be explicit about what we are choosing to accept."
+      },
+      {
+        "title": "The go/no-go checklist",
+        "note": "A human signs this. \"The AI did it\" is not a reason a defect shipped.",
+        "body": "Fill this in for sign-off:\n\n- Eval set passes bar: [yes/no, score]\n- Users tested: [n, who, including who was previously not in the room]\n- Open one-way risks: [list, or none]\n- Failures we are accepting and why: [list]\n- Owner of the final quality call: [name]\n\nIf any one-way risk is open, default to no-go and say what would change it to go."
+      }
+    ],
+    "guide": {
+      "eyebrow": "The runbook",
+      "title": "Two to four days of validation.",
+      "intro": "Planning estimate, not a measured cycle. Score the build, then watch real people use it. Eval scores are evidence; a named human reads the failures and owns the go/no-go. Weight your effort by what cannot be undone.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Encode good as evals",
+          "detail": "Turn the framing signal into 8-12 scored cases that re-run on every change."
+        },
+        {
+          "time": "Step 2",
+          "title": "Run the eval set",
+          "detail": "Score the current build. Read the failures, not just the headline number."
+        },
+        {
+          "time": "Step 3",
+          "title": "Recruit who is missing",
+          "detail": "Five target users, and deliberately include voices not in the core sample."
+        },
+        {
+          "time": "Step 4",
+          "title": "Test on the real build",
+          "detail": "Moderated session on the running build. Mark where users stall and capture time-to-value."
+        },
+        {
+          "time": "Step 5",
+          "title": "Weight by reversibility",
+          "detail": "Rank failures by cost-to-undo. One-way changes get the most rigor."
+        },
+        {
+          "time": "Step 6",
+          "title": "Make the call",
+          "detail": "Signed go/no-go with the human owner named. Accepted risks written down."
+        }
+      ],
+      "roles": "Lead: owns the bar and the final quality call. UX research: runs the test and reads the transcripts. Analytics: wires the success signal and the eval scoring. Approver: the same human who signs the merge.",
+      "artifacts": [
+        "Runnable eval set tied to the definition of good",
+        "Test readout with clips or transcripts",
+        "Reversibility-weighted rework list",
+        "Signed go/no-go with named owner",
+        "Written list of accepted failures"
+      ]
+    },
+    "pitfallsTitle": "Four ways validation goes wrong.",
+    "pitfalls": [
+      "Grading the easy proxy. Scoring tutorial completion when the bet was day-1 activation.",
+      "Treating the eval score as the verdict. A human has to read the failures and own the call.",
+      "Equal rigor on everything. Burning the schedule on cheap-to-revert copy while a one-way schema change ships unchecked.",
+      "Testing only the people already in the room. The exclusion you miss now is the one you find in production."
+    ]
+  },
+  "polish": {
+    "n": "07",
+    "name": "The final 5% + trust",
+    "dur": "~2-4 days",
+    "purpose": "This is where you spend judgment on purpose. The tool gets you to a working, on-brand, accessible flow fast, and that speed is the trap: good enough ships, and good enough rarely carries the product's voice or feel. This stage is the deliberate override. You polish the moments the tool flattened, decide how the flow holds up on the second and tenth use, and name where a human stays in the loop so nobody ever has to say \"the AI did it\" about a shipped defect.",
+    "output": [
+      "A short list of hand-tuned moments: the transitions, microcopy, and empty states you took off the defaults",
+      "Voice passes on the strings that carry the product's personality, rewritten out of generic-assistant tone",
+      "A trust map: where a human stays in the loop, what is reversible, and every escape hatch",
+      "A quality call signed by a named human, with the merge owner on record"
+    ],
+    "examplesTitle": "Where you override good enough.",
+    "examples": [
+      {
+        "label": "Onboarding flow: the step transitions",
+        "rows": [
+          {
+            "k": "Override",
+            "v": "Replace the default fade between steps with a hand-tuned timing and easing you set yourself."
+          },
+          {
+            "k": "Why",
+            "v": "The default reads as a slideshow. The tuned version reads as forward progress."
+          }
+        ],
+        "note": "This is the running onboarding flow. Tune the few transitions a user actually feels, not every one."
+      },
+      {
+        "label": "Onboarding flow: the empty state",
+        "rows": [
+          {
+            "k": "Override",
+            "v": "Rewrite the generated 'No items yet' into the product's actual voice, per your voice rules."
+          },
+          {
+            "k": "Catches",
+            "v": "Generic-assistant tone that makes a new product sound like every other one."
+          }
+        ],
+        "note": "The empty state is often the first thing a real user sees. It should sound like the product, not the model."
+      },
+      {
+        "label": "The skip-for-now escape hatch",
+        "rows": [
+          {
+            "k": "Trust move",
+            "v": "Add a clear, low-stakes way to skip onboarding and return to it later."
+          },
+          {
+            "k": "In the loop",
+            "v": "The user stays in control. Nothing is forced, nothing is irreversible."
+          }
+        ],
+        "note": "The exits you offer matter as much as the path you put in front of people."
+      },
+      {
+        "label": "The merge and the quality call",
+        "rows": [
+          {
+            "k": "Owner",
+            "v": "A named designer signs off and owns the merge."
+          },
+          {
+            "k": "Rule",
+            "v": "'The AI did it' is never the answer for a shipped defect."
+          }
+        ],
+        "note": "Reach in and fix the last details by hand before it ships. A human owns the final quality call."
+      }
+    ],
+    "promptsTitle": "Use these on the parts the tool flattened.",
+    "promptsIntro": "These are not for generating more. They help you find what the tool smoothed over and put your hand back on it. The first two are review passes. The rest are voice and trust work you do yourself.",
+    "prompts": [
+      {
+        "title": "Find the flattened moments",
+        "note": "Run it against your own flow before users do.",
+        "body": "You are a senior product designer doing a final craft pass. Here is the flow:\n\n[paste screens, states, or a description of a screen recording]\n\nList every moment that feels generic, default, or off-the-shelf:\n1. Transitions that read as templated.\n2. Microcopy that sounds like a generic assistant.\n3. Empty, loading, and error states that were clearly auto-filled.\n\nFor each, say what it looks like now and what one notch better would feel like. Do not rewrite anything yet. Just find the seams."
+      },
+      {
+        "title": "Rewrite a string in real voice",
+        "note": "Do this per string that carries personality. Keep your voice doc open.",
+        "body": "Here is our product voice in three rules:\n\n[rule 1]\n[rule 2]\n[rule 3]\n\nHere is the current string the tool generated:\n\n[paste the string]\n\nRewrite it three ways that fit those rules. Keep each the same length or shorter. No exclamation marks unless the voice rules call for them. After the three, tell me which one a real person would actually say out loud, and why."
+      },
+      {
+        "title": "Map where the human stays in the loop",
+        "note": "Fill this in before you ship, not after an incident.",
+        "body": "For this flow, fill in the table. One row per user action:\n\nAction | Reversible? | Who confirms | Escape hatch\n[action 1] | | |\n[action 2] | | |\n\nThen flag any action that is destructive, irreversible, or sends something external. Each of those needs a human confirm step. List the ones that do not have one yet."
+      },
+      {
+        "title": "Pressure-test the flow over time",
+        "note": "It is easy to nail the first use and ignore the tenth.",
+        "body": "You are a returning user. Walk me through this flow on:\n\n1. The first use, when everything is new.\n2. The fifth use, when the novelty is gone and the celebration moments start to feel slow.\n3. The tenth use, when I want to skip everything I already know.\n\nName the specific moments where the experience starts to grate. Say what should fade, shorten, or disappear for a repeat user. Be specific about the moment, not the principle."
+      },
+      {
+        "title": "The pre-merge trust checklist",
+        "note": "Paste into the PR or design ticket. A named human checks each box.",
+        "body": "Final quality call, owned by [name].\n\n[ ] Key transitions hand-tuned, not default.\n[ ] Personality strings in real product voice, not assistant tone.\n[ ] Empty, loading, and error states checked by a human.\n[ ] Every destructive or irreversible action has a confirm step.\n[ ] At least one clear escape hatch (skip, undo, or come back later).\n[ ] I can defend every detail that ships. Nothing here is 'the AI did it'.\n\nMerge owner: [name]. Date: [date]."
+      }
+    ],
+    "guide": {
+      "eyebrow": "The runbook",
+      "title": "Roughly two to four days of deliberate finishing.",
+      "intro": "The tool already gave you something shippable. This is the work of refusing to ship it as-is. Go state by state, override the defaults that matter, and end with one human owning the quality call. Do not touch everything. Pick the moments that carry the product. Durations here are planning estimates, not measured.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Inventory the defaults",
+          "detail": "Walk the whole flow and mark every moment that is still the tool's good enough: transitions, copy, empty and error states. You cannot polish what you have not named."
+        },
+        {
+          "time": "Step 2",
+          "title": "Hand-tune the feel",
+          "detail": "Take the moments that matter off the defaults. Tune the transitions, timing, and spacing yourself, in Figma or in code via Make. Leave the boring states boring."
+        },
+        {
+          "time": "Step 3",
+          "title": "Voice pass",
+          "detail": "Rewrite the personality-carrying strings against your real voice rules. Start with empty states, first-run copy, and confirmations, since those are what users actually read."
+        },
+        {
+          "time": "Step 4",
+          "title": "Design for repeat use",
+          "detail": "Decide what should fade for returning users, what should shorten, and where the product should get out of the way. The second use often matters more than the first."
+        },
+        {
+          "time": "Step 5",
+          "title": "Set the trust layer",
+          "detail": "Map reversibility and confirms. Add escape hatches: skip-for-now, undo, come back later. Decide where a human must stay in the loop and make it explicit in the build."
+        },
+        {
+          "time": "Step 6",
+          "title": "Sign the quality call",
+          "detail": "One named human walks the flow, runs the pre-merge checklist, and owns the merge. If anything ships broken, that person answers for it, not the tool."
+        }
+      ],
+      "roles": "Lead: the designer doing the craft and voice passes. Voice: whoever owns content or brand tone signs off on the rewrites. Approver and merge owner: one named human who makes the final quality call and owns the merge. Reviewer: a teammate who walks the repeat-use pass with fresh eyes.",
+      "artifacts": [
+        "List of hand-tuned moments and what changed",
+        "Voice-rewritten strings, replacing the defaults",
+        "A filled trust map: reversibility, confirms, escape hatches",
+        "A signed pre-merge checklist with a named merge owner"
+      ]
+    },
+    "pitfallsTitle": "Four ways the final 5% gets skipped.",
+    "pitfalls": [
+      "Shipping the tool's good enough because it works and the deadline is close. Working is not finished.",
+      "Polishing everything evenly, so the budget burns on states no user notices while the key moment stays default.",
+      "Leaving generic-assistant voice in the strings that were supposed to make the product feel like yours.",
+      "Nobody owns the merge, so when a defect ships the answer becomes 'the AI did it' and no human is accountable."
+    ]
+  },
+  "ship": {
+    "n": "08",
+    "name": "Ship & iterate",
+    "dur": "continuous",
+    "purpose": "Shipping in an AI-native process is not a one-time launch. It is a loop. A human picks the one version that ships, releases it behind a flag to a slice of users, watches the signals you defined back in framing, and folds whatever worked back into the system so the next cycle starts with more to build on. The real output is not a deployed build. It is a tighter feedback loop and a design system that gained one documented pattern.",
+    "output": [
+      "A human-signed release decision: the one version that ships, and the one-line reason why",
+      "A staged rollout behind a feature flag with a tested kill switch and a known rollback path",
+      "Evals on live traffic tied to the framing definition of good, compared against a baseline",
+      "New conventions written back into the design system, the Code Connect map, and the thinking file"
+    ],
+    "examplesTitle": "What a clean ship loop looks like.",
+    "examples": [
+      {
+        "label": "Onboarding flow: staged release",
+        "rows": [
+          {
+            "k": "Gate",
+            "v": "Flag at 10 percent. A human approves the merge and owns the call."
+          },
+          {
+            "k": "Watches",
+            "v": "Day-1 activation against baseline, not tutorial completion."
+          },
+          {
+            "k": "Feeds back",
+            "v": "The new wizard step becomes a documented pattern in the design system."
+          }
+        ],
+        "note": "If activation holds at 10 percent, widen the flag. If it dips, flip the kill switch and read the session replays before touching code."
+      },
+      {
+        "label": "Parity gate before merge",
+        "rows": [
+          {
+            "k": "Gate",
+            "v": "A CI check compares the build against a golden set you maintain."
+          },
+          {
+            "k": "Blocks",
+            "v": "Pixel and token drift from the approved onboarding screens."
+          }
+        ],
+        "note": "Golden sets and parity gates are a practice you build, not a feature you switch on. They only catch what you have taught them to compare."
+      },
+      {
+        "label": "Eval on the generated wizard component",
+        "rows": [
+          {
+            "k": "Gate",
+            "v": "An eval samples live sessions in the flagged group and flags regressions."
+          },
+          {
+            "k": "Catches",
+            "v": "Behavior the staging build never exercised: slow networks, real account data, empty states."
+          }
+        ],
+        "note": "Some defects only surface in production. Instrument the eval before you widen the rollout, not after."
+      },
+      {
+        "label": "Convention written back",
+        "rows": [
+          {
+            "k": "Gate",
+            "v": "A design system maintainer reviews the shipped wizard pattern."
+          },
+          {
+            "k": "Feeds back",
+            "v": "The new component is added to the Code Connect map so the next generation can reuse it."
+          }
+        ],
+        "note": "Code Connect is a map you author by hand from Figma components to real code. The payoff comes after the mapping is done, and only then does the next cycle start ahead. Reading that map through Figma's MCP tools is seat-gated."
+      }
+    ],
+    "promptsTitle": "Steal these. Fill the brackets.",
+    "promptsIntro": "These are release checklists and agent instructions, not chat prompts. A human still owns the merge and the final quality call. \"The AI did it\" is never an acceptable answer for a shipped defect.",
+    "prompts": [
+      {
+        "title": "Pre-merge release checklist",
+        "note": "Run this before any human signs the merge.",
+        "body": "Release: onboarding flow v[N]\nFlag: [onboarding_v2], starting at [10]% of [new signups]\n\nBefore I approve this merge, confirm in writing:\n1. Parity check passed against the golden set. Link the diff.\n2. The framing signal is instrumented and reporting: [day-1 activation].\n3. Baseline value for that signal over the last [14] days: [number].\n4. Kill switch tested. Rollback path is [flag flip], time-to-rollback under [5] min.\n5. Owner if this breaks at 2am: [name].\n\nIf any line is blank, the merge does not go in."
+      },
+      {
+        "title": "Staged rollout instruction",
+        "note": "Give your CI or ops agent the ramp and the stop conditions.",
+        "body": "Roll out the onboarding flow behind flag [onboarding_v2].\n\nRamp: 10% for [24h], then 25%, then 50%, then 100%, holding [24h] at each step.\n\nAt every step, compare against baseline:\n- Promote only if [day-1 activation] is within [2]% of baseline or better.\n- Auto-hold if [error rate] rises above [0.5%] or [activation] drops more than [3]%.\n- On a hold, page [owner] and do not advance without a human decision.\n\nNever skip a step. Never widen past a guardrail breach on your own."
+      },
+      {
+        "title": "Production eval spec",
+        "note": "Define what 'still good' means on live traffic, then build the check.",
+        "body": "Set up an eval on live traffic for the onboarding wizard.\n\nSample [1]% of sessions in the flagged group.\nDefinition of good (from framing): [user completes signup and reaches the dashboard under 2 min].\n\nCheck per session:\n- Did the activation signal fire?\n- Any console errors, failed requests, or layout breaks?\n- Time-to-value vs baseline.\n\nReport daily: pass rate, regressions vs baseline, and the top 3 failing session replays. Surface anything below [95]% pass for human review. I own the call on what to do about it."
+      },
+      {
+        "title": "Write the convention back",
+        "note": "Close the loop so the next cycle starts with more to build on.",
+        "body": "This shipped and held: the [3-step onboarding wizard].\n\nWrite it back into the system:\n1. Add the component to the design system with usage rules and a do/don't.\n2. Add or update the Code Connect map from the Figma component to [src/components/OnboardingWizard].\n3. Append to the thinking file: what we bet, what shipped, what the numbers said.\n\nReturn a checklist of what you changed so a design system maintainer can review it before it becomes canon."
+      },
+      {
+        "title": "Post-rollout retro prompt",
+        "note": "Read the result honestly after full rollout.",
+        "body": "Here is the framing bet and the live numbers after full rollout:\n\nBet: [paste]\nDefinition of good: [paste]\nResult: [paste numbers vs baseline]\n\n1. Did we win the bet? Be blunt, no rounding up.\n2. What in the result was the feature versus noise or seasonality?\n3. What should the next cycle change, and what convention should we keep?\n\nDo not congratulate me. Tell me what the data actually says."
+      }
+    ],
+    "guide": {
+      "eyebrow": "The loop",
+      "title": "One ramp, watched, then written back.",
+      "intro": "Ship & iterate is continuous, but each release runs the same loop. Pick one version, ramp it behind a flag, watch the signal you defined in framing, and fold what worked back into the system. A human owns the merge and the final quality call at every step.",
+      "steps": [
+        {
+          "time": "Step 1",
+          "title": "Pick the one version",
+          "detail": "A human chooses the single version that ships and writes one line on why. Not the AI, not a vote."
+        },
+        {
+          "time": "Step 2",
+          "title": "Gate before merge",
+          "detail": "Parity check against the golden set, framing signal instrumented, kill switch tested. Any blank line blocks the merge."
+        },
+        {
+          "time": "Step 3",
+          "title": "Ramp behind a flag",
+          "detail": "Release to 10 percent, hold, then widen by stages. Stop conditions are set before you start, not negotiated mid-incident."
+        },
+        {
+          "time": "Step 4",
+          "title": "Run evals on live traffic",
+          "detail": "Sample real sessions and compare the framing signal against baseline. Staging does not exercise slow networks, real data, and empty states; production does."
+        },
+        {
+          "time": "Step 5",
+          "title": "Decide: widen, hold, or kill",
+          "detail": "Signal holds, widen. Signal dips, flip the kill switch and read replays before touching code. The owner makes the call."
+        },
+        {
+          "time": "Step 6",
+          "title": "Write the convention back",
+          "detail": "Fold the pattern into the design system, update the Code Connect map, append to the thinking file. The next cycle starts with more to build on."
+        }
+      ],
+      "roles": "Decision owner: the human who signs the merge and owns the quality call. Front-end and ops: run the flag ramp and the rollback. Analytics: watches the framing signal against baseline. Design system maintainer: reviews and writes the new convention back into the system.",
+      "artifacts": [
+        "Signed release decision with a one-line rationale",
+        "Flag config with ramp stages and stop conditions",
+        "Eval report on live traffic, compared against baseline",
+        "Updated design system entry and Code Connect map",
+        "Thinking file appended with what shipped and what the numbers said"
+      ]
+    },
+    "pitfallsTitle": "Four ways shipping goes wrong.",
+    "pitfalls": [
+      "Shipping to 100 percent with no flag, so there is no kill switch when it breaks.",
+      "Watching a vanity number instead of the activation signal you defined in framing.",
+      "Treating staging as the full picture and skipping evals on live traffic, so real-data defects ship.",
+      "Winning the bet and never writing the pattern back, so the next cycle relearns the same thing.",
+      "Blaming the model for a shipped defect when a human owned the merge."
+    ]
+  }
+}

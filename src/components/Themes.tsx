@@ -17,7 +17,7 @@ function ThemeCard({ theme, talksById }: { theme: Theme; talksById: Map<string, 
       className="group flex flex-col rounded-2xl bg-paper p-7 text-ink shadow-sm ring-1 ring-black/5 dark:bg-[#161616] dark:text-paper dark:ring-white/10 sm:p-8"
     >
       <div className="flex items-center justify-between gap-4">
-        <ThemeMark id={markId(theme.id)} className="h-14 w-14" />
+        <ThemeMark id={markId(theme.id)} className="h-28 w-28" />
         <span className="rounded-full bg-accent/12 px-3 py-1 text-xs font-bold uppercase tracking-wide text-accent-ink dark:bg-accent/20 dark:text-accent">
           from {theme.talkCount} talks
         </span>
